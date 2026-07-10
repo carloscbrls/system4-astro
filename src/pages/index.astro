@@ -218,339 +218,236 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- Trust Stats -->
+  <!-- Stats + Trust Bar -->
   <section class="stats-bar" data-animate>
     <div class="container stats-inner">
-      <div class="stat">
-        <span class="stat-number">20+</span>
-        <span class="stat-label">Years of Experience</span>
-      </div>
+      <div class="stat"><span class="stat-number">20+</span><span class="stat-label">Years</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-number">67+</span><span class="stat-label">Locations</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-number">100K+</span><span class="stat-label">Clients</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-number">500K+</span><span class="stat-label">Jobs</span></div>
       <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-number">67+</span>
-        <span class="stat-label">System4 Locations Nationwide</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-number">100K+</span>
-        <span class="stat-label">Clients Served</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-number">500K+</span>
-        <span class="stat-label">Jobs Completed</span>
+        <svg width="18" height="18" style="vertical-align:middle;margin-right:.25rem;" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        <span class="stat-label" style="font-size:.8rem;">DGS Certified · DVBE · No Contracts</span>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="section" data-animate>
+  <!-- Services (compact) -->
+  <section class="section" style="padding:3rem 0;" data-animate>
     <div class="container">
       <div class="section-label">Our Services</div>
-      <h2 class="section-title">Commercial Cleaning Services</h2>
-      <p class="section-subtitle">Whether you manage a single office or a multi-site portfolio, we build a customized program that supports consistent results, reliable communication, and flexible adjustments as needs change.</p>
-      <div class="card-grid card-grid-3">
-        <a href="/services/" class="card" data-animate>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Commercial Cleaning Services</h2>
+      <div class="card-grid card-grid-3" style="gap:1rem;">
+        <a href="/services/" class="card" style="padding:1.25rem;" data-animate>
           <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
           <h3>Commercial & Office Cleaning</h3>
-          <p>Routine and nightly cleaning programs for professional offices and multi-tenant buildings.</p>
+          <p>Routine and nightly cleaning for offices and multi-tenant buildings.</p>
         </a>
-        <a href="/industries/medical-dental/" class="card" data-animate>
+        <a href="/industries/medical-dental/" class="card" style="padding:1.25rem;" data-animate>
           <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h3>Medical & Dental Office Cleaning</h3>
-          <p>Healthcare-focused cleaning supporting infection-control best practices and consistency.</p>
+          <h3>Medical & Dental Office</h3>
+          <p>Infection-control cleaning for healthcare environments.</p>
         </a>
-        <a href="/services/" class="card" data-animate>
+        <a href="/services/" class="card" style="padding:1.25rem;" data-animate>
           <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.37 7.37l-6.83 6.83a2 2 0 0 1-2.83-2.83l6.83-6.83a6 6 0 0 1 7.37-7.37z"/></svg></div>
           <h3>Janitorial Services</h3>
-          <p>Reliable service including restrooms, trash removal, dusting, break rooms, and floor care.</p>
+          <p>Restrooms, trash, dusting, break rooms, and floor care.</p>
         </a>
-        <a href="/services/" class="card" data-animate>
+        <a href="/services/" class="card" style="padding:1.25rem;" data-animate>
           <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
           <h3>Day Porter Services</h3>
-          <p>Daytime upkeep for lobbies, restrooms, and high-traffic areas to keep spaces client-ready.</p>
+          <p>Daytime upkeep for lobbies, restrooms, and high-traffic areas.</p>
         </a>
-        <a href="/services/" class="card" data-animate>
+        <a href="/services/" class="card" style="padding:1.25rem;" data-animate>
           <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-          <h3>Floor Care & Carpet Maintenance</h3>
-          <p>Strip & wax, scrub & recoat, carpet care, and ongoing floor maintenance programs.</p>
+          <h3>Floor Care & Carpet</h3>
+          <p>Strip & wax, scrub & recoat, carpet care programs.</p>
         </a>
-        <a href="/services/" class="card" data-animate>
+        <a href="/services/" class="card" style="padding:1.25rem;" data-animate>
           <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
           <h3>High-Touch Disinfection</h3>
-          <p>High-touch point focus for doors, switches, restrooms, break rooms, and common areas.</p>
+          <p>Doors, switches, restrooms, break rooms, and common areas.</p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <!-- Why System4 -->
-  <section class="section section-alt" data-animate>
+  <!-- Why System4 (compact horizontal) -->
+  <section class="section section-alt" style="padding:3rem 0;" data-animate>
     <div class="container">
       <div class="section-label">Why System4</div>
-      <h2 class="section-title">Why Facility Managers Choose System4</h2>
-      <p class="section-subtitle">The resources of a national company. The attention of a local partner. No long-term contracts.</p>
-      <div class="steps">
-        <div class="step" data-animate>
-          <div class="step-number">1</div>
-          <h3>Dedicated Territory Manager</h3>
-          <p>One person owns your account - from walkthrough to quality inspections. No call centers, no runaround. Your territory manager knows your building, your schedule, and your standards.</p>
+      <h2 class="section-title" style="margin-bottom:2rem;">Why Facility Managers Choose System4</h2>
+      <div class="card-grid card-grid-3" style="gap:1.5rem;">
+        <div class="card" style="text-align:center;padding:1.5rem;" data-animate>
+          <div style="font-size:2rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3 style="font-family:var(--font-tight);font-size:1.05rem;margin-bottom:.5rem;">Dedicated Territory Manager</h3>
+          <p style="font-size:.88rem;color:var(--gray-600);line-height:1.6;">One person owns your account. No call centers, no runaround.</p>
         </div>
-        <div class="step" data-animate>
-          <div class="step-number">2</div>
-          <h3>Quality Assurance Inspections</h3>
-          <p>Regular on-site inspections catch issues before you do. We document everything, adjust immediately, and keep your facility at the standard you expect.</p>
+        <div class="card" style="text-align:center;padding:1.5rem;" data-animate>
+          <div style="font-size:2rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3 style="font-family:var(--font-tight);font-size:1.05rem;margin-bottom:.5rem;">Quality Assurance Inspections</h3>
+          <p style="font-size:.88rem;color:var(--gray-600);line-height:1.6;">Regular on-site inspections catch issues before you do.</p>
         </div>
-        <div class="step" data-animate>
-          <div class="step-number">3</div>
-          <h3>Customized & Flexible Programs</h3>
-          <p>No long-term contracts. We tailor service frequency and timing to fit your operations - and adjust as your needs change. Cancel anytime if we don't meet your standards.</p>
+        <div class="card" style="text-align:center;padding:1.5rem;" data-animate>
+          <div style="font-size:2rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3 style="font-family:var(--font-tight);font-size:1.05rem;margin-bottom:.5rem;">No Long-Term Contracts</h3>
+          <p style="font-size:.88rem;color:var(--gray-600);line-height:1.6;">Cancel anytime. We earn your business every day with results.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Industries -->
-  <section class="section" data-animate>
+  <!-- Industries (compact icon grid) -->
+  <section class="section" style="padding:3rem 0;" data-animate>
     <div class="container">
       <div class="section-label">Industries</div>
-      <h2 class="section-title">Industries We Serve</h2>
-      <p class="section-subtitle">From medical offices requiring infection-control protocols to auto dealerships needing showroom-ready presentation - we customize for your industry.</p>
-      <div class="industry-grid">
-        <a href="/industries/medical-dental/" class="industry-card" data-animate>
-          <img src="/images/industry-medical.jpg" alt="Medical office cleaning" loading="lazy" />
-          <div class="industry-card-body">
-            <h3>Medical & Dental Offices</h3>
-            <p>Cleaning programs designed for busy healthcare environments with infection-control protocols.</p>
-          </div>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Industries We Serve</h2>
+      <div class="card-grid card-grid-3" style="gap:1rem;">
+        <a href="/industries/medical-dental/" class="card" style="padding:1rem;text-align:center;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3 style="font-size:.95rem;">Medical & Dental</h3>
         </a>
-        <a href="/industries/professional-offices/" class="industry-card" data-animate>
-          <img src="/images/industry-office.jpg" alt="Professional office cleaning" loading="lazy" />
-          <div class="industry-card-body">
-            <h3>Professional Offices</h3>
-            <p>Keep client-facing spaces spotless and ready for meetings - lobbies, conference rooms, and break rooms.</p>
-          </div>
+        <a href="/industries/professional-offices/" class="card" style="padding:1rem;text-align:center;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3 style="font-size:.95rem;">Professional Offices</h3>
         </a>
-        <a href="/industries/education/" class="industry-card" data-animate>
-          <img src="/images/industry-education.jpg" alt="Education facility cleaning" loading="lazy" />
-          <div class="industry-card-body">
-            <h3>Education & Schools</h3>
-            <p>Support for classrooms, offices, and common areas on your schedule - minimizing disruption.</p>
-          </div>
+        <a href="/industries/education/" class="card" style="padding:1rem;text-align:center;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg></div>
+          <h3 style="font-size:.95rem;">Education & Schools</h3>
         </a>
-        <a href="/industries/dealerships/" class="industry-card" data-animate>
-          <img src="/images/industry-dealership.jpg" alt="Dealership showroom cleaning" loading="lazy" />
-          <div class="industry-card-body">
-            <h3>Dealerships & Showrooms</h3>
-            <p>Presentation-focused cleaning that helps your showroom make the right first impression.</p>
-          </div>
+        <a href="/industries/dealerships/" class="card" style="padding:1rem;text-align:center;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3 style="font-size:.95rem;">Dealerships & Showrooms</h3>
         </a>
-        <a href="/industries/banks/" class="industry-card" data-animate>
-          <img src="/images/industry-bank.jpg" alt="Bank branch cleaning" loading="lazy" />
-          <div class="industry-card-body">
-            <h3>Banks & Financial</h3>
-            <p>Detail-oriented cleaning for high-traffic, customer-facing areas where appearance is everything.</p>
-          </div>
+        <a href="/industries/banks/" class="card" style="padding:1rem;text-align:center;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M12 3a9 9 0 0 1 9 9"/><path d="M3 12a9 9 0 0 1 9-9"/></svg></div>
+          <h3 style="font-size:.95rem;">Banks & Financial</h3>
         </a>
-        <a href="/industries/warehouses/" class="industry-card" data-animate>
-          <img src="/images/industry-warehouse.jpg" alt="Warehouse cleaning" loading="lazy" />
-          <div class="industry-card-body">
-            <h3>Warehouses & Light Industrial</h3>
-            <p>Practical cleaning solutions for back-of-house environments - floors, restrooms, and common areas.</p>
-          </div>
+        <a href="/industries/warehouses/" class="card" style="padding:1rem;text-align:center;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/></svg></div>
+          <h3 style="font-size:.95rem;">Warehouses & Industrial</h3>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Areas Served -->
-  <section class="section section-alt" data-animate>
-    <div class="container">
-      <div class="section-label">Local Service</div>
-      <h2 class="section-title">Serving the San Joaquin Valley</h2>
-      <p class="section-subtitle">Daily routes across San Joaquin County and Stanislaus County. A local team means fast response times and real accountability.</p>
-      <div class="areas-grid">
-        <div class="area-card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <div><strong>Stockton</strong><br/><span>San Joaquin County seat - daily routes</span></div>
-        </div>
-        <div class="area-card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <div><strong>Modesto</strong><br/><span>Stanislaus County - full service coverage</span></div>
-        </div>
-        <div class="area-card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <div><strong>Tracy</strong><br/><span>Fast-growing community - flexible scheduling</span></div>
-        </div>
-        <div class="area-card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <div><strong>Manteca</strong><br/><span>Central location - fast response times</span></div>
-        </div>
-        <div class="area-card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <div><strong>Lodi</strong><br/><span>Wine country businesses - specialty care</span></div>
-        </div>
-        <div class="area-card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <div><strong>Turlock</strong><br/><span>Stanislaus County - medical and office focus</span></div>
-        </div>
+  <!-- Areas Served (compact city bar) -->
+  <section class="section section-alt" style="padding:2.5rem 0;" data-animate>
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:600;color:var(--navy);margin-bottom:1rem;">Serving the San Joaquin Valley</h2>
+      <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:1.25rem;">Daily routes across San Joaquin & Stanislaus Counties</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;">
+        <a href="/cities/stockton/" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:white;border:1px solid var(--gray-200);border-radius:2rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .15s;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Stockton</a>
+        <a href="/cities/modesto/" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:white;border:1px solid var(--gray-200);border-radius:2rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .15s;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Modesto</a>
+        <a href="/cities/tracy/" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:white;border:1px solid var(--gray-200);border-radius:2rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .15s;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Tracy</a>
+        <a href="/cities/manteca/" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:white;border:1px solid var(--gray-200);border-radius:2rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .15s;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Manteca</a>
+        <a href="/cities/lodi/" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:white;border:1px solid var(--gray-200);border-radius:2rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .15s;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Lodi</a>
+        <a href="/cities/turlock/" style="display:inline-flex;align-items:center;gap:.35rem;padding:.5rem 1rem;background:white;border:1px solid var(--gray-200);border-radius:2rem;font-size:.85rem;font-weight:600;color:var(--navy);text-decoration:none;transition:all .15s;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--magenta)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Turlock</a>
       </div>
     </div>
   </section>
 
-  <!-- DGS / Trust Section -->
-  <section class="section trust-section" data-animate>
-    <div class="container trust-inner">
-      <div class="trust-badge">
-        <div class="dgs-shield">
-          <svg width="48" height="48" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-        </div>
-        <div>
-          <h3>DGS Certified</h3>
-          <p>System4 holds DGS Certification ID 2022081, qualifying us for state government facility contracts. We meet the rigorous standards required for government facilities - the same quality we bring to every client.</p>
-        </div>
+  <!-- Trust Bar (compact) -->
+  <section style="background:linear-gradient(135deg,var(--navy) 0%,#0a1628 100%);padding:2.5rem 0;color:white;" data-animate>
+    <div class="container" style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;justify-content:center;text-align:center;">
+      <div style="display:flex;align-items:center;gap:.75rem;">
+        <svg width="36" height="36" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        <div style="text-align:left;"><div style="font-size:1.1rem;font-weight:700;font-family:var(--font-tight);">DGS Certified · DVBE</div><div style="font-size:.78rem;opacity:.8;">ID 2022081 · State & Gov Contracts</div></div>
       </div>
-      <div class="trust-items">
-        <div class="trust-item">
-          <svg width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>No long-term contracts - cancel anytime</span>
-        </div>
-        <div class="trust-item">
-          <svg width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>Dedicated territory manager - one point of contact</span>
-        </div>
-        <div class="trust-item">
-          <svg width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>Regular quality inspections included</span>
-        </div>
-        <div class="trust-item">
-          <svg width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>National resources, local accountability</span>
-        </div>
+      <div style="width:1px;height:30px;background:rgba(255,255,255,.2);"></div>
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;font-size:.82rem;">
+        <span>✓ No long-term contracts</span>
+        <span>✓ Dedicated territory manager</span>
+        <span>✓ Quality inspections included</span>
+        <span>✓ Cancel anytime</span>
       </div>
     </div>
   </section>
 
-  <!-- Reviews -->
-  <section class="section reviews-section" data-animate>
+  <!-- Reviews (3 featured + link) -->
+  <section class="section reviews-section" style="padding:3rem 0;" data-animate>
     <div class="container">
       <div class="section-label" style="text-align:center;">Client Reviews</div>
-      <h2 class="section-title" style="text-align:center;">Trusted by Businesses Across the Valley</h2>
-      <div class="reviews-rating" style="text-align:center;margin-bottom:1.75rem;">
-        <div class="stars" style="display:inline-flex;gap:.15rem;margin-bottom:.4rem;">★ ★ ★ ★ ★</div>
-        <div style="font-size:1.1rem;font-weight:700;color:var(--navy);-webkit-text-fill-color:var(--navy);">5.0 Rating</div>
-        <div style="font-size:.8rem;color:var(--gray-500);margin-top:.15rem;">6 reviews on Google · Veteran-Owned Business</div>
+      <h2 class="section-title" style="text-align:center;margin-bottom:1rem;">Trusted by Businesses Across the Valley</h2>
+      <div class="reviews-rating" style="text-align:center;margin-bottom:1.5rem;">
+        <div class="stars" style="display:inline-flex;gap:.15rem;margin-bottom:.25rem;font-size:1.1rem;">★ ★ ★ ★ ★</div>
+        <div style="font-size:1rem;font-weight:700;color:var(--navy);-webkit-text-fill-color:var(--navy);">5.0 Rating</div>
+        <div style="font-size:.75rem;color:var(--gray-500);margin-top:.1rem;">6 reviews on Google · Veteran-Owned Business</div>
       </div>
-      <div class="card-grid-3">
-        <div class="card review-card">
-          <div class="review-stars" style="color:#f59e0b;margin-bottom:.5rem;font-size:.9rem;">★★★★★</div>
-          <p class="review-text" style="color:var(--gray-700);font-size:.9rem;line-height:1.6;margin-bottom:.75rem;">"Very professional service and great to work with! Highly recommended
-          <div class="review-author" style="display:flex;align-items:center;gap:.5rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--blue);color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;">BK</div>
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">Benjamin Kegele</div>
-              <div style="font-size:.7rem;color:var(--gray-400);">via Google</div>
-            </div>
+      <div class="card-grid-3" style="gap:1rem;">
+        <div class="card review-card" style="padding:1.25rem;">
+          <div class="review-stars" style="color:#f59e0b;margin-bottom:.4rem;font-size:.85rem;">★★★★★</div>
+          <p class="review-text" style="color:var(--gray-700);font-size:.88rem;line-height:1.55;margin-bottom:.6rem;">"Very professional service and great to work with! Highly recommended"</p>
+          <div class="review-author" style="display:flex;align-items:center;gap:.4rem;">
+            <div style="width:28px;height:28px;border-radius:50%;background:var(--blue);color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;">BK</div>
+            <div><div style="font-size:.8rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">Benjamin Kegele</div><div style="font-size:.65rem;color:var(--gray-400);">via Google</div></div>
           </div>
         </div>
-        <div class="card review-card">
-          <div class="review-stars" style="color:#f59e0b;margin-bottom:.5rem;font-size:.9rem;">★★★★★</div>
-          <p class="review-text" style="color:var(--gray-700);font-size:.9rem;line-height:1.6;margin-bottom:.75rem;">"Hands down best quality service and professionalism! Jose was able to take care of all our requests
-          <div class="review-author" style="display:flex;align-items:center;gap:.5rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--magenta);color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;">JR</div>
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">Josh Rangel</div>
-              <div style="font-size:.7rem;color:var(--gray-400);">via Google</div>
-            </div>
+        <div class="card review-card" style="padding:1.25rem;">
+          <div class="review-stars" style="color:#f59e0b;margin-bottom:.4rem;font-size:.85rem;">★★★★★</div>
+          <p class="review-text" style="color:var(--gray-700);font-size:.88rem;line-height:1.55;margin-bottom:.6rem;">"System4 was efficient with their estimate, professional and on time and delivered quality work as promised. Very easy to work with & definitely recommend them."</p>
+          <div class="review-author" style="display:flex;align-items:center;gap:.4rem;">
+            <div style="width:28px;height:28px;border-radius:50%;background:#059669;color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;">RC</div>
+            <div><div style="font-size:.8rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">Real Consumer Feedback</div><div style="font-size:.65rem;color:var(--gray-400);">Local Guide · via Google</div></div>
           </div>
         </div>
-        <div class="card review-card">
-          <div class="review-stars" style="color:#f59e0b;margin-bottom:.5rem;font-size:.9rem;">★★★★★</div>
-          <p class="review-text" style="color:var(--gray-700);font-size:.9rem;line-height:1.6;margin-bottom:.75rem;">"System 4 did a great job cleaning our carpets! Excellent service! Great price! Professional all the way
-          <div class="review-author" style="display:flex;align-items:center;gap:.5rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--navy);color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;">NF</div>
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">Nicco Franco</div>
-              <div style="font-size:.7rem;color:var(--gray-400);">via Google</div>
-            </div>
-          </div>
-        </div>
-        <div class="card review-card">
-          <div class="review-stars" style="color:#f59e0b;margin-bottom:.5rem;font-size:.9rem;">★★★★★</div>
-          <p class="review-text" style="color:var(--gray-700);font-size:.9rem;line-height:1.6;margin-bottom:.75rem;">"System4 was efficient with their estimate, professional and on time and delivered quality work as promised. Very easy to work with & definitely recommend them."</p>
-          <div class="review-author" style="display:flex;align-items:center;gap:.5rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:#059669;color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;">RC</div>
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">Real Consumer Feedback</div>
-              <div style="font-size:.7rem;color:var(--gray-400);">Local Guide · via Google</div>
-            </div>
-          </div>
-        </div>
-        <div class="card review-card">
-          <div class="review-stars" style="color:#f59e0b;margin-bottom:.5rem;font-size:.9rem;">★★★★★</div>
-          <p class="review-text" style="color:var(--gray-700);font-size:.9rem;line-height:1.6;margin-bottom:.75rem;">"System4 provides awesome and professional service! We've used them twice and will continue to be a return customer."</p>
-          <div class="review-author" style="display:flex;align-items:center;gap:.5rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:#7c3aed;color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;">TA</div>
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">TAP Athletics</div>
-              <div style="font-size:.7rem;color:var(--gray-400);">via Google</div>
-            </div>
-          </div>
-        </div>
-        <div class="card review-card">
-          <div class="review-stars" style="color:#f59e0b;margin-bottom:.5rem;font-size:.9rem;">★★★★★</div>
-          <p class="review-text" style="color:var(--gray-700);font-size:.9rem;line-height:1.6;margin-bottom:.75rem;">"Our Center has been treated with such care and support from System4. Jose was extremely sensitive to the fact that we are a non-profit and custom fit what we needed for our budget."</p>
-          <div class="review-author" style="display:flex;align-items:center;gap:.5rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--gold);color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;">PT</div>
-            <div>
-              <div style="font-size:.85rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">PRC Tracy</div>
-              <div style="font-size:.7rem;color:var(--gray-400);display:flex;align-items:center;gap:.3rem;"><span style="background:#16a34a;color:white;padding:1px 5px;border-radius:3px;font-size:.6rem;font-weight:700;letter-spacing:.03em;">NEW</span> via Google</div>
-            </div>
+        <div class="card review-card" style="padding:1.25rem;">
+          <div class="review-stars" style="color:#f59e0b;margin-bottom:.4rem;font-size:.85rem;">★★★★★</div>
+          <p class="review-text" style="color:var(--gray-700);font-size:.88rem;line-height:1.55;margin-bottom:.6rem;">"Our Center has been treated with such care and support from System4. Jose was extremely sensitive to the fact that we are a non-profit and custom fit what we needed for our budget."</p>
+          <div class="review-author" style="display:flex;align-items:center;gap:.4rem;">
+            <div style="width:28px;height:28px;border-radius:50%;background:var(--gold);color:white;-webkit-text-fill-color:white;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;">PT</div>
+            <div><div style="font-size:.8rem;font-weight:600;color:var(--navy);-webkit-text-fill-color:var(--navy);">PRC Tracy</div><div style="font-size:.65rem;color:var(--gray-400);display:flex;align-items:center;gap:.25rem;"><span style="background:#16a34a;color:white;padding:1px 4px;border-radius:3px;font-size:.55rem;font-weight:700;letter-spacing:.03em;">NEW</span> via Google</div></div>
           </div>
         </div>
       </div>
-      <div class="review-badges" style="display:flex;justify-content:center;gap:1rem;margin-top:1.5rem;flex-wrap:wrap;">
-        <div style="display:flex;align-items:center;gap:.4rem;padding:.4rem .75rem;background:rgba(16,108,176,.08);border-radius:6px;font-size:.75rem;color:var(--blue);-webkit-text-fill-color:var(--blue);font-weight:600;">
+      <div style="text-align:center;margin-top:1rem;">
+        <a href="https://www.google.com/maps/place/System4+of+San+Joaquin+Valley" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.88rem;font-weight:600;color:var(--magenta);-webkit-text-fill-color:var(--magenta);text-decoration:none;font-family:var(--font-tight);">See all 6 reviews on Google <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+      </div>
+      <div class="review-badges" style="display:flex;justify-content:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:.4rem;padding:.35rem .7rem;background:rgba(16,108,176,.08);border-radius:6px;font-size:.75rem;color:var(--blue);-webkit-text-fill-color:var(--blue);font-weight:600;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
           Veteran-Owned
         </div>
-        <div style="display:flex;align-items:center;gap:.4rem;padding:.4rem .75rem;background:rgba(204,51,102,.08);border-radius:6px;font-size:.75rem;color:var(--magenta);-webkit-text-fill-color:var(--magenta);font-weight:600;">
+        <div style="display:flex;align-items:center;gap:.4rem;padding:.35rem .7rem;background:rgba(204,51,102,.08);border-radius:6px;font-size:.75rem;color:var(--magenta);-webkit-text-fill-color:var(--magenta);font-weight:600;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           DVBE Certified
         </div>
-        <div style="display:flex;align-items:center;gap:.4rem;padding:.4rem .75rem;background:rgba(245,158,11,.08);border-radius:6px;font-size:.75rem;color:#b45309;-webkit-text-fill-color:#b45309;font-weight:600;">
+        <div style="display:flex;align-items:center;gap:.4rem;padding:.35rem .7rem;background:rgba(245,158,11,.08);border-radius:6px;font-size:.75rem;color:#b45309;-webkit-text-fill-color:#b45309;font-weight:600;">
           ★ 5.0 on Google
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section" data-animate style="background:var(--gray-50);">
+  <!-- FAQ (compact) -->
+  <section class="section" data-animate style="background:var(--gray-50);padding:3rem 0;">
     <div class="container">
       <div class="section-label" style="text-align:center;">Frequently Asked Questions</div>
-      <h2 class="section-title" style="text-align:center;margin-bottom:2.5rem;">Common Questions About Our Services</h2>
+      <h2 class="section-title" style="text-align:center;margin-bottom:1.5rem;">Common Questions</h2>
       <div style="max-width:800px;margin:0 auto;">
-        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
-          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">What commercial cleaning services does System4 offer? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
-          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">System4 of San Joaquin Valley offers commercial cleaning, janitorial services, day porter services, floor care and maintenance, high-touch disinfection, and specialized medical office cleaning. We serve offices, medical and dental facilities, banks, car dealerships, schools, and warehouses across Stockton, Modesto, Tracy, Manteca, Lodi, and Turlock.</p>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.5rem;padding:1rem 1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:.95rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">What commercial cleaning services does System4 offer? <span style="color:var(--magenta);font-size:1.1rem;">+</span></summary>
+          <p style="margin-top:.5rem;color:var(--gray-600);line-height:1.6;font-size:.88rem;">Commercial cleaning, janitorial, day porter, floor care, disinfection, and medical office cleaning across the San Joaquin Valley.</p>
         </details>
-        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
-          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">Does System4 require long-term contracts? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
-          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">No. System4 of San Joaquin Valley does not require long-term contracts. We earn your business every day with consistent results, regular quality inspections, and a dedicated territory manager.</p>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.5rem;padding:1rem 1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:.95rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">Does System4 require long-term contracts? <span style="color:var(--magenta);font-size:1.1rem;">+</span></summary>
+          <p style="margin-top:.5rem;color:var(--gray-600);line-height:1.6;font-size:.88rem;">No. We earn your business every day. Cancel anytime if we don't meet your standards.</p>
         </details>
-        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
-          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">What areas does System4 of San Joaquin Valley serve? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
-          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">We serve Stockton, Modesto, Tracy, Manteca, Lodi, Turlock, and all of San Joaquin County and Stanislaus County in California's Central Valley.</p>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.5rem;padding:1rem 1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:.95rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">What areas do you serve? <span style="color:var(--magenta);font-size:1.1rem;">+</span></summary>
+          <p style="margin-top:.5rem;color:var(--gray-600);line-height:1.6;font-size:.88rem;">Stockton, Modesto, Tracy, Manteca, Lodi, Turlock, and all of San Joaquin and Stanislaus Counties.</p>
         </details>
-        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
-          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">Is System4 a DGS certified business? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
-          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">Yes. System4 holds DGS Certification ID 2022081, qualifying us for state and government facility cleaning contracts.</p>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.5rem;padding:1rem 1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:.95rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">Is System4 DGS certified? <span style="color:var(--magenta);font-size:1.1rem;">+</span></summary>
+          <p style="margin-top:.5rem;color:var(--gray-600);line-height:1.6;font-size:.88rem;">Yes. DGS Certification ID 2022081, qualifying us for state and government facility contracts.</p>
         </details>
-        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
-          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">How quickly can I get a cleaning quote? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
-          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">We typically deliver a custom cleaning proposal within 24 hours of a facility walkthrough. Contact us at (209) 229-2066 or jcastillo@system4.com for a free, no-obligation quote.</p>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.5rem;padding:1rem 1.25rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:.95rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">How quickly can I get a quote? <span style="color:var(--magenta);font-size:1.1rem;">+</span></summary>
+          <p style="margin-top:.5rem;color:var(--gray-600);line-height:1.6;font-size:.88rem;">Typically within 24 hours of a walkthrough. Call (209) 229-2066 or email jcastillo@system4.com.</p>
         </details>
       </div>
     </div>
