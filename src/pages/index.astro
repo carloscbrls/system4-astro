@@ -920,13 +920,15 @@ const faqSchema = {
 
   /* ===== DESKTOP LUXURY (wide screens) ===== */
   @media(min-width:1100px) {
-    /* Hero takes full width, form floats into it */
+    /* Hero takes full width, form floats into it — centered as a unit */
     .hero-inner {
-      max-width: 100% !important;
+      max-width: 1120px !important;
+      margin: 0 auto !important;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 2rem;
+      padding: 0 1.5rem;
     }
     .hero-content {
       flex: 1 1 55%;

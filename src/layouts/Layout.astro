@@ -106,7 +106,6 @@ const localBusinessSchema = {
     a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
     .skip-link{position:absolute;top:-100%;left:0;background:var(--blue);color:var(--white);padding:.75rem 1.5rem;z-index:9999;font-weight:600;border-radius:0 0 var(--radius-sm) 0}
     .skip-link:focus{top:0}
-    .container{max-width:1120px;margin:0 auto;padding:0 1.5rem}
     .nav{background:rgba(255,255,255,.98);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(0,0,0,.04);position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.02),0 4px 24px rgba(0,0,0,.06)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.85rem 2rem;max-width:1120px;margin:0 auto}
     .nav-logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
@@ -365,6 +364,13 @@ const localBusinessSchema = {
   </script>
   <style is:global>
     /* Global base styles — must be global because Astro scopes Layout CSS with a different cid than slot content */
+    .container{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+    .section{padding:3rem 2rem}
+    .section-alt{background:linear-gradient(180deg,#fafbfd 0%,#f3f4f6 100%)}
+    .section-label{color:var(--gold);-webkit-text-fill-color:var(--gold);font-weight:700;font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;margin-bottom:.5rem;display:inline-flex;align-items:center;gap:.5rem}
+    .section-label::before{content:"";width:32px;height:2px;background:linear-gradient(90deg,var(--gold),var(--magenta));border-radius:1px}
+    .section-title{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2.25rem);color:var(--gray-900);margin-bottom:.75rem;line-height:1.15;font-weight:400;letter-spacing:-.02em}
+    .section-subtitle{color:var(--gray-500);font-size:.95rem;max-width:540px;line-height:1.6}
     .hero{position:relative!important;overflow:hidden!important}
     .hero-bg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;opacity:.15!important;z-index:0!important}
     .cta-bg{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;opacity:.15!important;z-index:0!important}
