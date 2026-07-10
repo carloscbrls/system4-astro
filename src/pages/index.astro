@@ -920,15 +920,18 @@ const faqSchema = {
 
   /* ===== DESKTOP LUXURY (wide screens) ===== */
   @media(min-width:1100px) {
-    /* Hero takes full width, form floats into it — centered as a unit */
+    /* Hero: side-by-side with sticky form, generous vertical padding */
+    .hero {
+      padding: 5rem 2rem 4rem;
+    }
     .hero-inner {
       max-width: 1120px !important;
       margin: 0 auto !important;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 2rem;
-      padding: 0 1.5rem;
+      gap: 3rem;
+      padding: 0;
     }
     .hero-content {
       flex: 1 1 55%;
@@ -936,42 +939,56 @@ const faqSchema = {
     }
     .hero-form-desktop {
       display: block;
-      flex: 0 0 340px;
+      flex: 0 0 360px;
+      position: sticky;
+      top: 100px;
     }
-    /* Hide the separate form section on desktop — form is inside hero */
+    /* Hide the separate form section on desktop */
     .hero-form-section {
       display: none !important;
     }
-    /* Hero content — bigger and bolder */
+    /* Hero content — premium typography */
     .hero h1 {
-      font-size: 2.4rem;
-      line-height: 1.1;
+      font-size: 3.2rem;
+      line-height: 1.08;
+      letter-spacing: -.03em;
+      margin-bottom: 1.25rem;
+    }
+    .hero-tag {
+      font-size: .7rem;
+      letter-spacing: .12em;
+      padding: .35rem 1.1rem;
+      margin-bottom: 1.25rem;
     }
     .hero-tagline {
-      font-size: 1.15rem;
+      font-size: 1.3rem;
+      margin-bottom: .5rem;
     }
     .hero-sub {
-      font-size: 1rem;
-      line-height: 1.65;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+    .hero-cta {
+      margin-bottom: 1.5rem;
     }
     .hero-badges {
       display: flex;
-      gap: .6rem;
+      gap: .75rem;
       justify-content: flex-start;
-      margin-top: 1rem;
-      padding-top: .75rem;
-      border-top: 1px solid rgba(255,255,255,.15);
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,.12);
     }
     .hero-badge {
       display: flex;
       align-items: center;
-      gap: .45rem;
-      padding: .55rem 1rem;
-      background: rgba(255,255,255,.06);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 10px;
+      gap: .5rem;
+      padding: .65rem 1.1rem;
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 12px;
       transition: all .4s cubic-bezier(.25,.46,.45,.94);
       position: relative;
       overflow: hidden;
@@ -982,89 +999,211 @@ const faqSchema = {
       inset: -1px;
       border-radius: inherit;
       padding: 1.5px;
-      background: linear-gradient(135deg, rgba(212,55,110,.5), transparent 40%, rgba(255,200,50,.4));
+      background: linear-gradient(135deg, rgba(212,55,110,.45), transparent 40%, rgba(201,168,76,.35));
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
       pointer-events: none;
     }
     .hero-badge:hover {
-      background: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.13);
       transform: translateY(-3px);
-      box-shadow: 0 8px 32px rgba(0,0,0,.2), 0 0 0 1px rgba(255,255,255,.1);
+      box-shadow: 0 10px 36px rgba(0,0,0,.2), 0 0 0 1px rgba(255,255,255,.08);
     }
     .badge-icon {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 28px;
-      height: 28px;
-      border-radius: 7px;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
       background: linear-gradient(135deg, var(--magenta), #e8447a);
       color: white;
       flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(212,55,110,.35);
     }
     .badge-icon svg {
-      width: 14px;
-      height: 14px;
+      width: 15px;
+      height: 15px;
     }
     .badge-accent {
       display: block;
       font-family: var(--font-tight);
       font-weight: 700;
-      font-size: .9rem;
-      color: var(--magenta);
-      -webkit-text-fill-color: var(--magenta);
-      line-height: 1.1;
+      font-size: .95rem;
+      color: white;
+      -webkit-text-fill-color: white;
+      line-height: 1.15;
       letter-spacing: .02em;
     }
     .badge-label {
       display: block;
       font-family: var(--font-tight);
       font-weight: 500;
-      font-size: .65rem;
-      color: rgba(255,255,255,.75);
-      -webkit-text-fill-color: rgba(255,255,255,.75);
-      letter-spacing: .08em;
+      font-size: .6rem;
+      color: rgba(255,255,255,.6);
+      -webkit-text-fill-color: rgba(255,255,255,.6);
+      letter-spacing: .1em;
       text-transform: uppercase;
       line-height: 1;
     }
-    /* Stats: bigger numbers */
+
+    /* Stats bar: premium feel */
+    .stats-bar {
+      background: linear-gradient(180deg, #fafbfd 0%, #fff 100%);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 1px 8px rgba(0,0,0,.04);
+    }
+    .stats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
     .stat {
-      padding: 0 4rem;
+      padding: 1.25rem 3.5rem;
     }
     .stat-number {
-      font-size: 3rem;
+      font-size: 2.8rem;
+      letter-spacing: -.03em;
+      background: linear-gradient(135deg, var(--blue), var(--magenta));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     .stat-label {
-      font-size: .95rem;
+      font-size: .88rem;
+      letter-spacing: .02em;
     }
+    .stat-divider {
+      height: 44px;
+    }
+
     /* More generous section padding */
     .section {
-      padding: 7rem 2rem;
+      padding: 6rem 2rem;
     }
-    /* Larger section titles */
+
+    /* Larger section titles with decorative accent */
     .section-title {
-      font-size: 2.8rem;
+      font-size: 2.75rem;
       margin-bottom: 1.5rem;
+      letter-spacing: -.025em;
     }
     .section-subtitle {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
     }
-    /* Cards: more breathing room */
+
+    /* Cards: premium breathing room and elevation */
     .card {
       padding: 2rem;
+      border-radius: var(--radius-lg);
+      background: white;
+      border: 1px solid var(--gray-100);
+      box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.03);
     }
-    /* Trust section: bigger */
+    .card-grid {
+      gap: 1.5rem;
+    }
+
+    /* Steps: connector line between steps */
+    .steps {
+      position: relative;
+      gap: 2rem;
+      padding-top: 1rem;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 16.67%;
+      right: 16.67%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--magenta));
+      opacity: .25;
+      z-index: 0;
+    }
+    .step {
+      position: relative;
+      z-index: 1;
+    }
+    .step-number {
+      width: 56px;
+      height: 56px;
+      font-size: 1.35rem;
+    }
+    .step h3 {
+      font-size: 1.3rem;
+    }
+    .step p {
+      font-size: 1rem;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Industry cards: refined hover */
+    .industry-grid {
+      gap: 2rem;
+    }
+    .industry-card img {
+      height: 200px;
+      transition: transform .6s cubic-bezier(.25,.46,.45,.94);
+    }
+    .industry-card:hover img {
+      transform: scale(1.05);
+    }
+    .industry-card-body {
+      padding: 1.5rem;
+    }
+
+    /* Trust section: stronger visual */
+    .trust-section {
+      padding: 5rem 0 !important;
+    }
+    .trust-inner {
+      gap: 4rem;
+    }
     .trust-badge h3 {
-      font-size: 1.6rem;
+      font-size: 1.75rem;
     }
     .trust-badge p {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
     }
-    /* CTA: bigger */
+
+    /* CTA: premium gradient */
+    .cta-section {
+      padding: 5rem 2rem;
+    }
     .cta-section h2 {
-      font-size: 2.8rem;
+      font-size: 2.75rem;
+      letter-spacing: -.02em;
+    }
+    .cta-section p {
+      font-size: 1.1rem;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Review cards: refined spacing */
+    .review-card {
+      padding: 2rem;
+    }
+
+    /* Footer: more generous spacing */
+    .footer {
+      padding: 5rem 3rem 2rem;
+    }
+    .footer-inner {
+      gap: 3rem;
+    }
+
+    /* Nav refinement */
+    .nav-inner {
+      padding: .75rem 2rem;
+    }
+    .nav-logo img {
+      height: 42px;
     }
   }
 
