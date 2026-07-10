@@ -69,7 +69,7 @@ const faqSchema = {
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Get a Free Quote
           </a>
-          <a href="tel:+12092292066" class="btn-secondary btn-lg" style="-webkit-text-fill-color:white;color:white;">
+          <a href="tel:+12092292066" class="btn-secondary btn-lg" style="-webkit-text-fill-color:#d4376e;color:#d4376e;background:white;border-color:white;">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             (209) 229-2066
           </a>
@@ -457,8 +457,8 @@ const faqSchema = {
       <p>Get a free, no-obligation walkthrough and custom cleaning program. We'll assess your space, identify your needs, and deliver a proposal — typically within 24 hours.</p>
       <div class="cta-buttons">
         <a href="/contact/" class="btn-primary btn-lg">Get a Free Quote</a>
-        <a href="tel:+12092292066" class="btn-secondary btn-lg" style="-webkit-text-fill-color:white;color:white;">Call (209) 229-2066</a>
-        <a href="mailto:jcastillo@system4.com" class="btn-ghost" style="-webkit-text-fill-color:white;color:white;">Email jcastillo@system4.com</a>
+        <a href="tel:+12092292066" class="btn-secondary btn-lg" style="-webkit-text-fill-color:#d4376e;color:#d4376e;">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-ghost" style="-webkit-text-fill-color:white;color:white;background:rgba(11,125,218,.15);border-color:rgba(255,255,255,.6);">Email jcastillo@system4.com</a>
       </div>
     </div>
   </section>
@@ -770,9 +770,9 @@ const faqSchema = {
     font-weight: 600;
     font-size: 1rem;
     padding: .85rem 2rem;
-    border: 2px solid rgba(255,255,255,.5);
+    border: 2px solid rgba(255,255,255,.6);
     border-radius: var(--radius-md);
-    background: rgba(255,255,255,.08);
+    background: rgba(11,125,218,.15);
     transition: all .4s cubic-bezier(.25,.46,.45,.94);
     position: relative;
     -webkit-backdrop-filter: blur(8px);
@@ -793,10 +793,10 @@ const faqSchema = {
   .btn-ghost:hover {
     color: white;
     -webkit-text-fill-color: white;
-    background: rgba(255,255,255,.2);
-    border-color: white;
+    background: var(--blue);
+    border-color: var(--blue);
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    box-shadow: 0 8px 24px rgba(11,125,218,.4);
   }
   .btn-ghost:hover::after {
     transform: scaleX(1);
@@ -1096,8 +1096,8 @@ const faqSchema = {
   .btn-primary{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 50%,var(--magenta) 100%)!important;background-size:200% auto!important;border-radius:12px!important;box-shadow:0 4px 16px rgba(212,55,110,.35),inset 0 1px 0 rgba(255,255,255,.2)!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important;letter-spacing:.01em!important}
   .btn-primary:hover{transform:translateY(-3px)!important;box-shadow:0 8px 28px rgba(212,55,110,.45),inset 0 1px 0 rgba(255,255,255,.25)!important;background-position:right center!important}
   .btn-primary:active{transform:translateY(-1px)!important}
-  .btn-secondary{background:transparent!important;color:var(--white)!important;-webkit-text-fill-color:white!important;border:2px solid rgba(255,255,255,.5)!important;border-radius:12px!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important}
-  .btn-secondary:hover{background:rgba(255,255,255,.15)!important;-webkit-text-fill-color:white!important;border-color:rgba(255,255,255,.8)!important;transform:translateY(-3px)!important;box-shadow:0 8px 24px rgba(0,0,0,.2)!important}
+  .btn-secondary{background:white!important;color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important;border:2px solid white!important;border-radius:12px!important;box-shadow:0 4px 16px rgba(0,0,0,.15)!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important;font-weight:700!important}
+  .btn-secondary:hover{background:var(--navy-light)!important;color:white!important;-webkit-text-fill-color:white!important;border-color:var(--navy-light)!important;transform:translateY(-3px)!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important}
   .btn-ghost::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
   .btn-ghost:hover{transform:translateY(-1px)}
   .btn-ghost:hover::after{transform:scaleX(1)}
