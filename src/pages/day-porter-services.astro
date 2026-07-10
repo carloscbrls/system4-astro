@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'Day Porter Services in Stockton & San Joaquin Valley | System4';
+const description = 'Professional day porter services for lobbies, restrooms, and high-traffic areas in Stockton, Modesto, Tracy, and the San Joaquin Valley. Keep your facility client-ready all day.';
+const canonicalUrl = 'https://system4sjv.com/day-porter-services/';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Day Porter Services",
+  "description": "Professional day porter services for lobbies, restrooms, and high-traffic areas across the San Joaquin Valley, including Stockton, Modesto, Tracy, Manteca, and Lodi.",
+  "provider": {
+    "@type": "CleaningService",
+    "name": "System4 of San Joaquin Valley",
+    "telephone": "+1-209-229-2066",
+    "url": "https://system4sjv.com"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Stockton"},
+    {"@type": "City", "name": "Modesto"},
+    {"@type": "City", "name": "Tracy"},
+    {"@type": "City", "name": "Manteca"},
+    {"@type": "City", "name": "Lodi"},
+    {"@type": "City", "name": "Turlock"}
+  ],
+  "serviceType": "Day Porter Services"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://system4sjv.com/services/"},
+    {"@type": "ListItem", "position": 3, "name": "Day Porter Services"}
+  ]
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[serviceSchema, breadcrumbSchema]}>
+
+  <!-- Hero -->
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;">
+    <img src="/images/hero-office.jpg" alt="Professional day porter maintaining a lobby" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;pointer-events:none;" loading="eager" />
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Day Porter Services</div>
+      <h1>Day Porter Services<br/>in the <em>San Joaquin Valley</em></h1>
+      <p>Continuous daytime cleaning for lobbies, restrooms, and high-traffic areas across Stockton, Modesto, Tracy, Manteca, and Lodi. Keep your facility client-ready all day long.</p>
+      <div class="hero-cta" style="margin-top:1.5rem;">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What a Day Porter Does -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">What a Day Porter Does</div>
+      <h2 class="section-title" style="text-align:center;">Continuous Care for Your Facility</h2>
+      <p class="section-subtitle" style="text-align:center;">A day porter is your on-site cleaning professional during business hours, keeping high-traffic areas spotless and responding to needs as they arise.</p>
+
+      <div class="service-detail-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem;">
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Ongoing Upkeep</h3>
+          <ul class="service-checklist">
+            <li>Continuous lobby and entryway upkeep</li>
+            <li>Restroom monitoring and touch-up cleaning</li>
+            <li>Supply restocking (paper, soap, sanitizer)</li>
+            <li>Spill and emergency response</li>
+            <li>Common area tidying and straightening</li>
+            <li>Trash management and recycling</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Additional Support</h3>
+          <ul class="service-checklist">
+            <li>Meeting room setup and refresh</li>
+            <li>Floor spot cleaning and touch-up mopping</li>
+            <li>Glass and door smudge removal</li>
+            <li>Break room and kitchen upkeep</li>
+            <li>Light dusting of visible surfaces</li>
+            <li>Coordination with nightly cleaning crew</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Day Porter Service Matters -->
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Why Day Porter Service Matters</div>
+      <h2 class="section-title" style="text-align:center;">First Impressions Happen All Day</h2>
+      <div class="card-grid card-grid-3" style="margin-top:2.5rem;">
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3>Always Client-Ready</h3>
+          <p>Your lobby, restrooms, and common areas stay clean throughout the day — not just after hours.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Immediate Response</h3>
+          <p>Spills, messes, and unexpected needs are handled on the spot — no waiting for the next cleaning shift.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+          <h3>Extended Coverage</h3>
+          <p>Day porter service complements your nightly cleaning, giving your facility 24/7 coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Service Areas</div>
+      <h2 class="section-title" style="text-align:center;">Day Porter Service Where You Need It</h2>
+      <p class="section-subtitle" style="text-align:center;">On-site day porter coverage across San Joaquin and Stanislaus Counties. A local team means fast response and real accountability.</p>
+      <div class="areas-grid" style="margin-top:2rem;">
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Stockton</strong><br/><span>San Joaquin County — daily routes</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Modesto</strong><br/><span>Stanislaus County — full coverage</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Tracy</strong><br/><span>Fast-growing community — flexible scheduling</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Manteca</strong><br/><span>Central location — fast response times</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Lodi</strong><br/><span>Wine country businesses — specialty care</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Turlock</strong><br/><span>Stanislaus County — medical and office focus</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:800px;">
+      <div class="section-label" style="text-align:center;">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">Common Questions About Day Porter Services</h2>
+      <div class="faq-list" style="margin-top:2rem;">
+        <details class="faq-item">
+          <summary class="faq-question">What is a day porter and how is it different from nightly cleaning?</summary>
+          <p class="faq-answer">A day porter works during business hours to maintain high-traffic areas continuously, while nightly cleaning focuses on deep cleaning after hours. Day porter service keeps your facility presentable throughout the day, responding to messes and needs as they happen.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How many hours per day does a day porter work?</summary>
+          <p class="faq-answer">Day porter shifts are typically 4–8 hours depending on your facility size and needs. We customize the schedule to match your peak traffic times and budget.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What types of facilities benefit most from day porter service?</summary>
+          <p class="faq-answer">Medical offices, banks, retail spaces, corporate lobbies, government buildings, and any facility with high daytime foot traffic benefit significantly from having a day porter on-site during business hours.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can day porter service be combined with nightly cleaning?</summary>
+          <p class="faq-answer">Absolutely. Most of our clients pair day porter service with nightly cleaning for round-the-clock facility care. The day porter handles daytime touch-ups while the nightly crew performs deep cleaning tasks.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-animate>
+    <img src="/images/cta-meeting.jpg" alt="Facility walkthrough meeting" class="cta-bg" loading="lazy" />
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Keep Your Facility Client-Ready All Day</h2>
+      <p>Get a free walkthrough and customized day porter program. We'll assess your traffic patterns, identify your needs, and deliver a proposal — typically within 24 hours.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-secondary">Email jcastillo@system4.com</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .service-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .service-checklist { list-style: none; padding: 0; }
+  .service-checklist li { padding: .5rem 0 .5rem 1.5rem; position: relative; color: var(--gray-700); font-size: .95rem; line-height: 1.6; }
+  .service-checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--green-600); font-weight: 700; }
+  .faq-item { border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem; background: white; }
+  .faq-question { font-weight: 600; cursor: pointer; color: var(--gray-900); font-size: 1rem; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question::after { content: '+'; font-size: 1.2rem; font-weight: 300; color: var(--blue); transition: transform .2s ease; }
+  .faq-item[open] .faq-question::after { content: '−'; }
+  .faq-answer { color: var(--gray-500); margin-top: .75rem; line-height: 1.7; }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .areas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .area-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: .75rem; transition: all .3s ease; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+  .area-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateX(4px); }
+  .area-card svg { color: var(--green-600); flex-shrink: 0; }
+  .area-card strong { color: var(--gray-900); font-size: 1rem; }
+  .area-card span { color: var(--gray-500); font-size: .85rem; }
+  @media (max-width: 768px) {
+    .service-detail-grid { grid-template-columns: 1fr; }
+    .areas-grid { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; align-items: stretch; }
+    .cta-buttons a { text-align: center; justify-content: center; }
+  }
+</style>

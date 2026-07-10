@@ -1,0 +1,101 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'How to Evaluate a Commercial Cleaning Company | System4 SJV Blog';
+const description = 'Learn how to evaluate commercial cleaning companies in the San Joaquin Valley. Key questions to ask, red flags to watch for, and what separates great cleaning partners from average ones.';
+const canonicalUrl = 'https://system4sjv.com/blog/how-to-evaluate-a-commercial-cleaning-company/';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Evaluate a Commercial Cleaning Company",
+  "description": description,
+  "url": canonicalUrl,
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-07-10",
+  "author": { "@type": "Organization", "name": "System4 of San Joaquin Valley", "url": "https://system4sjv.com" },
+  "publisher": { "@type": "Organization", "name": "System4 of San Joaquin Valley", "url": "https://system4sjv.com" }
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={articleSchema}>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="max-width:760px;">
+      <a href="/services/" class="back-link">← Back to Services</a>
+      <h1 style="font-size:clamp(1.6rem,4vw,2.4rem);margin-top:1rem;">How to Evaluate a Commercial Cleaning Company</h1>
+      <p style="color:var(--gray-500);font-size:.9rem;margin-bottom:2rem;">January 15, 2025 · System4 of San Joaquin Valley</p>
+
+      <p>Choosing a commercial cleaning company isn't just about price. The wrong partner creates more problems than they solve — inconsistent quality, communication gaps, and hidden costs that erode your facility's appearance and your team's morale.</p>
+
+      <p>Here's a practical framework for evaluating any cleaning provider, whether you're in Stockton, Modesto, Tracy, or anywhere in the Central Valley.</p>
+
+      <h2>1. Ask About Their Quality Assurance Process</h2>
+      <p>A cleaning company without a QA process is guessing. Ask specifically:</p>
+      <ul>
+        <li>Do they conduct regular on-site inspections?</li>
+        <li>Are results documented?</li>
+        <li>What happens when something is missed — is there a feedback loop?</li>
+      </ul>
+      <p>System4 uses our <strong>Measured Success®</strong> QA program — documented inspections, a direct feedback channel, and immediate corrective action. Every visit is tracked.</p>
+
+      <h2>2. Check for a Dedicated Point of Contact</h2>
+      <p>If your cleaning company sends a different person every month, or routes you through a call center, that's a red flag. You need one person who knows your building, your schedule, and your standards.</p>
+      <p>A dedicated territory manager means one call, one text, one email — and it gets handled. No runaround.</p>
+
+      <h2>3. Verify Insurance, Bonding, and Licensing</h2>
+      <p>This is non-negotiable. Ask for proof of:</p>
+      <ul>
+        <li>General liability insurance</li>
+        <li>Workers' compensation</li>
+        <li>Bonding</li>
+        <li>Business license in your county</li>
+      </ul>
+      <p>Any reputable cleaning company will provide this without hesitation. If they can't, move on.</p>
+
+      <h2>4. Ask About Flexibility and Contract Terms</h2>
+      <p>Long-term contracts lock you in even when the service declines. The best cleaning companies earn your business every month.</p>
+      <p>At System4, we work <strong>month-to-month</strong>. If we're not meeting your standards, you can cancel anytime. That's not a risk for us — it's how we hold ourselves accountable.</p>
+
+      <h2>5. Evaluate Their Industry-Specific Experience</h2>
+      <p>Cleaning a medical office is fundamentally different from cleaning a warehouse. If a company says "we clean everything," ask for specifics:</p>
+      <ul>
+        <li>Do they have experience in your industry?</li>
+        <li>Can they describe their infection-control protocols?</li>
+        <li>Do they understand HIPAA considerations for waiting rooms?</li>
+      </ul>
+      <p>If they can't answer confidently, they're learning on your dime.</p>
+
+      <h2>6. Request References in Your Area</h2>
+      <p>A cleaning company with happy clients will gladly share them. Ask for 2-3 references in your city. When you call, ask about consistency, communication, and how problems were resolved.</p>
+
+      <h2>7. Compare the Total Value, Not Just the Price</h2>
+      <p>The cheapest bid usually means the thinnest scope. A $200/month difference could mean skipped restrooms, inconsistent scheduling, and no accountability.</p>
+      <p>Look at the <strong>total value</strong>: scope completeness, communication quality, QA process, and whether they'll adjust as your needs change.</p>
+
+      <div style="background:var(--blue-100);border-radius:var(--radius-md);padding:2rem;margin-top:2rem;border-left:4px solid var(--blue);">
+        <h3 style="color:var(--navy);margin-bottom:.5rem;">The Bottom Line</h3>
+        <p style="margin-bottom:0;">The right cleaning partner makes your job easier. The wrong one makes it harder. Take 15 minutes to evaluate your options — it'll save you months of frustration.</p>
+      </div>
+
+      <div style="margin-top:3rem;padding:2rem;background:linear-gradient(135deg,var(--magenta),#b02a58);border-radius:var(--radius-lg);text-align:center;color:white;">
+        <h2 style="color:white;-webkit-text-fill-color:white;margin-bottom:.5rem;">Ready to Evaluate System4?</h2>
+        <p style="opacity:.9;margin-bottom:1.5rem;color:white;-webkit-text-fill-color:white;">Get a free walkthrough and see how we measure up.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="/contact/" class="btn-primary" style="background:white;color:var(--magenta);">Request a Walkthrough</a>
+          <a href="tel:+12092292066" class="btn-secondary" style="border-color:rgba(255,255,255,.5);color:white;">Call (209) 229-2066</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .back-link { color: var(--blue); font-weight: 600; font-size: .9rem; text-decoration: none; }
+  .back-link:hover { color: var(--magenta); }
+  h2 { margin-top: 2rem; margin-bottom: .75rem; font-size: 1.4rem; }
+  ul { padding-left: 1.5rem; margin: 1rem 0; }
+  li { color: var(--gray-700); line-height: 1.8; margin-bottom: .5rem; }
+  p { color: var(--gray-700); line-height: 1.8; margin-bottom: 1rem; }
+</style>

@@ -1,0 +1,202 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'Medical & Dental Office Cleaning in Stockton, CA | System4 SJV';
+const description = 'Specialized medical and dental office cleaning services supporting infection-control protocols in Stockton, Modesto, Tracy, and across the San Joaquin Valley. Waiting rooms, operatories, staff areas. Licensed, bonded & insured.';
+const canonicalUrl = 'https://system4sjv.com/medical-office-cleaning/';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Medical & Dental Office Cleaning",
+  "description": "Healthcare-focused cleaning supporting infection-control best practices for medical offices, dental practices, and clinics across the San Joaquin Valley.",
+  "provider": {
+    "@type": "CleaningService",
+    "name": "System4 of San Joaquin Valley",
+    "telephone": "+1-209-229-2066",
+    "url": "https://system4sjv.com"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Stockton"},
+    {"@type": "City", "name": "Modesto"},
+    {"@type": "City", "name": "Tracy"},
+    {"@type": "City", "name": "Manteca"},
+    {"@type": "City", "name": "Lodi"},
+    {"@type": "City", "name": "Turlock"}
+  ],
+  "serviceType": "Medical Office Cleaning"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://system4sjv.com/services/"},
+    {"@type": "ListItem", "position": 3, "name": "Medical & Dental Office Cleaning"}
+  ]
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[serviceSchema, breadcrumbSchema]}>
+
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;">
+    <img src="/images/hero-office.jpg" alt="Clean medical office waiting room" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;pointer-events:none;" loading="eager" />
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Medical Cleaning</div>
+      <h1>Medical & Dental Office<br/>Cleaning in the <em>San Joaquin Valley</em></h1>
+      <p>Healthcare-focused cleaning supporting infection-control best practices for medical offices, dental practices, and clinics. Waiting rooms, operatories, staff areas, and restrooms — all to your compliance standards.</p>
+      <div class="hero-cta" style="margin-top:1.5rem;">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Covered -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Infection-Control Cleaning</div>
+      <h2 class="section-title" style="text-align:center;">Every Area, Every Standard</h2>
+      <p class="section-subtitle" style="text-align:center;">Medical and dental offices require cleaning protocols that go beyond standard commercial cleaning. Here's what we cover:</p>
+
+      <div class="service-detail-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem;">
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Clinical Areas</h3>
+          <ul class="service-checklist">
+            <li>Waiting rooms and reception areas</li>
+            <li>Dental operatories and exam rooms</li>
+            <li>Sterilization and processing areas</li>
+            <li>Staff break rooms and offices</li>
+            <li>Patient restrooms</li>
+            <li>High-touch disinfection protocols</li>
+            <li>Biohazard waste area cleaning</li>
+            <li>Lab and imaging area cleaning</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Compliance Support</h3>
+          <ul class="service-checklist">
+            <li>Infection control checklists</li>
+            <li>EPA-registered disinfectants</li>
+            <li>Proper contact time adherence</li>
+            <li>Clean-then-disinfect sequencing</li>
+            <li>Color-coded microfiber system</li>
+            <li>Cross-contamination prevention</li>
+            <li>Documented cleaning verification</li>
+            <li>Regulatory alignment (OSHA, CDC)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why System4 for Healthcare -->
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Why System4</div>
+      <h2 class="section-title" style="text-align:center;">Built for Healthcare Environments</h2>
+      <div class="card-grid card-grid-3" style="margin-top:2.5rem;">
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Infection-Control Focus</h3>
+          <p>Our teams are trained in healthcare-specific cleaning protocols, including proper disinfection sequencing and cross-contamination prevention.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>Measured Success® QA</h3>
+          <p>Documented inspections and a direct feedback loop ensure every area meets your standards — every time.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3>One Point of Contact</h3>
+          <p>Your dedicated territory manager understands your practice's specific protocols and schedules. No call centers, no runaround.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Service Areas</div>
+      <h2 class="section-title" style="text-align:center;">Medical Cleaning Across the Valley</h2>
+      <p class="section-subtitle" style="text-align:center;">Serving dental offices, medical practices, and healthcare facilities across San Joaquin and Stanislaus Counties.</p>
+      <div class="areas-grid" style="margin-top:2rem;">
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Stockton</strong><br/><span>Medical offices and dental practices</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Modesto</strong><br/><span>Healthcare facilities and clinics</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Tracy</strong><br/><span>Dental offices and medical suites</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Manteca</strong><br/><span>Family practice and specialty offices</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Lodi</strong><br/><span>Dental practices and medical offices</span></div></div>
+        <div class="area-card"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Turlock</strong><br/><span>Medical and dental cleaning</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:800px;">
+      <div class="section-label" style="text-align:center;">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">Medical & Dental Office Cleaning FAQ</h2>
+      <div class="faq-list" style="margin-top:2rem;">
+        <details class="faq-item">
+          <summary class="faq-question">What cleaning protocols do you follow for medical offices?</summary>
+          <p class="faq-answer">We follow CDC and OSHA guidelines for healthcare environments, including proper clean-then-disinfect sequencing, EPA-registered disinfectants with adequate contact time, color-coded microfiber systems to prevent cross-contamination, and documented cleaning verification.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can you clean after patient hours?</summary>
+          <p class="faq-answer">Yes. Most of our healthcare clients prefer nightly cleaning after hours. We can also provide daytime porter service for high-traffic practices.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Do you provide your own cleaning products and equipment?</summary>
+          <p class="faq-answer">Yes. We bring all cleaning products, equipment, and supplies. For medical offices, we use EPA-registered, hospital-grade disinfectants appropriate for healthcare environments.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you handle operatories and sterilization areas?</summary>
+          <p class="faq-answer">Operatories are cleaned and disinfected with healthcare-grade protocols, including proper contact time for disinfectants. Sterilization areas are handled with separate protocols to maintain compliance and prevent cross-contamination.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-animate>
+    <img src="/images/cta-meeting.jpg" alt="Healthcare facility walkthrough" class="cta-bg" loading="lazy" />
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Need Healthcare-Grade Cleaning?</h2>
+      <p>Get a free walkthrough of your medical or dental office. We'll assess your infection-control needs and create a customized cleaning program.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-secondary">Email jcastillo@system4.com</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .service-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .service-checklist { list-style: none; padding: 0; }
+  .service-checklist li { padding: .5rem 0 .5rem 1.5rem; position: relative; color: var(--gray-700); font-size: .95rem; line-height: 1.6; }
+  .service-checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--green-600); font-weight: 700; }
+  .faq-item { border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem; background: white; }
+  .faq-question { font-weight: 600; cursor: pointer; color: var(--gray-900); font-size: 1rem; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question::after { content: '+'; font-size: 1.2rem; font-weight: 300; color: var(--blue); transition: transform .2s ease; }
+  .faq-item[open] .faq-question::after { content: '−'; }
+  .faq-answer { color: var(--gray-500); margin-top: .75rem; line-height: 1.7; }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .areas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .area-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: .75rem; transition: all .3s ease; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+  .area-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateX(4px); }
+  .area-card svg { color: var(--green-600); flex-shrink: 0; }
+  .area-card strong { color: var(--gray-900); font-size: 1rem; }
+  .area-card span { color: var(--gray-500); font-size: .85rem; }
+  @media (max-width: 768px) {
+    .service-detail-grid { grid-template-columns: 1fr; }
+    .areas-grid { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; align-items: stretch; }
+    .cta-buttons a { text-align: center; justify-content: center; }
+  }
+</style>

@@ -1,0 +1,197 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'High-Touch Disinfection Services in Stockton, CA | System4 SJV';
+const description = 'Professional high-touch disinfection services for doors, switches, restrooms, break rooms, and common areas across Stockton, Modesto, Tracy, and the San Joaquin Valley.';
+const canonicalUrl = 'https://system4sjv.com/disinfection-services/';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "High-Touch Disinfection Services",
+  "description": "Professional high-touch point disinfection services for commercial facilities across the San Joaquin Valley, focusing on doors, switches, restrooms, break rooms, and common areas.",
+  "provider": {
+    "@type": "CleaningService",
+    "name": "System4 of San Joaquin Valley",
+    "telephone": "+1-209-229-2066",
+    "url": "https://system4sjv.com"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Stockton"},
+    {"@type": "City", "name": "Modesto"},
+    {"@type": "City", "name": "Tracy"},
+    {"@type": "City", "name": "Manteca"},
+    {"@type": "City", "name": "Lodi"},
+    {"@type": "City", "name": "Turlock"}
+  ],
+  "serviceType": "Disinfection Services"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://system4sjv.com/services/"},
+    {"@type": "ListItem", "position": 3, "name": "High-Touch Disinfection"}
+  ]
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[serviceSchema, breadcrumbSchema]}>
+
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;">
+    <img src="/images/hero-office.jpg" alt="Professional disinfection services" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;pointer-events:none;" loading="eager" />
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Disinfection Services</div>
+      <h1>High-Touch Disinfection<br/>in the <em>San Joaquin Valley</em></h1>
+      <p>Targeted disinfection for the surfaces your employees, patients, and visitors touch most. Doors, switches, restrooms, break rooms, and common areas — systematically covered, every time.</p>
+      <div class="hero-cta" style="margin-top:1.5rem;">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Touch Points -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">What We Cover</div>
+      <h2 class="section-title" style="text-align:center;">High-Touch Points, Systematically Disinfected</h2>
+      <p class="section-subtitle" style="text-align:center;">Every surface your people touch, every day. Our disinfection program targets the areas that matter most for health and appearance.</p>
+
+      <div class="service-detail-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem;">
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Entry & Navigation</h3>
+          <ul class="service-checklist">
+            <li>Door handles and push plates</li>
+            <li>Light switches and dimmer knobs</li>
+            <li>Elevator buttons</li>
+            <li>Stair handrails</li>
+            <li>Reception counters and sign-in tablets</li>
+            <li>Security keypads and card readers</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Common Areas</h3>
+          <ul class="service-checklist">
+            <li>Break room tables and countertops</li>
+            <li>Microwave and refrigerator handles</li>
+            <li>Coffee station and water cooler buttons</li>
+            <li>Conference room table surfaces</li>
+            <li>Chair armrests and seat backs</li>
+            <li>Vending machine buttons and coin slots</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Restrooms</h3>
+          <ul class="service-checklist">
+            <li>Faucet handles and flush levers</li>
+            <li>Door handles (entry and stalls)</li>
+            <li>Soap and sanitizer dispensers</li>
+            <li>Paper towel and toilet paper dispensers</li>
+            <li>Mirror and partition surfaces</li>
+            <li>Diaper changing stations</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--gray-900);font-size:1.1rem;margin-bottom:.75rem;">Workspaces</h3>
+          <ul class="service-checklist">
+            <li>Desk surfaces and keyboard trays</li>
+            <li>Phone handsets and charging cables</li>
+            <li>Monitor power buttons</li>
+            <li>Drawer handles and cabinet pulls</li>
+            <li>Shared equipment (printers, copiers)</li>
+            <li>Whiteboard markers and erasers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Professional Disinfection -->
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Why Professional Disinfection</div>
+      <h2 class="section-title" style="text-align:center;">More Than Wiping Down Surfaces</h2>
+      <div class="card-grid card-grid-3" style="margin-top:2.5rem;">
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>EPA-Registered Products</h3>
+          <p>Hospital-grade disinfectants proven to kill pathogens on contact. Not generic cleaners — real disinfectants with verified kill claims.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>Documented Checklists</h3>
+          <p>Every touch point is on a checklist. Every checklist is verified. No surface is skipped, and we can prove it.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3>Same-Day Response</h3>
+          <p>Concern about a surface? Your territory manager responds same-day. No waiting for next week's schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:800px;">
+      <div class="section-label" style="text-align:center;">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">Disinfection FAQ</h2>
+      <div class="faq-list" style="margin-top:2rem;">
+        <details class="faq-item">
+          <summary class="faq-question">What's the difference between cleaning and disinfecting?</summary>
+          <p class="faq-answer">Cleaning removes visible dirt and debris. Disinfecting kills germs and bacteria on surfaces. We always clean first, then disinfect — disinfectant can't penetrate dirt, so both steps are essential.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How often should high-touch surfaces be disinfected?</summary>
+          <p class="faq-answer">High-traffic areas (door handles, elevator buttons, restroom fixtures) should be disinfected every 1–2 hours during business hours. Other surfaces can be disinfected 2–3 times daily. We customize frequency based on your facility's traffic.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What products do you use for disinfection?</summary>
+          <p class="faq-answer">We use EPA-registered, hospital-grade disinfectants proven effective against a broad spectrum of pathogens, including cold and flu viruses. All products meet CDC and OSHA guidelines for commercial and healthcare environments.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Is disinfection included in regular cleaning?</summary>
+          <p class="faq-answer">Our standard cleaning programs include basic surface disinfection of restrooms and break areas. High-touch disinfection is a specialized add-on that targets the full list of high-contact surfaces with more frequent, documented coverage.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-animate>
+    <img src="/images/cta-meeting.jpg" alt="Disinfection consultation" class="cta-bg" loading="lazy" />
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Ready for Safer Spaces?</h2>
+      <p>Get a free walkthrough and customized disinfection program for your facility.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-secondary">Email jcastillo@system4.com</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .service-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .service-checklist { list-style: none; padding: 0; }
+  .service-checklist li { padding: .5rem 0 .5rem 1.5rem; position: relative; color: var(--gray-700); font-size: .95rem; line-height: 1.6; }
+  .service-checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--green-600); font-weight: 700; }
+  .faq-item { border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem; background: white; }
+  .faq-question { font-weight: 600; cursor: pointer; color: var(--gray-900); font-size: 1rem; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question::after { content: '+'; font-size: 1.2rem; font-weight: 300; color: var(--blue); transition: transform .2s ease; }
+  .faq-item[open] .faq-question::after { content: '−'; }
+  .faq-answer { color: var(--gray-500); margin-top: .75rem; line-height: 1.7; }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .service-detail-grid { grid-template-columns: 1fr; }
+    .card-grid-3 { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; align-items: stretch; }
+    .cta-buttons a { text-align: center; justify-content: center; }
+  }
+</style>

@@ -1,0 +1,108 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'Blog — Cleaning Tips & Industry Insights | System4 of San Joaquin Valley';
+const description = 'Practical guides, cleaning tips, and industry insights for facility managers in the San Joaquin Valley. From evaluating cleaning companies to disinfection checklists.';
+const canonicalUrl = 'https://system4sjv.com/blog/';
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;">
+    <div class="container" style="text-align:center;">
+      <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Blog</div>
+      <h1>Cleaning Tips &<br/><em>Industry Insights</em></h1>
+      <p>Practical guides for facility managers in the San Joaquin Valley. From evaluating cleaning companies to disinfection checklists.</p>
+    </div>
+  </section>
+
+  <section class="section" data-animate>
+    <div class="container" style="max-width:800px;">
+      <div class="blog-list">
+
+        <a href="/blog/how-to-evaluate-a-commercial-cleaning-company/" class="blog-card" data-animate>
+          <div class="blog-card-label">Guide</div>
+          <h2>How to Evaluate a Commercial Cleaning Company</h2>
+          <p>Key questions to ask, red flags to watch for, and what separates great cleaning partners from average ones.</p>
+          <span class="blog-card-meta">January 15, 2025</span>
+        </a>
+
+        <a href="/blog/how-to-reduce-cleaning-complaints/" class="blog-card" data-animate>
+          <div class="blog-card-label">Facility Management</div>
+          <h2>How to Reduce Cleaning Complaints in Your Facility</h2>
+          <p>Practical strategies from inspection checklists to communication protocols — what actually works for facility managers.</p>
+          <span class="blog-card-meta">February 10, 2025</span>
+        </a>
+
+        <a href="/blog/high-touch-disinfection-checklist/" class="blog-card" data-animate>
+          <div class="blog-card-label">Healthcare</div>
+          <h2>High-Touch Disinfection Checklist for Medical Offices</h2>
+          <p>A comprehensive checklist for high-touch point disinfection in healthcare environments, based on CDC guidelines.</p>
+          <span class="blog-card-meta">March 5, 2025</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" data-animate>
+    <img src="/images/cta-meeting.jpg" alt="Business meeting about facility services" class="cta-bg" loading="lazy" />
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Need Professional Cleaning?</h2>
+      <p>Get a free walkthrough and customized cleaning program for your San Joaquin Valley facility.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .blog-list { display: flex; flex-direction: column; gap: 1.5rem; }
+  .blog-card {
+    display: block;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-decoration: none;
+    transition: all .35s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.03);
+  }
+  .blog-card:hover {
+    box-shadow: 0 8px 30px rgba(11,125,218,.12), 0 2px 8px rgba(0,0,0,.06);
+    transform: translateY(-4px);
+    border-color: var(--blue-100);
+  }
+  .blog-card-label {
+    display: inline-block;
+    background: var(--green-100);
+    color: var(--green-600);
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: .25rem .75rem;
+    border-radius: 100px;
+    margin-bottom: .75rem;
+  }
+  .blog-card h2 {
+    font-size: 1.3rem;
+    color: var(--gray-900);
+    margin-bottom: .5rem;
+    line-height: 1.3;
+  }
+  .blog-card p {
+    color: var(--gray-500);
+    font-size: .95rem;
+    line-height: 1.6;
+    margin-bottom: .75rem;
+  }
+  .blog-card-meta {
+    color: var(--gray-500);
+    font-size: .8rem;
+  }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+</style>

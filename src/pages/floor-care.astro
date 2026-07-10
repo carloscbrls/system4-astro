@@ -1,0 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = 'Floor Care & Carpet Maintenance in Stockton, CA | System4 SJV';
+const description = 'Professional floor care services including strip & wax, scrub & recoat, carpet cleaning, and ongoing maintenance programs in Stockton, Modesto, Tracy, and the San Joaquin Valley.';
+const canonicalUrl = 'https://system4sjv.com/floor-care/';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Floor Care & Carpet Maintenance",
+  "description": "Professional floor care and carpet maintenance services including strip & wax, scrub & recoat, and ongoing floor maintenance programs across the San Joaquin Valley.",
+  "provider": {
+    "@type": "CleaningService",
+    "name": "System4 of San Joaquin Valley",
+    "telephone": "+1-209-229-2066",
+    "url": "https://system4sjv.com"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Stockton"},
+    {"@type": "City", "name": "Modesto"},
+    {"@type": "City", "name": "Tracy"},
+    {"@type": "City", "name": "Manteca"},
+    {"@type": "City", "name": "Lodi"},
+    {"@type": "City", "name": "Turlock"}
+  ],
+  "serviceType": "Floor Care"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://system4sjv.com/services/"},
+    {"@type": "ListItem", "position": 3, "name": "Floor Care & Carpet Maintenance"}
+  ]
+};
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[serviceSchema, breadcrumbSchema]}>
+
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;">
+    <img src="/images/hero-office.jpg" alt="Professional floor care and maintenance" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;pointer-events:none;" loading="eager" />
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Floor Care</div>
+      <h1>Floor Care & Carpet<br/>Maintenance in the <em>San Joaquin Valley</em></h1>
+      <p>Strip & wax, scrub & recoat, carpet care, and ongoing floor maintenance programs that protect your investment and keep your floors looking professional.</p>
+      <div class="hero-cta" style="margin-top:1.5rem;">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" data-animate>
+    <div class="container" style="max-width:900px;">
+      <div class="section-label" style="text-align:center;">Our Floor Care Services</div>
+      <h2 class="section-title" style="text-align:center;">Protect Your Floors, Protect Your Investment</h2>
+      <p class="section-subtitle" style="text-align:center;">From routine maintenance to complete restoration, we keep your floors looking their best and lasting longer.</p>
+
+      <div class="card-grid card-grid-3" style="margin-top:2.5rem;">
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Strip & Wax</h3>
+          <p>Complete floor restoration. We remove old finish, deep-clean the surface, and apply fresh wax for a showroom-quality shine.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.37 7.37l-6.83 6.83a2 2 0 0 1-2.83-2.83l6.83-6.83a6 6 0 0 1 7.37-7.37z"/></svg></div>
+          <h3>Scrub & Recoat</h3>
+          <p>Top scrub existing finish and apply a new protective coat. Extends floor life without the downtime of a full strip & wax.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>Carpet Care</h3>
+          <p>Regular vacuuming, spot treatment, and periodic deep extraction cleaning to extend carpet life and maintain appearance.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Tile & Grout</h3>
+          <p>Deep cleaning and sealing for tile and grout surfaces. Removes embedded dirt and protects against future staining.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+          <h3>Machine Scrub</h3>
+          <p>Heavy-duty machine scrubbing for hard floors. Removes ground-in dirt and restores surface appearance.</p>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h3>Scheduled Programs</h3>
+          <p>Proactive floor care schedules based on traffic patterns. We track wear and recommend service timing to minimize downtime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:800px;">
+      <div class="section-label" style="text-align:center;">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">Floor Care FAQ</h2>
+      <div class="faq-list" style="margin-top:2rem;">
+        <details class="faq-item">
+          <summary class="faq-question">How often should floors be stripped and waxed?</summary>
+          <p class="faq-answer">It depends on traffic. High-traffic areas (lobbies, hallways) typically need strip & wax every 6–12 months. Lower-traffic areas can go 12–18 months. We recommend scrub & recoat quarterly to extend the full strip cycle.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can floor care be done during business hours?</summary>
+          <p class="faq-answer">Most floor care is best done after hours due to wet floors and equipment noise. We can schedule strip & wax on weekends or overnight to minimize disruption. Lighter services like spray buffing can sometimes be done during the day.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What's the difference between scrub & recoat and strip & wax?</summary>
+          <p class="faq-answer">Scrub & recoat is a lighter service — we top-scrub the existing finish and apply a new coat. Strip & wax removes all old finish down to the bare floor and applies fresh finish from scratch. Strip & wax is more thorough but requires more downtime.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Do you provide all equipment and supplies?</summary>
+          <p class="faq-answer">Yes. We bring all equipment, chemicals, and supplies needed for the job. You don't need to purchase or store anything.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-animate>
+    <img src="/images/cta-meeting.jpg" alt="Floor care consultation" class="cta-bg" loading="lazy" />
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Ready for Better Floors?</h2>
+      <p>Get a free floor assessment and customized maintenance program. We'll evaluate your floors and recommend the right schedule.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-secondary">Email jcastillo@system4.com</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .faq-item { border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1rem; background: white; }
+  .faq-question { font-weight: 600; cursor: pointer; color: var(--gray-900); font-size: 1rem; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question::after { content: '+'; font-size: 1.2rem; font-weight: 300; color: var(--blue); transition: transform .2s ease; }
+  .faq-item[open] .faq-question::after { content: '−'; }
+  .faq-answer { color: var(--gray-500); margin-top: .75rem; line-height: 1.7; }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .card-grid-3 { grid-template-columns: 1fr; }
+    .cta-buttons { flex-direction: column; align-items: stretch; }
+    .cta-buttons a { text-align: center; justify-content: center; }
+  }
+</style>
