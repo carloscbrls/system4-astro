@@ -396,6 +396,14 @@ const localBusinessSchema = {
     /* Service area link styling */
     .area-card h3,.area-card a{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;text-decoration:none!important}
     .area-card a:hover{color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important}
+    /* Grid layout — must be global because Astro scopes Layout CSS with different cid than page content */
+    .card-grid{display:grid!important;gap:1.25rem!important;margin-top:1.75rem!important}
+    .card-grid-3{grid-template-columns:repeat(3,1fr)!important}
+    .steps{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1.25rem!important;margin-top:1.5rem!important}
+    .industry-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:1.5rem!important;margin-top:1.5rem!important}
+    .areas-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:.75rem!important;margin-top:1rem!important}
+    @media(max-width:1024px){.card-grid-3{grid-template-columns:repeat(2,1fr)!important}.steps{grid-template-columns:repeat(2,1fr)!important}.industry-grid{grid-template-columns:repeat(2,1fr)!important}.areas-grid{grid-template-columns:repeat(2,1fr)!important}}
+    @media(max-width:768px){.card-grid-3{grid-template-columns:1fr!important}.steps{grid-template-columns:1fr!important}.industry-grid{grid-template-columns:1fr!important}.areas-grid{grid-template-columns:1fr!important}}
     /* CTA section global styles — must be global for same reason */
     .cta-section{position:relative!important;overflow:hidden!important;background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 30%,#c42d63 70%,#a82050 100%)!important;padding:2.5rem 2rem!important;text-align:center!important;color:white!important}
     .cta-section::before{content:""!important;position:absolute!important;inset:0!important;background:radial-gradient(ellipse 80% 60% at 20% 80%,rgba(255,255,255,.08),transparent 60%),radial-gradient(ellipse 60% 40% at 80% 20%,rgba(255,255,255,.05),transparent 50%),radial-gradient(ellipse 40% 60% at 50% 50%,rgba(201,168,76,.06),transparent 50%)!important;pointer-events:none!important}
