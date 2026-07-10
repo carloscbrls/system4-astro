@@ -1,0 +1,16 @@
+[build]
+  command = "npx astro build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/wp-content/*"
+  to = "/404"
+  status = 404
+
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/404"
+  status = 404
