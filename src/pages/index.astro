@@ -237,7 +237,7 @@ const faqSchema = {
   </section>
 
   <!-- Services (compact) -->
-  <section class="section" style="padding:2rem 0;" data-animate>
+  <section class="section" data-animate>
     <div class="container">
       <div class="section-label">Our Services</div>
       <h2 class="section-title" style="margin-bottom:1.5rem;">Commercial Cleaning Services</h2>
@@ -277,7 +277,7 @@ const faqSchema = {
   </section>
 
   <!-- Why System4 (compact horizontal) -->
-  <section class="section section-alt" style="padding:2rem 0;" data-animate>
+  <section class="section section-alt" data-animate>
     <div class="container">
       <div class="section-label">Why System4</div>
       <h2 class="section-title" style="margin-bottom:2rem;">Why Facility Managers Choose System4</h2>
@@ -302,7 +302,7 @@ const faqSchema = {
   </section>
 
   <!-- Industries (compact icon grid) -->
-  <section class="section" style="padding:2rem 0;" data-animate>
+  <section class="section" data-animate>
     <div class="container">
       <div class="section-label">Industries</div>
       <h2 class="section-title" style="margin-bottom:1.5rem;">Industries We Serve</h2>
@@ -336,7 +336,7 @@ const faqSchema = {
   </section>
 
   <!-- Areas Served (compact city bar) -->
-  <section class="section section-alt" style="padding:1.5rem 0;" data-animate>
+  <section class="section section-alt" data-animate>
     <div class="container" style="text-align:center;">
       <h2 style="font-family:var(--font-display);font-size:1.35rem;font-weight:600;color:var(--navy);margin-bottom:1rem;">Serving the San Joaquin Valley</h2>
       <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:1.25rem;">Daily routes across San Joaquin & Stanislaus Counties</p>
@@ -352,7 +352,7 @@ const faqSchema = {
   </section>
 
   <!-- Trust Bar (compact) -->
-  <section style="background:linear-gradient(135deg,var(--navy) 0%,#0a1628 100%);padding:2.5rem 0;color:white;" data-animate>
+  <section style="background:linear-gradient(135deg,var(--navy) 0%,#0a1628 100%);padding:1.5rem 0;color:white;" data-animate>
     <div class="container" style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap;justify-content:center;text-align:center;">
       <div style="display:flex;align-items:center;gap:.75rem;">
         <svg width="36" height="36" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
@@ -369,7 +369,7 @@ const faqSchema = {
   </section>
 
   <!-- Reviews (3 featured + link) -->
-  <section class="section reviews-section" style="padding:2rem 0;" data-animate>
+  <section class="section reviews-section" data-animate>
     <div class="container">
       <div class="section-label" style="text-align:center;">Client Reviews</div>
       <h2 class="section-title" style="text-align:center;margin-bottom:1rem;">Trusted by Businesses Across the Valley</h2>
@@ -424,7 +424,7 @@ const faqSchema = {
   </section>
 
   <!-- FAQ (compact) -->
-  <section class="section" data-animate style="background:var(--gray-50);padding:3rem 0;">
+  <section class="section" data-animate style="background:var(--gray-50);">
     <div class="container">
       <div class="section-label" style="text-align:center;">Frequently Asked Questions</div>
       <h2 class="section-title" style="text-align:center;margin-bottom:1.5rem;">Common Questions</h2>
@@ -812,7 +812,7 @@ const faqSchema = {
   @media(min-width:1100px) {
     /* Hero: side-by-side with sticky form, generous vertical padding */
     .hero {
-      padding: 4rem 3rem 3.5rem;
+      padding: 3rem 3rem 2.5rem;
     }
     .hero-inner {
       max-width: 1200px !important;
@@ -839,10 +839,10 @@ const faqSchema = {
     }
     /* Hero content - premium typography */
     .hero h1 {
-      font-size: 3.5rem;
-      line-height: 1.06;
-      letter-spacing: -.035em;
-      margin-bottom: 1.5rem;
+      font-size: 2.8rem;
+      line-height: 1.1;
+      letter-spacing: -.03em;
+      margin-bottom: 1rem;
     }
     .hero-tag {
       font-size: .7rem;
@@ -967,39 +967,39 @@ const faqSchema = {
       height: 44px;
     }
 
-    /* More generous section padding */
+    /* Compact section padding for condensed homepage */
     .section {
-      padding: 4.5rem 2rem;
+      padding: 3rem 2rem;
     }
 
     /* Larger section titles with decorative accent */
     .section-title {
-      font-size: 2.9rem;
-      margin-bottom: 1.5rem;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
       letter-spacing: -.03em;
     }
     .section-subtitle {
-      font-size: 1.15rem;
-      line-height: 1.7;
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
-    /* Cards: premium breathing room and elevation */
+    /* Cards: compact padding */
     .card {
-      padding: 2.25rem;
+      padding: 1.5rem;
       border-radius: var(--radius-lg);
       background: white;
       border: 1px solid var(--gray-100);
       box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 8px 32px rgba(0,0,0,.04);
     }
     .card-grid {
-      gap: 2rem;
+      gap: 1.25rem;
     }
 
     /* Steps: connector line between steps */
     .steps {
       position: relative;
-      gap: 2rem;
-      padding-top: 1rem;
+      gap: 1.25rem;
+      padding-top: .75rem;
     }
     .steps::before {
       content: '';
@@ -1017,38 +1017,38 @@ const faqSchema = {
       z-index: 1;
     }
     .step-number {
-      width: 64px;
-      height: 64px;
-      font-size: 1.5rem;
+      width: 52px;
+      height: 52px;
+      font-size: 1.3rem;
     }
     .step h3 {
-      font-size: 1.35rem;
+      font-size: 1.15rem;
     }
     .step p {
-      font-size: 1.05rem;
-      max-width: 300px;
+      font-size: .95rem;
+      max-width: 280px;
       margin-left: auto;
       margin-right: auto;
     }
 
     /* Industry cards: refined hover */
     .industry-grid {
-      gap: 2.5rem;
+      gap: 1.5rem;
     }
     .industry-card img {
-      height: 220px;
+      height: 160px;
       transition: transform .6s cubic-bezier(.25,.46,.45,.94);
     }
     .industry-card:hover img {
       transform: scale(1.05);
     }
     .industry-card-body {
-      padding: 1.5rem;
+      padding: 1rem;
     }
 
-    /* Trust section: stronger visual */
+    /* Trust section: compact */
     .trust-section {
-      padding: 6rem 0 !important;
+      padding: 3rem 0 !important;
     }
     .trust-inner {
       gap: 5rem;
@@ -1062,7 +1062,7 @@ const faqSchema = {
 
     /* CTA: premium gradient */
     .cta-section {
-      padding: 2.5rem 2rem;
+      padding: 2rem 2rem;
     }
     .cta-section h2 {
       font-size: 2.25rem;
@@ -1075,14 +1075,14 @@ const faqSchema = {
       margin-right: auto;
     }
 
-    /* Review cards: refined spacing */
+    /* Review cards: compact spacing */
     .review-card {
-      padding: 2rem;
+      padding: 1.25rem;
     }
 
-    /* Footer: more generous spacing */
+    /* Footer: compact spacing */
     .footer {
-      padding: 6rem 3rem 2.5rem;
+      padding: 3rem 3rem 1.5rem;
     }
     .footer-inner {
       gap: 3.5rem;
