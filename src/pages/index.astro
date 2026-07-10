@@ -766,10 +766,11 @@ const faqSchema = {
     align-items: center;
     gap: .5rem;
     color: white;
+    -webkit-text-fill-color: white;
     font-weight: 600;
     font-size: 1rem;
     padding: .85rem 2rem;
-    border: 2px solid rgba(255,255,255,.35);
+    border: 2px solid rgba(255,255,255,.5);
     border-radius: var(--radius-md);
     background: rgba(255,255,255,.08);
     transition: all .4s cubic-bezier(.25,.46,.45,.94);
@@ -791,6 +792,7 @@ const faqSchema = {
   }
   .btn-ghost:hover {
     color: white;
+    -webkit-text-fill-color: white;
     background: rgba(255,255,255,.2);
     border-color: white;
     transform: translateY(-3px);
@@ -1094,8 +1096,8 @@ const faqSchema = {
   .btn-primary{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 50%,var(--magenta) 100%)!important;background-size:200% auto!important;border-radius:12px!important;box-shadow:0 4px 16px rgba(212,55,110,.35),inset 0 1px 0 rgba(255,255,255,.2)!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important;letter-spacing:.01em!important}
   .btn-primary:hover{transform:translateY(-3px)!important;box-shadow:0 8px 28px rgba(212,55,110,.45),inset 0 1px 0 rgba(255,255,255,.25)!important;background-position:right center!important}
   .btn-primary:active{transform:translateY(-1px)!important}
-  .btn-secondary{background:transparent!important;color:var(--white)!important;border:2px solid rgba(255,255,255,.4)!important;border-radius:12px!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important}
-  .btn-secondary:hover{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.7)!important;transform:translateY(-3px)!important;box-shadow:0 8px 24px rgba(0,0,0,.2)!important}
+  .btn-secondary{background:transparent!important;color:var(--white)!important;-webkit-text-fill-color:white!important;border:2px solid rgba(255,255,255,.5)!important;border-radius:12px!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important}
+  .btn-secondary:hover{background:rgba(255,255,255,.15)!important;-webkit-text-fill-color:white!important;border-color:rgba(255,255,255,.8)!important;transform:translateY(-3px)!important;box-shadow:0 8px 24px rgba(0,0,0,.2)!important}
   .btn-ghost::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
   .btn-ghost:hover{transform:translateY(-1px)}
   .btn-ghost:hover::after{transform:scaleX(1)}
