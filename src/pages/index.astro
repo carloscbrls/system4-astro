@@ -514,7 +514,7 @@ const faqSchema = {
 
   /* Hero with form layout */
   .hero-inner {
-    max-width: 620px;
+    max-width: 560px;
     margin: 0 auto;
   }
   /* Form section — overlaps hero on desktop */
@@ -525,7 +525,7 @@ const faqSchema = {
     padding-bottom: 2rem;
   }
   .hero-form-wrap {
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
   }
   .hero-tag {
@@ -626,7 +626,7 @@ const faqSchema = {
   .stats-bar {
     background: var(--white);
     border-bottom: 1px solid var(--gray-100);
-    padding: 2rem 1.5rem;
+    padding: 1.25rem 1.5rem;
   }
   .stats-inner {
     display: flex;
@@ -636,26 +636,26 @@ const faqSchema = {
   }
   .stat {
     text-align: center;
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
   }
   .stat-number {
     display: block;
     font-family: var(--font-display);
-    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
     color: var(--blue);
     font-weight: 700;
     line-height: 1.1;
   }
   .stat-label {
     display: block;
-    font-size: .85rem;
+    font-size: .8rem;
     color: var(--gray-500);
-    margin-top: .25rem;
+    margin-top: .15rem;
     font-weight: 500;
   }
   .stat-divider {
     width: 1px;
-    height: 48px;
+    height: 36px;
     background: var(--gray-300);
   }
 
@@ -686,7 +686,7 @@ const faqSchema = {
   }
 
   /* Trust section */
-  .trust-section {
+  .trust-section { padding: 3rem 0 !important;
     background: linear-gradient(135deg, #f0f7ff, #e8f4f8);
     position: relative;
     overflow: hidden;
@@ -775,7 +775,7 @@ const faqSchema = {
   .cta-section .container { position: relative; z-index: 1; }
   .cta-section .cta-buttons {
     display: flex;
-    gap: 1rem;
+    gap: .75rem;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -828,15 +828,15 @@ const faqSchema = {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 1.5rem;
+      gap: 1rem;
     }
     .hero-content {
       flex: 1 1 55%;
-      max-width: 580px;
+      max-width: 560px;
     }
     .hero-form-desktop {
       display: block;
-      flex: 0 0 360px;
+      flex: 0 0 340px;
     }
     /* Hide the separate form section on desktop — form is inside hero */
     .hero-form-section {
@@ -844,34 +844,34 @@ const faqSchema = {
     }
     /* Hero content — bigger and bolder */
     .hero h1 {
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       line-height: 1.1;
     }
     .hero-tagline {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
     }
     .hero-sub {
-      font-size: 1.05rem;
-      line-height: 1.7;
+      font-size: 1rem;
+      line-height: 1.65;
     }
     .hero-badges {
       display: flex;
-      gap: .75rem;
+      gap: .6rem;
       justify-content: flex-start;
-      margin-top: 1.25rem;
-      padding-top: 1rem;
+      margin-top: 1rem;
+      padding-top: .75rem;
       border-top: 1px solid rgba(255,255,255,.15);
     }
     .hero-badge {
       display: flex;
       align-items: center;
-      gap: .5rem;
-      padding: .7rem 1.25rem;
+      gap: .45rem;
+      padding: .55rem 1rem;
       background: rgba(255,255,255,.06);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255,255,255,.12);
-      border-radius: 12px;
+      border-radius: 10px;
       transition: all .4s cubic-bezier(.25,.46,.45,.94);
       position: relative;
       overflow: hidden;
@@ -897,22 +897,22 @@ const faqSchema = {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
       background: linear-gradient(135deg, var(--magenta), #e8447a);
       color: white;
       flex-shrink: 0;
     }
     .badge-icon svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
     }
     .badge-accent {
       display: block;
       font-family: var(--font-tight);
       font-weight: 700;
-      font-size: 1rem;
+      font-size: .9rem;
       color: var(--magenta);
       -webkit-text-fill-color: var(--magenta);
       line-height: 1.1;
@@ -922,7 +922,7 @@ const faqSchema = {
       display: block;
       font-family: var(--font-tight);
       font-weight: 500;
-      font-size: .72rem;
+      font-size: .65rem;
       color: rgba(255,255,255,.75);
       -webkit-text-fill-color: rgba(255,255,255,.75);
       letter-spacing: .08em;
@@ -1283,7 +1283,7 @@ const faqSchema = {
   .hero-form::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue))}
   .hero-form input,.hero-form select{border-width:1.5px!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important}
   .hero-form input:focus,.hero-form select:focus{border-color:var(--blue)!important;box-shadow:0 0 0 4px rgba(16,108,176,.12)!important;background:var(--white)!important}
-  .cta-section{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 40%,#c42d63 100%)!important;padding:5rem 2rem!important;text-align:center!important;color:white!important;position:relative!important;overflow:hidden!important}
+  .cta-section{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 40%,#c42d63 100%)!important;padding:3.5rem 2rem!important;text-align:center!important;color:white!important;position:relative!important;overflow:hidden!important}
   .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(255,255,255,.08),transparent 60%),radial-gradient(circle at 80% 20%,rgba(255,255,255,.05),transparent 50%);pointer-events:none}
   .cta-section .container{position:relative!important;z-index:1!important}
   .trust-section{position:relative!important;overflow:hidden!important}
