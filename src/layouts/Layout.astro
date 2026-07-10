@@ -52,7 +52,9 @@ const localBusinessSchema = {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="https://system4.com/wp-content/uploads/2026/03/cropped-favicon-system4-32x32.png" />
+  <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-180.png" sizes="180x180" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <script type="application/ld+json" set:html={JSON.stringify(schema || localBusinessSchema)} />
   <style>
     :root{--navy:#112337;--blue:#106CB0;--blue-dark:#0a4f8a;--blue-light:#1a8cd8;--blue-500:#3d8fd4;--blue-600:#106CB0;--blue-700:#0b5394;--blue-800:#083f71;--blue-900:#112337;--blue-100:#e6f0fa;--magenta:#CC3366;--magenta-dark:#a82952;--green-600:#059669;--green-500:#10b981;--green-100:#d1fae5;--gray-900:#111827;--gray-700:#374151;--gray-500:#6b7280;--gray-300:#d1d5db;--gray-100:#f3f4f6;--gray-50:#f9fafb;--white:#fff;--font-display:'Noto Sans',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;--font-body:'Noto Sans',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;--radius-sm:9px;--radius-md:10px;--radius-lg:16px;--shadow-sm:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 12px rgba(0,0,0,.1);--shadow-lg:0 12px 32px rgba(0,0,0,.12);--transition:all .3s ease}
@@ -65,8 +67,9 @@ const localBusinessSchema = {
     .container{max-width:1200px;margin:0 auto;padding:0 1.5rem}
     .nav{background:var(--white);border-bottom:1px solid var(--gray-100);position:sticky;top:0;z-index:100}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;max-width:1200px;margin:0 auto}
-    .nav-logo{font-family:var(--font-body);font-size:1.6rem;color:var(--navy);font-weight:700;letter-spacing:-.02em}
-    .nav-logo span{color:var(--blue)}
+    .nav-logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+    .nav-logo img{height:36px;width:auto}
+    .nav-logo-text{font-family:var(--font-body);font-size:.75rem;font-weight:400;color:var(--gray-500);line-height:1.2}
     .nav-links{display:flex;gap:2rem;align-items:center}
     .nav-links a{color:var(--gray-700);font-weight:500;font-size:.95rem}
     .nav-links a:hover{color:var(--blue)}
@@ -138,7 +141,7 @@ const localBusinessSchema = {
 <body>
   <nav class="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">System<strong style="color:var(--magenta);font-weight:900;">4</strong> <span style="font-size:.65em;font-weight:400;color:var(--gray-500);">of San Joaquin Valley</span></a>
+      <a href="/" class="nav-logo"><img src="/logo-system4.png" alt="System4" width="179" height="50" /><span class="nav-logo-text">of San Joaquin Valley</span></a>
       <div class="nav-links">
         <a href="/industries/">Industries</a>
         <a href="/services/">Services</a>
@@ -155,7 +158,7 @@ const localBusinessSchema = {
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <h4 style="font-weight:700;">System<strong style="color:var(--magenta);font-weight:900;">4</strong> of San Joaquin Valley</h4>
+        <h4 style="font-weight:700;"><img src="/logo-system4-footer.png" alt="System4" width="220" height="68" style="height:40px;width:auto;margin-bottom:.5rem;" /><br><span style="font-size:.85em;font-weight:400;">of San Joaquin Valley</span></h4>
         <p style="max-width:400px;line-height:1.7;margin-bottom:1rem;">Commercial cleaning, janitorial, and facility services for medical, dental, office, and multi-site organizations across the Central Valley. One contact. One invoice. One solution.</p>
         <a href="/contact/" class="btn-primary" style="font-size:.9rem;padding:.6rem 1.4rem;">Get a Free Quote</a>
       </div>
