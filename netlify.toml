@@ -6,6 +6,41 @@
   NODE_VERSION = "22"
 
 [[redirects]]
+  from = "/industries/medical/"
+  to = "/industries/medical-dental/"
+  status = 301
+
+[[redirects]]
+  from = "/industries/dental/"
+  to = "/industries/medical-dental/"
+  status = 301
+
+[[redirects]]
+  from = "/industries/restaurant/"
+  to = "/industries/dealerships/"
+  status = 301
+
+[[redirects]]
+  from = "/industries/retail/"
+  to = "/industries/dealerships/"
+  status = 301
+
+[[redirects]]
+  from = "/industries/real-estate/"
+  to = "/industries/professional-offices/"
+  status = 301
+
+[[redirects]]
+  from = "/industries/manufacturing/"
+  to = "/industries/warehouses/"
+  status = 301
+
+[[redirects]]
+  from = "/industries/churches/"
+  to = "/industries/education/"
+  status = 301
+
+[[redirects]]
   from = "/wp-content/*"
   to = "/404"
   status = 404

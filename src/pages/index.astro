@@ -4,9 +4,56 @@ import Layout from '../layouts/Layout.astro';
 const title = 'Commercial Cleaning & Facility Services | System4 of San Joaquin Valley';
 const description = 'System4 of San Joaquin Valley — GSA-approved commercial cleaning, janitorial, and facility services for medical, dental, office, and multi-site organizations across Stockton, Modesto, Tracy, Manteca, Lodi, and Turlock. One contact. One invoice. One solution.';
 const canonicalUrl = 'https://system4sjv.com/';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What commercial cleaning services does System4 offer in San Joaquin Valley?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "System4 of San Joaquin Valley offers commercial cleaning, janitorial services, day porter services, floor care and maintenance, high-touch disinfection, and specialized medical office cleaning. We serve offices, medical and dental facilities, banks, car dealerships, schools, and warehouses across Stockton, Modesto, Tracy, Manteca, Lodi, and Turlock."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does System4 require long-term contracts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. System4 of San Joaquin Valley does not require long-term contracts. We earn your business every day with consistent results, regular quality inspections, and a dedicated territory manager."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas does System4 of San Joaquin Valley serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve Stockton, Modesto, Tracy, Manteca, Lodi, Turlock, and all of San Joaquin County and Stanislaus County in California's Central Valley."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is System4 a GSA contract holder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. System4 holds GSA Contract #47QSMS24D0089, which allows us to provide cleaning services to federal government facilities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can System4 provide a cleaning quote?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We typically deliver a custom cleaning proposal within 24 hours of a facility walkthrough. Contact us at (209) 229-2066 or jcastillo@system4.com for a free, no-obligation quote."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={faqSchema}>
 
   <!-- Hero -->
   <section class="hero" data-animate>
@@ -374,6 +421,35 @@ const canonicalUrl = 'https://system4sjv.com/';
   </section>
 
   <!-- CTA -->
+  <section class="section" data-animate style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-label" style="text-align:center;">Frequently Asked Questions</div>
+      <h2 class="section-title" style="text-align:center;margin-bottom:2.5rem;">Common Questions About Our Services</h2>
+      <div style="max-width:800px;margin:0 auto;">
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">What commercial cleaning services does System4 offer? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
+          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">System4 of San Joaquin Valley offers commercial cleaning, janitorial services, day porter services, floor care and maintenance, high-touch disinfection, and specialized medical office cleaning. We serve offices, medical and dental facilities, banks, car dealerships, schools, and warehouses across Stockton, Modesto, Tracy, Manteca, Lodi, and Turlock.</p>
+        </details>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">Does System4 require long-term contracts? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
+          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">No. System4 of San Joaquin Valley does not require long-term contracts. We earn your business every day with consistent results, regular quality inspections, and a dedicated territory manager.</p>
+        </details>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">What areas does System4 of San Joaquin Valley serve? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
+          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">We serve Stockton, Modesto, Tracy, Manteca, Lodi, Turlock, and all of San Joaquin County and Stanislaus County in California’s Central Valley.</p>
+        </details>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">Is System4 a GSA contract holder? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
+          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">Yes. System4 holds GSA Contract #47QSMS24D0089, which allows us to provide cleaning services to federal government facilities.</p>
+        </details>
+        <details style="background:white;border-radius:var(--radius-md);margin-bottom:.75rem;padding:1.25rem 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--gray-100);">
+          <summary style="font-weight:600;font-size:1.05rem;cursor:pointer;color:var(--navy);-webkit-text-fill-color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center;">How quickly can I get a cleaning quote? <span style="color:var(--magenta);font-size:1.2rem;">+</span></summary>
+          <p style="margin-top:.75rem;color:var(--gray-600);line-height:1.7;">We typically deliver a custom cleaning proposal within 24 hours of a facility walkthrough. Contact us at (209) 229-2066 or jcastillo@system4.com for a free, no-obligation quote.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-section" data-animate>
     <img src="/images/cta-meeting.jpg" alt="Business meeting about facility services" class="cta-bg" loading="lazy" />
     <div class="container">
@@ -668,6 +744,14 @@ const canonicalUrl = 'https://system4sjv.com/';
   }
 
   /* CTA section */
+  /* FAQ accordion styles */
+  details summary::-webkit-details-marker { display: none; }
+  details summary::marker { display: none; content: ''; }
+  details[open] summary span:last-child { transform: rotate(45deg); }
+  details[open] { border-color: var(--blue) !important; box-shadow: 0 4px 12px rgba(14,108,175,.12) !important; }
+  details summary { transition: color .2s; }
+  details summary:hover { color: var(--blue) !important; }
+
   .cta-section { position: relative; overflow: hidden; }
   .cta-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .15; pointer-events: none; }
   .cta-section .container { position: relative; z-index: 1; }
@@ -919,6 +1003,9 @@ const canonicalUrl = 'https://system4sjv.com/';
     }
   }
   @media(max-width: 480px) {
+    details { padding: 1rem !important; }
+    details summary { font-size: .95rem !important; }
+    details p { font-size: .88rem !important; }
     .cta-section { padding: 2.5rem 1rem; text-align: center; }
     .cta-section .container { text-align: center; }
     .cta-buttons { flex-direction: column; align-items: center; gap: .75rem; }
