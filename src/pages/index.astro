@@ -765,12 +765,17 @@ const faqSchema = {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    color: rgba(255,255,255,.85);
+    color: white;
     font-weight: 600;
     font-size: 1rem;
     padding: .85rem 2rem;
+    border: 2px solid rgba(255,255,255,.35);
+    border-radius: var(--radius-md);
+    background: rgba(255,255,255,.08);
     transition: all .4s cubic-bezier(.25,.46,.45,.94);
     position: relative;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
   }
   .btn-ghost::after {
     content: '';
@@ -786,7 +791,10 @@ const faqSchema = {
   }
   .btn-ghost:hover {
     color: white;
-    transform: translateY(-1px);
+    background: rgba(255,255,255,.2);
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.2);
   }
   .btn-ghost:hover::after {
     transform: scaleX(1);
