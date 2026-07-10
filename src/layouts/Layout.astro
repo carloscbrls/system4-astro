@@ -40,6 +40,15 @@ const localBusinessSchema = {
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
   <meta name="robots" content="index, follow" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="System4 of San Joaquin Valley" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -146,15 +155,15 @@ const localBusinessSchema = {
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <h4 style="font-weight:700;">System<4 style="color:var(--magenta);font-weight:900;">4</4> of San Joaquin Valley</h4>
+        <h4 style="font-weight:700;">System<strong style="color:var(--magenta);font-weight:900;">4</strong> of San Joaquin Valley</h4>
         <p style="max-width:400px;line-height:1.7;margin-bottom:1rem;">Commercial cleaning, janitorial, and facility services for medical, dental, office, and multi-site organizations across the Central Valley. One contact. One invoice. One solution.</p>
         <a href="/contact/" class="btn-primary" style="font-size:.9rem;padding:.6rem 1.4rem;">Get a Free Quote</a>
       </div>
       <div>
         <h4>Services</h4>
-        <p><a href="/industries/medical-centers/">Medical & Dental Offices</a></p>
-        <p><a href="/industries/commercial-offices/">Professional Offices</a></p>
-        <p><a href="/industries/dental-offices/">Day Porter Services</a></p>
+        <p><a href="/industries/medical-dental/">Medical & Dental Offices</a></p>
+        <p><a href="/industries/professional-offices/">Professional Offices</a></p>
+        <p><a href="/services/">Day Porter Services</a></p>
         <p><a href="/services/">All Services →</a></p>
       </div>
       <div>
