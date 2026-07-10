@@ -1,18 +1,55 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-const title = 'Bank & Financial Office Cleaning | System4 of San Joaquin Valley';
-const description = 'Security-conscious cleaning for banks, credit unions, and financial offices across San Joaquin and Stanislaus counties.';
+const title = 'Bank & Financial Office Cleaning in Stockton, CA | System4 SJV';
+const description = 'Security-conscious commercial cleaning for banks, credit unions, and financial offices across Stockton, Modesto, Tracy, and the San Joaquin Valley. Licensed, bonded & insured.';
 const canonicalUrl = 'https://system4sjv.com/industries/banks/';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Bank & Financial Office Cleaning",
+  "description": "Security-conscious commercial cleaning for banks, credit unions, and financial offices across the San Joaquin Valley, including Stockton, Modesto, Tracy, Manteca, and Lodi.",
+  "provider": {
+    "@type": "CleaningService",
+    "name": "System4 of San Joaquin Valley",
+    "telephone": "+1-209-229-2066",
+    "url": "https://system4sjv.com"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Stockton"},
+    {"@type": "City", "name": "Modesto"},
+    {"@type": "City", "name": "Tracy"},
+    {"@type": "City", "name": "Manteca"},
+    {"@type": "City", "name": "Lodi"},
+    {"@type": "City", "name": "Turlock"}
+  ],
+  "serviceType": "Bank & Financial Office Cleaning"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://system4sjv.com/industries/"},
+    {"@type": "ListItem", "position": 3, "name": "Banks & Financial Offices"}
+  ]
+};
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[serviceSchema, breadcrumbSchema]}>
 
-  <section class="hero hero-compact" data-animate>
-    <div class="container">
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;">
+    <img src="/images/industry-bank.jpg" alt="Clean bank branch lobby" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;pointer-events:none;" loading="eager" />
+    <div class="container" style="position:relative;z-index:1;">
       <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Financial</div>
       <h1>Banks &<br/><em>Financial Offices</em></h1>
-      <p>Detail-oriented, security-conscious cleaning for high-traffic customer environments.</p>
+      <p>Detail-oriented, security-conscious cleaning for high-traffic customer environments across Stockton, Modesto, Tracy, Manteca, and Lodi. Licensed, bonded & insured.</p>
+      <div class="hero-cta" style="margin-top:1.5rem;">
+        <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
     </div>
   </section>
 
@@ -60,9 +97,10 @@ const canonicalUrl = 'https://system4sjv.com/industries/banks/';
     <div class="container">
       <h2>Clean Facilities, Confident Clients</h2>
       <p>Get a security-conscious cleaning program for your bank or financial office.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <div class="cta-buttons" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="/contact/" class="btn-primary">Request a Walkthrough</a>
         <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-secondary">Email jcastillo@system4.com</a>
       </div>
     </div>
   </section>
