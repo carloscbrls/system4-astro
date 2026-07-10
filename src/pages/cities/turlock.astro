@@ -275,7 +275,107 @@ const canonicalUrl = `https://system4sjv.com/cities/${slug}/`;
 
 </Layout>
 
-<style>
+<style is:global>
+  /* ===== PREMIUM CITY PAGE STYLES ===== */
+
+  /* Stats Bar — Frosted glass cards with animated feel */
+  .stats-bar{background:linear-gradient(135deg,var(--navy) 0%,#0d2847 50%,#132f52 100%)!important;padding:2.5rem 1.5rem!important;position:relative!important;overflow:hidden!important}
+  .stats-bar::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(11,125,218,.15),transparent 60%),radial-gradient(circle at 80% 50%,rgba(212,55,110,.08),transparent 50%);pointer-events:none}
+  .stats-inner{display:flex!important;align-items:center!important;justify-content:center!important;gap:2.5rem!important;flex-wrap:wrap!important;position:relative!important;z-index:1!important}
+  .stat{display:flex!important;flex-direction:column!important;align-items:center!important;padding:1.5rem 2rem!important;background:rgba(255,255,255,.06)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;border:1px solid rgba(255,255,255,.1)!important;border-radius:var(--radius-lg)!important;min-width:160px!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important}
+  .stat:hover{background:rgba(255,255,255,.12)!important;transform:translateY(-4px)!important;box-shadow:0 12px 40px rgba(0,0,0,.25)!important;border-color:rgba(255,255,255,.2)!important}
+  .stat-number{font-family:var(--font-display)!important;font-size:2.8rem!important;font-weight:700!important;color:white!important;-webkit-text-fill-color:white!important;background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,.85) 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;letter-spacing:-.02em!important;line-height:1!important;margin-bottom:.35rem!important}
+  .stat-label{font-family:var(--font-tight)!important;font-size:.75rem!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.1em!important;color:rgba(255,255,255,.65)!important;-webkit-text-fill-color:rgba(255,255,255,.65)!important}
+  .stat-divider{width:1px!important;height:48px!important;background:rgba(255,255,255,.15)!important;margin:0 .5rem!important}
+
+  /* Area Cards — Premium with gradient border */
+  .area-card{background:var(--white)!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;padding:1.25rem 1.5rem!important;display:flex!important;align-items:center!important;gap:.75rem!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important;text-decoration:none!important}
+  .area-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--blue),var(--magenta))!important;border-radius:0 2px 2px 0!important;opacity:0!important;transition:opacity .3s ease!important}
+  .area-card::after{content:'';position:absolute;inset:0;border-radius:inherit;opacity:0!important;background:linear-gradient(135deg,rgba(11,125,218,.03),rgba(212,55,110,.03))!important;transition:opacity .3s ease!important;pointer-events:none!important}
+  .area-card:hover{border-color:var(--blue-100)!important;box-shadow:0 8px 32px rgba(0,0,0,.08),0 0 0 1px var(--gray-100)!important;transform:translateY(-2px) translateX(4px)!important}
+  .area-card:hover::before{opacity:1!important}
+  .area-card:hover::after{opacity:1!important}
+  .area-card:hover svg{color:var(--magenta)!important;transform:scale(1.15)!important}
+  .area-card strong{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;font-size:1rem!important;letter-spacing:-.01em!important}
+  .area-card span{color:var(--gray-500)!important;font-size:.85rem!important;display:block!important;margin-top:.15rem!important}
+  .area-card:hover strong{color:var(--navy)!important;-webkit-text-fill-color:var(--navy)!important}
+  .area-card svg{color:var(--green-600)!important;flex-shrink:0!important;transition:all .3s ease!important}
+
+  /* Industry Cards — Premium hover with image overlay */
+  .industry-card{background:var(--white)!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;overflow:hidden!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;text-decoration:none!important;display:block!important}
+  .industry-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue))!important;transform:scaleX(0)!important;transform-origin:left!important;transition:transform .4s cubic-bezier(.25,.46,.45,.94)!important}
+  .industry-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.1),0 0 0 1px var(--gray-100)!important;transform:translateY(-6px)!important}
+  .industry-card:hover::after{transform:scaleX(1)!important}
+  .industry-card h3{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;font-size:1.15rem!important;letter-spacing:-.005em!important;text-decoration:none!important}
+  .industry-card:hover h3{color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important}
+  .industry-card p{color:var(--gray-500)!important;font-size:.88rem!important;line-height:1.6!important}
+  .industry-card-body{padding:1.5rem!important}
+
+  /* Card — Premium with top accent line */
+  .card{background:var(--white)!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;box-shadow:var(--shadow-sm)!important;padding:2rem!important;position:relative!important;overflow:hidden!important;text-decoration:none!important;display:block!important;transition:transform .3s cubic-bezier(.4,0,.2,1),box-shadow .3s cubic-bezier(.4,0,.2,1)!important}
+  .card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue))!important;transform:scaleX(0)!important;transform-origin:left!important;transition:transform .4s cubic-bezier(.25,.46,.45,.94)!important}
+  .card:hover{box-shadow:0 12px 40px rgba(0,0,0,.1),0 0 0 1px var(--gray-100)!important;transform:translateY(-4px)!important}
+  .card:hover::after{transform:scaleX(1)!important}
+  .card h3{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:-.005em!important;text-decoration:none!important;margin-bottom:.5rem!important}
+  .card:hover h3{color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important}
+  .card p{color:var(--gray-500)!important;font-size:.92rem!important;line-height:1.6!important}
+  .card-icon{background:linear-gradient(135deg,var(--blue-600),var(--blue-800))!important;box-shadow:0 4px 12px rgba(16,108,176,.25)!important}
+  .card:hover .card-icon{transform:scale(1.08)!important;box-shadow:0 6px 18px rgba(16,108,176,.35)!important}
+
+  /* Steps — Premium with green gradient */
+  .step-number{background:linear-gradient(135deg,var(--green-600),var(--green-500))!important;box-shadow:0 4px 14px rgba(40,168,102,.3)!important}
+  .step:hover .step-number{transform:scale(1.08)!important;box-shadow:0 8px 24px rgba(40,168,102,.4)!important}
+
+  /* Trust Section — Premium glass */
+  .trust-section{position:relative!important;overflow:hidden!important;background:var(--gray-50)!important}
+  .trust-section::before{content:'';position:absolute;top:-30%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(16,108,176,.06),transparent 70%);border-radius:50%;pointer-events:none}
+  .trust-badge{background:white!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;padding:2rem!important;box-shadow:var(--shadow-sm)!important;display:flex!important;align-items:flex-start!important;gap:1.5rem!important}
+  .gsa-shield{background:linear-gradient(135deg,#106cb0,#083f71)!important;border-radius:var(--radius-md)!important;padding:1rem!important;color:white!important;flex-shrink:0!important}
+  .gsa-shield svg{color:white!important}
+  .trust-badge h3{color:var(--navy)!important;-webkit-text-fill-color:var(--navy)!important;font-family:var(--font-display)!important;font-size:1.3rem!important;margin-bottom:.5rem!important}
+  .trust-badge p{color:var(--gray-600)!important;line-height:1.7!important}
+  .trust-items{display:flex!important;flex-direction:column!important;gap:.75rem!important}
+  .trust-item{padding:.75rem 1rem!important;border-radius:var(--radius-sm)!important;transition:all .3s ease!important;display:flex!important;align-items:center!important;gap:.75rem!important;color:var(--gray-700)!important;font-weight:500!important}
+  .trust-item:hover{background:rgba(16,108,176,.05)!important}
+  .trust-item svg{color:var(--green-600)!important;flex-shrink:0!important}
+
+  /* Hero — Premium gradient overlay */
+  .hero{background:linear-gradient(135deg,#1a2e4a 0%,#0b7dda 100%)!important}
+  .hero-tag{background:rgba(16,108,176,.15)!important;color:var(--blue-light)!important;-webkit-text-fill-color:var(--blue-light)!important;border:1px solid rgba(11,125,218,.3)!important;border-radius:20px!important;padding:.35rem 1rem!important;font-size:.7rem!important;font-weight:600!important;text-transform:uppercase!important;letter-spacing:.12em!important;display:inline-block!important;margin-bottom:1rem!important}
+
+  /* Section labels — Premium accent */
+  .section-label{color:var(--green-600)!important;-webkit-text-fill-color:var(--green-600)!important;font-weight:700!important;font-size:.8rem!important;text-transform:uppercase!important;letter-spacing:.12em!important}
+
+  /* CTA — Premium gradient with depth */
+  .cta-section{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 40%,#c42d63 100%)!important;padding:5rem 2rem!important;text-align:center!important;color:white!important;position:relative!important;overflow:hidden!important}
+  .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(255,255,255,.08),transparent 60%),radial-gradient(circle at 80% 20%,rgba(255,255,255,.05),transparent 50%),radial-gradient(circle at 50% 50%,rgba(201,168,76,.06),transparent 50%)!important;pointer-events:none!important}
+  .cta-section h2{color:white!important;-webkit-text-fill-color:white!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:clamp(2rem,3.5vw,3rem)!important;letter-spacing:-.02em!important;line-height:1.15!important;text-shadow:0 2px 12px rgba(0,0,0,.2)!important;margin-bottom:1.25rem!important}
+  .cta-section p{opacity:.92!important;color:white!important;-webkit-text-fill-color:white!important;max-width:640px!important;margin:0 auto 2.5rem!important;line-height:1.7!important}
+  .cta-section .container{position:relative!important;z-index:1!important}
+
+  /* CTA Buttons — Premium */
+  .cta-section .btn-primary{background:white!important;color:var(--magenta)!important;box-shadow:0 4px 14px rgba(0,0,0,.2)!important;font-weight:600!important;padding:.85rem 2.25rem!important;border-radius:12px!important;transition:all .3s ease!important;text-decoration:none!important}
+  .cta-section .btn-primary:hover{transform:translateY(-2px)!important;box-shadow:0 8px 28px rgba(0,0,0,.3)!important}
+  .cta-section .btn-secondary{border-color:rgba(255,255,255,.5)!important;color:white!important;background:transparent!important;font-weight:600!important;padding:.85rem 2.25rem!important;border-radius:12px!important;transition:all .3s ease!important;text-decoration:none!important}
+  .cta-section .btn-secondary:hover{background:rgba(255,255,255,.15)!important;border-color:white!important}
+  .cta-section .btn-ghost{color:rgba(255,255,255,.8)!important;font-weight:500!important;transition:all .3s ease!important;text-decoration:none!important}
+  .cta-section .btn-ghost:hover{color:white!important}
+
+  /* Responsive */
+  @media(max-width:768px){
+    .stats-inner{gap:1rem!important}
+    .stat{padding:1rem 1.25rem!important;min-width:140px!important}
+    .stat-number{font-size:2rem!important}
+    .stat-divider{display:none!important}
+    .areas-grid{grid-template-columns:1fr!important}
+  }
+  @media(max-width:480px){
+    .stat{padding:.75rem 1rem!important;min-width:120px!important}
+    .stat-number{font-size:1.6rem!important}
+    .stat-label{font-size:.65rem!important}
+  }
+
+
   .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -291,5 +391,4 @@ const canonicalUrl = `https://system4sjv.com/cities/${slug}/`;
       text-align: center;
       justify-content: center;
     }
-  }
-</style>
+  }</style>
