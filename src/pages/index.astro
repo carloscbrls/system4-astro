@@ -33,6 +33,12 @@ const canonicalUrl = 'https://system4sjv.com/';
           <div class="hero-badge"><strong>One</strong><span>Solution</span></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Quote form — separate section for mobile, overlaps hero on desktop -->
+  <section class="hero-form-section" data-animate>
+    <div class="container">
       <div class="hero-form-wrap">
         <form class="hero-form" name="contact" method="POST" data-netlify="true" action="/contact/thanks/">
           <h2 class="hero-form-title">Get Your Free Quote</h2>
@@ -298,10 +304,19 @@ const canonicalUrl = 'https://system4sjv.com/';
 
   /* Hero with form layout */
   .hero-inner {
-    display: grid;
-    grid-template-columns: 1fr 380px;
-    gap: 3rem;
-    align-items: center;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  /* Form section — overlaps hero on desktop */
+  .hero-form-section {
+    position: relative;
+    z-index: 2;
+    margin-top: -3rem;
+    padding-bottom: 2rem;
+  }
+  .hero-form-wrap {
+    max-width: 420px;
+    margin: 0 auto;
   }
   .hero-tag {
     display: inline-block;
@@ -526,11 +541,14 @@ const canonicalUrl = 'https://system4sjv.com/';
   /* Mobile responsive */
   @media(max-width: 900px) {
     .hero-inner {
-      grid-template-columns: 1fr;
+      max-width: 100%;
       text-align: center;
     }
+    .hero-form-section {
+      margin-top: -2rem;
+    }
     .hero-form-wrap {
-      order: -1;
+      max-width: 100%;
     }
     .hero-sub {
       margin: 0 auto 2rem;
@@ -548,13 +566,13 @@ const canonicalUrl = 'https://system4sjv.com/';
   @media(max-width: 768px) {
     .stats-inner {
       flex-direction: column;
-      gap: 1rem;
+      gap: .75rem;
     }
     .stat {
-      padding: .5rem 0;
+      padding: .4rem 0;
     }
     .stat-number {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
     .stat-divider {
       width: 60px;
@@ -575,67 +593,84 @@ const canonicalUrl = 'https://system4sjv.com/';
     .footer-inner {
       grid-template-columns: 1fr;
     }
-    .hero-form {
-      padding: 1.25rem;
-    }
-    .hero-form input,
-    .hero-form select {
-      font-size: 16px; /* Prevents iOS zoom on focus */
-      padding: .6rem .75rem;
-    }
-  }
-  @media(max-width: 480px) {
-    .hero h1 {
-      font-size: 1.4rem;
-    }
-    .hero p {
-      font-size: .92rem;
-    }
-    .hero-tag {
-      font-size: .65rem;
-      padding: .25rem .6rem;
-    }
-    .hero-tagline {
-      font-size: 1.05rem;
-    }
-    .hero-sub {
-      font-size: .92rem;
+    .hero-form-section {
+      margin-top: -1rem;
     }
     .hero-form {
       padding: 1rem;
     }
+    .hero-form input,
+    .hero-form select {
+      font-size: 16px; /* Prevents iOS zoom on focus */
+      padding: .5rem .6rem;
+    }
+  }
+  @media(max-width: 480px) {
+    .hero h1 {
+      font-size: 1.15rem;
+    }
+    .hero p {
+      font-size: .82rem;
+    }
+    .hero-tag {
+      font-size: .55rem;
+      padding: .15rem .4rem;
+    }
+    .hero-tagline {
+      font-size: .9rem;
+    }
+    .hero-sub {
+      font-size: .82rem;
+    }
+    .hero-form-section {
+      margin-top: -.5rem;
+      padding-bottom: .5rem;
+    }
+    .hero-form {
+      padding: .65rem;
+    }
     .hero-form h2 {
-      font-size: 1.1rem;
+      font-size: .95rem;
+    }
+    .hero-form input,
+    .hero-form select {
+      font-size: 16px;
+      padding: .45rem .5rem;
+    }
+    .hero-form-disclaimer {
+      font-size: .7rem;
     }
     .btn-lg {
-      padding: .7rem 1.25rem;
-      font-size: .92rem;
+      padding: .5rem .75rem;
+      font-size: .82rem;
     }
     .hero-cta {
-      flex-direction: column;
-      align-items: stretch;
+      flex-direction: row;
+      align-items: center;
+      gap: .4rem;
+      flex-wrap: wrap;
     }
     .hero-cta a {
       text-align: center;
       justify-content: center;
     }
     .hero-badges {
-      gap: .5rem;
+      gap: .35rem;
     }
     .hero-badge {
-      padding: .4rem .6rem;
+      padding: .3rem .4rem;
     }
     .hero-badge strong {
-      font-size: 1rem;
+      font-size: .85rem;
     }
     .hero-badge span {
-      font-size: .6rem;
+      font-size: .5rem;
     }
     .industry-card img {
-      height: 100px;
+      height: 70px;
     }
     .container {
-      padding: 0 1rem;
+      padding: 0 .75rem;
     }
   }
 </style>
