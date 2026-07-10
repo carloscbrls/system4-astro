@@ -1,0 +1,294 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const city = 'Tracy';
+const county = 'San Joaquin County';
+const slug = 'tracy';
+const title = 'Commercial Cleaning in Tracy, CA | System4 San Joaquin Valley';
+const description = 'Professional commercial cleaning, janitorial, and day porter services in Tracy, CA. GSA contract holder. No long-term contracts. Dedicated territory manager for your facility.';
+const canonicalUrl = `https://system4sjv.com/cities/${slug}/`;
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "System4 San Joaquin Valley",
+    "description": description,
+    "url": canonicalUrl,
+    "telephone": "+1-209-229-2066",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": city,
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": city
+    },
+    "serviceType": ["Commercial Cleaning", "Janitorial Services", "Day Porter Services", "Floor Care", "Disinfection Services"]
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/" },
+      { "@type": "ListItem", "position": 2, "name": city, "item": canonicalUrl }
+    ]
+  })} />
+
+  <!-- Hero -->
+  <section class="hero hero-compact" data-animate>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">Serving {city}</div>
+        <h1>Commercial Cleaning Services in {city}</h1>
+        <p class="hero-tagline">One Contact. One Invoice. One Solution.</p>
+        <p class="hero-sub">System4 provides customized cleaning programs for offices, medical facilities, and commercial buildings throughout {city} and {county}. No long-term contracts — just consistent results.</p>
+        <div class="hero-cta">
+          <a href="/contact/" class="btn-primary btn-lg">Get a Free Quote</a>
+          <a href="tel:+12092292066" class="btn-secondary btn-lg">Call (209) 229-2066</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar" data-animate>
+    <div class="container stats-inner">
+      <div class="stat">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Years of Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">67+</span>
+        <span class="stat-label">System4 Locations Nationwide</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">100K+</span>
+        <span class="stat-label">Clients Served</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">500K+</span>
+        <span class="stat-label">Jobs Completed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services We Offer in Tracy -->
+  <section class="section" data-animate>
+    <div class="container">
+      <div class="section-label">Services in {city}</div>
+      <h2 class="section-title">Cleaning Services Available in {city}</h2>
+      <p class="section-subtitle">From medical offices along Grant Line Road to professional buildings near I-205 — we tailor every program to your facility's specific needs.</p>
+      <div class="card-grid card-grid-3" style="margin-top:2.5rem;">
+        <a href="/commercial-cleaning/" class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+          <h3>Commercial & Office Cleaning</h3>
+          <p>Routine and nightly cleaning for Tracy's growing professional offices and multi-tenant buildings.</p>
+        </a>
+        <a href="/janitorial-services/" class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.37 7.37l-6.83 6.83a2 2 0 0 1-2.83-2.83l6.83-6.83a6 6 0 0 1 7.37-7.37z"/></svg></div>
+          <h3>Janitorial Services</h3>
+          <p>Reliable daily and weekly janitorial support for Tracy businesses — restrooms, break rooms, trash, and common areas.</p>
+        </a>
+        <a href="/day-porter-services/" class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+          <h3>Day Porter Services</h3>
+          <p>Daytime upkeep for Tracy lobbies, restrooms, and high-traffic areas — keep your facility client-ready throughout the day.</p>
+        </a>
+        <a href="/medical-office-cleaning/" class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Medical & Dental Office Cleaning</h3>
+          <p>Healthcare-focused cleaning for Tracy's medical and dental practices with infection-control protocols.</p>
+        </a>
+        <a href="/floor-care/" class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Floor Care & Carpet Maintenance</h3>
+          <p>Strip & wax, scrub & recoat, and carpet care programs for Tracy commercial facilities.</p>
+        </a>
+        <a href="/disinfection-services/" class="card" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3>High-Touch Disinfection</h3>
+          <p>Targeted disinfection for Tracy facilities — doors, switches, restrooms, break rooms, and common areas.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Tracy Businesses Choose System4 -->
+  <section class="section section-alt" data-animate>
+    <div class="container">
+      <div class="section-label">Why {city}</div>
+      <h2 class="section-title">Why {city} Businesses Choose System4</h2>
+      <p class="section-subtitle">As one of the fastest-growing communities in California, Tracy's businesses need facility services that can keep pace. Here's why local facility managers trust us.</p>
+      <div class="steps">
+        <div class="step" data-animate>
+          <div class="step-number">1</div>
+          <h3>Dedicated Territory Manager</h3>
+          <p>Your Tracy facility gets one point of contact who knows your building, your schedule, and your standards. No call centers, no runaround — just a real person who owns your account from walkthrough to quality inspections.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step-number">2</div>
+          <h3>Quality Assurance Inspections</h3>
+          <p>Regular on-site inspections catch issues before you do. We document everything, adjust immediately, and keep your Tracy facility at the standard you expect.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step-number">3</div>
+          <h3>Customized & Flexible Programs</h3>
+          <p>No long-term contracts. We tailor service frequency and timing to fit your Tracy operations — and adjust as your needs change. Cancel anytime if we don't meet your standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve in Tracy -->
+  <section class="section" data-animate>
+    <div class="container">
+      <div class="section-label">Industries in {city}</div>
+      <h2 class="section-title">Industries We Serve in {city}</h2>
+      <p class="section-subtitle">From medical offices to professional buildings — we customize for your industry.</p>
+      <div class="industry-grid" style="margin-top:2.5rem;">
+        <a href="/industries/medical-dental/" class="industry-card" data-animate>
+          <div class="industry-card-body">
+            <h3>Medical & Dental Offices</h3>
+            <p>Infection-control cleaning for Tracy's healthcare facilities, clinics, and dental practices.</p>
+          </div>
+        </a>
+        <a href="/industries/professional-offices/" class="industry-card" data-animate>
+          <div class="industry-card-body">
+            <h3>Professional Offices</h3>
+            <p>Keep Tracy's client-facing spaces spotless — lobbies, conference rooms, and break rooms.</p>
+          </div>
+        </a>
+        <a href="/industries/education/" class="industry-card" data-animate>
+          <div class="industry-card-body">
+            <h3>Education & Schools</h3>
+            <p>Cleaning support for Tracy's educational facilities on your schedule.</p>
+          </div>
+        </a>
+        <a href="/industries/dealerships/" class="industry-card" data-animate>
+          <div class="industry-card-body">
+            <h3>Dealerships & Showrooms</h3>
+            <p>Presentation-focused cleaning for Tracy auto dealerships and showrooms.</p>
+          </div>
+        </a>
+        <a href="/industries/banks/" class="industry-card" data-animate>
+          <div class="industry-card-body">
+            <h3>Banks & Financial</h3>
+            <p>Detail-oriented cleaning for Tracy's financial institutions and bank branches.</p>
+          </div>
+        </a>
+        <a href="/industries/warehouses/" class="industry-card" data-animate>
+          <div class="industry-card-body">
+            <h3>Warehouses & Light Industrial</h3>
+            <p>Practical cleaning for Tracy's warehouse and industrial facilities.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area / Nearby Cities -->
+  <section class="section section-alt" data-animate>
+    <div class="container">
+      <div class="section-label">Service Area</div>
+      <h2 class="section-title">Also Serving Near {city}</h2>
+      <p class="section-subtitle">Daily routes across {county} and surrounding areas. We're local — fast response times and real accountability.</p>
+      <div class="areas-grid">
+        <a href="/cities/stockton/" class="area-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Stockton</strong><br/><span>San Joaquin County seat — daily routes</span></div>
+        </a>
+        <a href="/cities/manteca/" class="area-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Manteca</strong><br/><span>Central location — fast response times</span></div>
+        </a>
+        <a href="/cities/lodi/" class="area-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Lodi</strong><br/><span>Wine country businesses — specialty care</span></div>
+        </a>
+        <a href="/cities/modesto/" class="area-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Modesto</strong><br/><span>Stanislaus County — full service coverage</span></div>
+        </a>
+        <a href="/cities/turlock/" class="area-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Turlock</strong><br/><span>Stanislaus County — medical and office focus</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="section trust-section" data-animate>
+    <div class="container trust-inner">
+      <div class="trust-badge">
+        <div class="gsa-shield">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div>
+          <h3>GSA Contract Holder</h3>
+          <p>System4 is a federally approved GSA vendor (Contract #47QSMS24D0089). We meet the rigorous standards required for government facilities — the same quality we bring to every {city} client.</p>
+        </div>
+      </div>
+      <div class="trust-items">
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>No long-term contracts — cancel anytime</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Dedicated territory manager — one point of contact</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Regular quality inspections included</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>National resources, local accountability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-animate>
+    <div class="container">
+      <h2>Ready for a Cleaner Facility in {city}?</h2>
+      <p>Get a free, no-obligation walkthrough and custom cleaning program for your {city} facility. We'll assess your space, identify your needs, and deliver a proposal — typically within 24 hours.</p>
+      <div class="cta-buttons">
+        <a href="/contact/" class="btn-primary btn-lg">Get a Free Quote</a>
+        <a href="tel:+12092292066" class="btn-secondary btn-lg">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-ghost">Email jcastillo@system4.com</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 768px) {
+    .cta-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .cta-buttons a {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+</style>

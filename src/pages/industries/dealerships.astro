@@ -4,9 +4,46 @@ import Layout from '../../layouts/Layout.astro';
 const title = 'Dealership & Showroom Cleaning | System4 of San Joaquin Valley';
 const description = 'Presentation-focused cleaning for auto dealerships, showrooms, and customer-facing spaces across San Joaquin and Stanislaus counties.';
 const canonicalUrl = 'https://system4sjv.com/industries/dealerships/';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Dealership & Showroom Cleaning",
+  "description": "Presentation-focused cleaning for auto dealerships, showrooms, and customer-facing spaces across San Joaquin and Stanislaus counties.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "System4 San Joaquin Valley",
+    "telephone": "+1-209-229-2066",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stockton",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Stockton"},
+      {"@type": "City", "name": "Modesto"},
+      {"@type": "City", "name": "Tracy"},
+      {"@type": "City", "name": "Manteca"},
+      {"@type": "City", "name": "Lodi"},
+      {"@type": "City", "name": "Turlock"}
+    ]
+  },
+  "url": "https://system4sjv.com/industries/dealerships/"
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://system4sjv.com/industries/"},
+    {"@type": "ListItem", "position": 3, "name": "Dealership & Showroom Cleaning", "item": "https://system4sjv.com/industries/dealerships/"}
+  ]
+};
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[serviceSchema, breadcrumbSchema]}>
 
   <section class="hero hero-compact" data-animate>
     <img src="/images/dealerships-hero.jpg" alt="Clean car dealership showroom" class="hero-bg" loading="eager" />
