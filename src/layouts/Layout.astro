@@ -78,7 +78,7 @@ const localBusinessSchema = {
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;max-width:1240px;margin:0 auto}
     .nav-logo{display:flex;align-items:center;gap:.5rem;text-decoration:none}
     .nav-logo img{height:36px;width:auto}
-    .nav-logo-text{font-family:var(--font-tight);font-size:.75rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--gray-500);line-height:1.2}
+
     .nav-links{display:flex;gap:2rem;align-items:center}
     .nav-links a{color:var(--gray-700);font-weight:500;font-size:.95rem;padding:.35rem .85rem;min-height:44px;display:inline-flex;align-items:center;border-radius:8px;transition:all .3s cubic-bezier(.25,.46,.45,.94);position:relative}
     .nav-links a::after{content:"";position:absolute;bottom:4px;left:50%;transform:translateX(-50%) scaleX(0);width:calc(100% - 1.7rem);height:2px;background:var(--magenta);border-radius:1px;transition:transform .3s cubic-bezier(.25,.46,.45,.94)}
@@ -228,7 +228,7 @@ const localBusinessSchema = {
   }
 
   @media(max-width:1024px){.card-grid-3{grid-template-columns:repeat(2,1fr)}.industry-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.areas-grid{grid-template-columns:repeat(2,1fr)}.trust-inner{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}.nav-links{gap:1.5rem}}
-    @media(max-width:768px){.nav-inner{padding:1rem}.nav-logo-text{display:none}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:1rem 1.5rem;box-shadow:var(--shadow-lg);z-index:99;gap:.5rem;border-bottom-left-radius:var(--radius-md);border-bottom-right-radius:var(--radius-md)}.nav-links.open{display:flex}.nav-links a{padding:.75rem 0;border-bottom:1px solid var(--gray-100)}.nav-links a:last-child{border-bottom:none}.mobile-toggle{display:flex}.nav-phone-mobile{display:flex}.nav-phone{font-size:.95rem;padding:.75rem 0;border-bottom:1px solid var(--gray-100)}.card-grid-3{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.industry-grid{grid-template-columns:1fr}.areas-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}.hero{padding:2.5rem 1rem 1.5rem}.hero-compact{padding:2rem 1rem 1.25rem}.hero h1{font-size:1.6rem;margin-bottom:.75rem}.hero p{font-size:1rem;margin-bottom:1rem}.hero-badges{flex-direction:row;gap:.75rem;margin-top:1rem}.hero-badge{padding:.6rem 1rem}.hero-badge strong{font-size:1.3rem}.hero-badge span{font-size:.7rem}.section{padding:3.5rem 1rem}}
+    @media(max-width:768px){.nav-inner{padding:1rem}.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:1rem 1.5rem;box-shadow:var(--shadow-lg);z-index:99;gap:.5rem;border-bottom-left-radius:var(--radius-md);border-bottom-right-radius:var(--radius-md)}.nav-links.open{display:flex}.nav-links a{padding:.75rem 0;border-bottom:1px solid var(--gray-100)}.nav-links a:last-child{border-bottom:none}.mobile-toggle{display:flex}.nav-phone-mobile{display:flex}.nav-phone{font-size:.95rem;padding:.75rem 0;border-bottom:1px solid var(--gray-100)}.card-grid-3{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.industry-grid{grid-template-columns:1fr}.areas-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}.hero{padding:2.5rem 1rem 1.5rem}.hero-compact{padding:2rem 1rem 1.25rem}.hero h1{font-size:1.6rem;margin-bottom:.75rem}.hero p{font-size:1rem;margin-bottom:1rem}.hero-badges{flex-direction:row;gap:.75rem;margin-top:1rem}.hero-badge{padding:.6rem 1rem}.hero-badge strong{font-size:1.3rem}.hero-badge span{font-size:.7rem}.section{padding:3.5rem 1rem}}
     @media(max-width:480px){.nav-inner{padding:.75rem}.nav-phone-mobile{width:40px;height:40px;min-height:40px}.hero{padding:2rem .75rem 1.25rem}.hero-compact{padding:1.25rem .75rem .75rem}.hero h1{font-size:1.4rem;margin-bottom:.5rem}.hero p{font-size:.92rem;line-height:1.6;margin-bottom:.75rem}.hero-tagline{font-size:1.05rem;margin-bottom:.35rem}.hero-sub{font-size:.92rem;line-height:1.6}.hero-tag{font-size:.65rem;padding:.25rem .6rem;margin-bottom:.75rem}.hero-badges{gap:.5rem;margin-top:.75rem}.hero-badge{padding:.5rem .75rem}.hero-badge strong{font-size:1.1rem}.hero-badge span{font-size:.65rem}.btn-lg{padding:.7rem 1.25rem;font-size:.92rem}.hero-cta{flex-direction:column;align-items:stretch;gap:.5rem}.hero-cta .btn-secondary{border-color:white;color:white}.hero-form{padding:1rem}.industry-card img{height:100px}.container{padding:0 1rem}.section{padding:2rem 1rem}.card{padding:1.25rem}}
   </style>
 </head>
@@ -245,7 +245,7 @@ const localBusinessSchema = {
   </div>
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><img src="/logo-system4.png" alt="System4" width="179" height="50" /><span class="nav-logo-text">of San Joaquin Valley</span><span class="sr-only">System4</span></a>
+      <a href="/" class="nav-logo"><img src="/logo-system4.png" alt="System4 of San Joaquin Valley" width="179" height="50" /><span class="sr-only">System4 of San Joaquin Valley</span></a>
       <div class="nav-links" id="nav-links" role="menu">
         <a href="/industries/">Industries</a>
         <a href="/services/">Services</a>
