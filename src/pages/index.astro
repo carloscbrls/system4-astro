@@ -35,16 +35,16 @@ const canonicalUrl = 'https://system4sjv.com/';
       </div>
       <div class="hero-form-wrap">
         <form class="hero-form" name="contact" method="POST" data-netlify="true" action="/contact/thanks/">
-          <h3>Get Your Free Quote</h3>
+          <h2 class="hero-form-title">Get Your Free Quote</h2>
           <p style="color:var(--gray-500);font-size:.88rem;margin-bottom:1.25rem;">Tell us about your facility. We'll respond within 24 hours.</p>
           <label for="quote-name" class="sr-only">Full Name</label>
-          <input type="text" id="quote-name" name="name" placeholder="Full Name *" required aria-required="true" />
+          <input type="text" id="quote-name" name="name" placeholder="Full Name *" required aria-required="true" autocomplete="name" />
           <label for="quote-email" class="sr-only">Email Address</label>
-          <input type="email" id="quote-email" name="email" placeholder="Email Address *" required aria-required="true" />
+          <input type="email" id="quote-email" name="email" placeholder="Email Address *" required aria-required="true" autocomplete="email" />
           <label for="quote-phone" class="sr-only">Phone Number</label>
-          <input type="tel" id="quote-phone" name="phone" placeholder="Phone Number" />
+          <input type="tel" id="quote-phone" name="phone" placeholder="Phone Number" autocomplete="tel" />
           <label for="quote-service" class="sr-only">Select a Service</label>
-          <select id="quote-service" name="service" aria-label="Select a service type">
+          <select id="quote-service" name="service" aria-label="Select a service type" autocomplete="off">
             <option value="" disabled selected>Select a Service</option>
             <option value="commercial-cleaning">Commercial & Office Cleaning</option>
             <option value="medical-dental">Medical & Dental Office Cleaning</option>
@@ -525,6 +525,9 @@ const canonicalUrl = 'https://system4sjv.com/';
       grid-template-columns: 1fr;
       text-align: center;
     }
+    .hero-form-wrap {
+      order: -1;
+    }
     .hero-sub {
       margin: 0 auto 2rem;
     }
@@ -546,6 +549,9 @@ const canonicalUrl = 'https://system4sjv.com/';
     .stat {
       padding: .5rem 0;
     }
+    .stat-number {
+      font-size: 2rem;
+    }
     .stat-divider {
       width: 60px;
       height: 1px;
@@ -564,6 +570,40 @@ const canonicalUrl = 'https://system4sjv.com/';
     }
     .footer-inner {
       grid-template-columns: 1fr;
+    }
+    .hero-form {
+      padding: 1.5rem;
+    }
+    .hero-form input,
+    .hero-form select {
+      font-size: 16px; /* Prevents iOS zoom on focus */
+    }
+  }
+  @media(max-width: 480px) {
+    .hero h1 {
+      font-size: 1.7rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .hero-tag {
+      font-size: .7rem;
+      padding: .3rem .8rem;
+    }
+    .btn-lg {
+      padding: .75rem 1.5rem;
+      font-size: .95rem;
+    }
+    .hero-cta {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .hero-cta a {
+      text-align: center;
+      justify-content: center;
+    }
+    .container {
+      padding: 0 1rem;
     }
   }
 </style>
