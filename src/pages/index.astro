@@ -33,6 +33,35 @@ const canonicalUrl = 'https://system4sjv.com/';
           <div class="hero-badge"><strong>One</strong><span>Solution</span></div>
         </div>
       </div>
+      <!-- Desktop form (shown only on wide screens, side-by-side with hero content) -->
+      <div class="hero-form-desktop">
+        <form class="hero-form" name="contact-desktop" method="POST" data-netlify="true" action="/contact/thanks/">
+          <input type="hidden" name="form-name" value="contact-desktop" />
+          <h2 class="hero-form-title">Get Your Free Quote</h2>
+          <p style="color:var(--gray-500);font-size:.88rem;margin-bottom:1.25rem;">Tell us about your facility. We'll respond within 24 hours.</p>
+          <label for="quote-name-d" class="sr-only">Full Name</label>
+          <input type="text" id="quote-name-d" name="name" placeholder="Full Name *" required aria-required="true" autocomplete="name" />
+          <label for="quote-email-d" class="sr-only">Email Address</label>
+          <input type="email" id="quote-email-d" name="email" placeholder="Email Address *" required aria-required="true" autocomplete="email" />
+          <label for="quote-phone-d" class="sr-only">Phone Number</label>
+          <input type="tel" id="quote-phone-d" name="phone" placeholder="Phone Number" autocomplete="tel" />
+          <label for="quote-service-d" class="sr-only">Select a Service</label>
+          <select id="quote-service-d" name="service" aria-label="Select a service type" autocomplete="off">
+            <option value="" disabled selected>Select a Service</option>
+            <option value="commercial-cleaning">Commercial & Office Cleaning</option>
+            <option value="medical-dental">Medical & Dental Office Cleaning</option>
+            <option value="janitorial">Janitorial Services</option>
+            <option value="day-porter">Day Porter Services</option>
+            <option value="floor-care">Floor Care & Carpet</option>
+            <option value="disinfection">High-Touch Disinfection</option>
+            <option value="other">Other / Custom</option>
+          </select>
+          <label for="quote-city-d" class="sr-only">City</label>
+          <input type="text" id="quote-city-d" name="city" placeholder="City (e.g. Stockton, Modesto)" />
+          <button type="submit" class="btn-primary btn-block">Get My Free Quote</button>
+          <p class="hero-form-disclaimer">By submitting, you agree to be contacted about your request.</p>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -679,12 +708,29 @@ const canonicalUrl = 'https://system4sjv.com/';
     transform: scaleX(1);
   }
 
-  /* ===== DESKTOP ENHANCEMENTS (luxury feel on wide screens) ===== */
-  @media(min-width: 1100px) {
-    /* Hero: wider content, bigger impact */
+  /* ===== DESKTOP LUXURY (wide screens) ===== */
+  @media(min-width:1100px) {
+    /* Hero takes full width, form floats into it */
     .hero-inner {
-      max-width: 800px;
+      max-width: 100% !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 3rem;
     }
+    .hero-content {
+      flex: 1 1 55%;
+      max-width: 680px;
+    }
+    .hero-form-desktop {
+      display: block;
+      flex: 0 0 400px;
+    }
+    /* Hide the separate form section on desktop — form is inside hero */
+    .hero-form-section {
+      display: none !important;
+    }
+    /* Hero content — bigger and bolder */
     .hero h1 {
       font-size: 3.2rem;
       line-height: 1.1;
@@ -695,7 +741,6 @@ const canonicalUrl = 'https://system4sjv.com/';
     .hero-sub {
       font-size: 1.15rem;
       line-height: 1.9;
-      max-width: 700px;
     }
     .hero-badge {
       padding: 1.5rem 2.5rem;
@@ -706,17 +751,6 @@ const canonicalUrl = 'https://system4sjv.com/';
     }
     .hero-badge span {
       font-size: .85rem;
-    }
-    /* Form: wider and more prominent */
-    .hero-form-wrap {
-      max-width: 480px;
-    }
-    .hero-form {
-      padding: 2.5rem;
-      gap: 1rem;
-    }
-    .hero-form h2 {
-      font-size: 1.5rem;
     }
     /* Stats: bigger numbers */
     .stat {
@@ -760,6 +794,51 @@ const canonicalUrl = 'https://system4sjv.com/';
   /* Hide desktop form on mobile */
   .hero-form-desktop {
     display: none;
+  }
+  .hero-form-desktop .hero-form {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: 0 12px 40px rgba(0,0,0,.12), 0 0 0 1px rgba(255,255,255,.1);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-form-desktop .hero-form::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--magenta), var(--blue));
+  }
+  .hero-form-desktop .hero-form-title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--navy);
+    margin-bottom: 0;
+  }
+  .hero-form-desktop input,
+  .hero-form-desktop select {
+    padding: .75rem 1rem;
+    border: 1.5px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: .92rem;
+    font-family: var(--font-body);
+    color: var(--gray-900);
+    background: var(--gray-50);
+    transition: all .3s cubic-bezier(.25,.46,.45,.94);
+  }
+  .hero-form-desktop input:focus,
+  .hero-form-desktop select:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 4px rgba(16,108,176,.12);
+    background: var(--white);
+  }
+  .hero-form-desktop input::placeholder {
+    color: var(--gray-500);
   }
 
   /* Mobile responsive */
