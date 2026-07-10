@@ -1119,9 +1119,9 @@ const faqSchema = {
   .btn-ghost::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
   .btn-ghost:hover{transform:translateY(-1px)}
   .btn-ghost:hover::after{transform:scaleX(1)}
-  .card{position:relative!important;overflow:hidden!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important}
+  .card{background:var(--white)!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;box-shadow:var(--shadow-sm)!important;position:relative!important;overflow:hidden!important;transition:transform .3s cubic-bezier(.4,0,.2,1),box-shadow .3s cubic-bezier(.4,0,.2,1)!important}
   .card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue));transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
-  .card:hover{box-shadow:0 12px 40px rgba(0,0,0,.1)!important;transform:translateY(-6px)!important}
+  .card:hover{box-shadow:var(--shadow-md)!important;transform:translateY(-4px)!important}
   .card:hover::after{transform:scaleX(1)}
   .card-icon{background:linear-gradient(135deg,var(--blue-600),var(--blue-800))!important;box-shadow:0 4px 12px rgba(16,108,176,.25)!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important}
   .card:hover .card-icon{transform:scale(1.08)!important;box-shadow:0 6px 18px rgba(16,108,176,.35)!important}
@@ -1129,7 +1129,7 @@ const faqSchema = {
   .step-number::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:2px solid rgba(40,168,102,.25);transition:all .4s cubic-bezier(.25,.46,.45,.94)}
   .step:hover .step-number{transform:scale(1.08)!important;box-shadow:0 8px 24px rgba(40,168,102,.4)!important}
   .step:hover .step-number::after{border-color:rgba(40,168,102,.5)!important;inset:-6px!important}
-  .industry-card{transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important}
+  .industry-card{border-radius:var(--radius-lg)!important;overflow:hidden!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important}
   .industry-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue));transform:scaleX(0);transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
   .industry-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.12)!important;transform:translateY(-6px)!important}
   .industry-card:hover::after{transform:scaleX(1)}
@@ -1143,7 +1143,7 @@ const faqSchema = {
   .hero-badge::before{content:'';position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(255,255,255,.3),transparent,rgba(255,255,255,.15));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
   .hero-badge:hover{background:rgba(255,255,255,.14)!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px rgba(0,0,0,.15)!important}
   .hero-badge span{letter-spacing:.08em!important}
-  .nav-cta{background:linear-gradient(135deg,var(--magenta),#e8447a)!important;border-radius:8px!important;box-shadow:0 2px 8px rgba(212,55,110,.25)!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important}
+  .nav-cta{color:white!important;-webkit-text-fill-color:white!important;background:linear-gradient(135deg,var(--magenta),#e8447a)!important;border-radius:8px!important;box-shadow:0 2px 8px rgba(212,55,110,.25)!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important}
   .nav-cta:hover{transform:translateY(-1px)!important;box-shadow:0 4px 14px rgba(212,55,110,.4)!important}
   .nav-links a{padding:.35rem .85rem!important;border-radius:8px!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important}
   .nav-links a:hover{background:var(--gray-50)!important;color:var(--navy)!important}
@@ -1157,7 +1157,7 @@ const faqSchema = {
   .hero-form::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue))}
   .hero-form input,.hero-form select{border-width:1.5px!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important}
   .hero-form input:focus,.hero-form select:focus{border-color:var(--blue)!important;box-shadow:0 0 0 4px rgba(16,108,176,.12)!important;background:var(--white)!important}
-  .cta-section{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 40%,#c42d63 100%)!important;position:relative!important;overflow:hidden!important}
+  .cta-section{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 40%,#c42d63 100%)!important;padding:5rem 2rem!important;text-align:center!important;color:white!important;position:relative!important;overflow:hidden!important}
   .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(255,255,255,.08),transparent 60%),radial-gradient(circle at 80% 20%,rgba(255,255,255,.05),transparent 50%);pointer-events:none}
   .cta-section .container{position:relative!important;z-index:1!important}
   .trust-section{position:relative!important;overflow:hidden!important}
@@ -1184,23 +1184,23 @@ const faqSchema = {
   .section-title{font-family:var(--font-display)!important;font-weight:400!important;line-height:1.15!important;letter-spacing:-.01em!important}
   .stat-number{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.02em!important}
   .stat-label{font-family:var(--font-tight)!important;font-weight:500!important;text-transform:uppercase!important;letter-spacing:.06em!important}
-  .card h3{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:-.005em!important}
+  .card h3{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:-.005em!important;text-decoration:none!important}
   .card p{font-family:var(--font-body)!important;letter-spacing:-.01em!important;line-height:1.7!important}
   .step h3{font-family:var(--font-tight)!important;font-weight:600!important}
   .step p{font-family:var(--font-body)!important;line-height:1.7!important}
-  .industry-card h3{font-family:var(--font-tight)!important;font-weight:600!important}
+  .industry-card h3{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;text-decoration:none!important}
   .industry-card p{font-family:var(--font-body)!important;line-height:1.7!important}
   .btn-primary,.btn-secondary,.btn-ghost,.nav-cta{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
   .hero-form h2{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
   .hero-form label{font-family:var(--font-tight)!important;font-weight:500!important;letter-spacing:.01em!important}
   .trust-badge h3{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
   .trust-badge p{font-family:var(--font-body)!important;line-height:1.7!important}
-  .cta-section h2{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important;line-height:1.15!important}
-  .cta-section p{font-family:var(--font-body)!important;line-height:1.8!important}
+  .cta-section h2{font-family:var(--font-display)!important;font-weight:700!important;letter-spacing:-.02em!important;line-height:1.15!important;color:white!important;-webkit-text-fill-color:white!important;text-shadow:0 2px 12px rgba(0,0,0,.2)!important}
+  .cta-section p{opacity:.92!important;max-width:640px!important;margin:0 auto 2.5rem!important;line-height:1.7!important;color:white!important;-webkit-text-fill-color:white!important}
   .footer-heading{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
-  .footer{font-family:var(--font-body)!important;line-height:1.7!important}
-  .area-card strong{font-family:var(--font-tight)!important;font-weight:600!important}
-  .area-card span{font-family:var(--font-body)!important}
+  .footer{background:linear-gradient(180deg,var(--navy),#0a1628)!important;color:rgba(255,255,255,.7)!important;font-family:var(--font-body)!important;line-height:1.7!important}
+  .area-card strong,.area-card h3,.area-card a{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;text-decoration:none!important}
+  .area-card span{font-family:var(--font-body)!important}.area-card a:hover{color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important}
   .hero-tag{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.05em!important}
   .hero-badge span{font-family:var(--font-tight)!important;font-weight:500!important}
 </style>
