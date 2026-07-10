@@ -791,10 +791,7 @@ const canonicalUrl = 'https://system4sjv.com/';
     }
   }
 
-  /* Hide desktop form on mobile */
-  .hero-form-desktop {
-    display: none;
-  }
+  /* Desktop form styles (always loaded, visibility controlled by media query) */
   .hero-form-desktop .hero-form {
     background: var(--white);
     border-radius: var(--radius-lg);
@@ -839,6 +836,13 @@ const canonicalUrl = 'https://system4sjv.com/';
   }
   .hero-form-desktop input::placeholder {
     color: var(--gray-500);
+  }
+
+  /* Desktop form hidden on mobile/tablet — shown via @media(min-width:1100px) above */
+  @media(max-width:1099px) {
+    .hero-form-desktop {
+      display: none !important;
+    }
   }
 
   /* Mobile responsive */
