@@ -91,6 +91,7 @@ const localBusinessSchema = {
     .nav-cta:hover::before{left:100%}
     .nav-phone{font-weight:700;color:var(--navy);white-space:nowrap}
     .nav-phone-mobile{display:none;align-items:center;justify-content:center;width:44px;height:44px;background:var(--magenta);color:white;border-radius:50%;font-size:1.3rem;text-decoration:none;min-height:44px}
+    .nav-actions{display:flex;align-items:center;gap:.5rem}
     .mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:.5rem;min-width:44px;min-height:44px;align-items:center;justify-content:center;color:var(--navy)}
     .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 50%,var(--magenta) 100%);background-size:200% auto;color:var(--white);padding:1rem 2.5rem;border-radius:var(--radius-md);font-weight:600;font-size:1.05rem;transition:all .4s cubic-bezier(.25,.46,.45,.94);box-shadow:0 4px 20px rgba(212,55,110,.35),0 1px 3px rgba(0,0,0,.1),inset 0 1px 0 rgba(255,255,255,.2);text-decoration:none;border:none;cursor:pointer;letter-spacing:.02em;position:relative;overflow:hidden}
     .btn-primary::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transition:left .6s ease}
@@ -244,7 +245,6 @@ const localBusinessSchema = {
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="/" class="nav-logo"><img src="/logo-system4.png" alt="System4" width="179" height="50" /><span class="nav-logo-text">of San Joaquin Valley</span><span class="sr-only">System4</span></a>
-      <a href="tel:+12092292066" class="nav-phone-mobile" aria-label="Call us">☎</a>
       <div class="nav-links" id="nav-links" role="menu">
         <a href="/industries/">Industries</a>
         <a href="/services/">Services</a>
@@ -254,9 +254,12 @@ const localBusinessSchema = {
         <a href="tel:+12092292066" class="nav-phone">(209) 229-2066</a>
         <a href="/contact/" class="nav-cta">Get a Free Quote</a>
       </div>
-      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <div class="nav-actions">
+        <a href="tel:+12092292066" class="nav-phone-mobile" aria-label="Call us">☎</a>
+        <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
+      </div>
     </div>
   </nav>
   <main id="main-content">
