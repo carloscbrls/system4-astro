@@ -628,17 +628,20 @@ const faqSchema = {
   }
   .hero-tag {
     display: inline-block;
-    background: rgba(255,255,255,.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,.25);
-    color: var(--blue);
-    font-size: .8rem;
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(16,108,176,.35);
+    color: var(--blue-light);
+    -webkit-text-fill-color: var(--blue-light);
+    font-size: .7rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .08em;
-    padding: .4rem 1rem;
+    letter-spacing: .14em;
+    padding: .4rem 1.2rem;
     border-radius: 100px;
     margin-bottom: 1.25rem;
+    box-shadow: 0 0 20px rgba(16,108,176,.2), inset 0 1px 0 rgba(255,255,255,.1);
   }
   .hero-tagline {
     font-size: 1.3rem;
