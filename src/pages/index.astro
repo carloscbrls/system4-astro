@@ -992,7 +992,8 @@ const faqSchema = {
       grid-template-columns: 1fr;
     }
     .industry-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .75rem;
     }
     .areas-grid {
       grid-template-columns: 1fr;
@@ -1084,7 +1085,24 @@ const faqSchema = {
       font-size: .5rem;
     }
     .industry-card img {
-      height: 70px;
+      height: 80px;
+      object-position: center 30%;
+    }
+    .industry-card-body {
+      padding: .75rem;
+    }
+    .industry-card h3 {
+      font-size: .9rem;
+    }
+    .industry-card p {
+      font-size: .8rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .industry-card p {
+      font-size: .82rem;
     }
     .container {
       padding: 0 .75rem;
