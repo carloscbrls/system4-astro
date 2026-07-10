@@ -176,7 +176,7 @@ const localBusinessSchema = {
     .cta-section .btn-secondary:hover{background:rgba(255,255,255,.15);border-color:white}
     .footer{background:linear-gradient(180deg,var(--navy) 0%,#0a1525 100%);color:rgba(255,255,255,.7);padding:4rem 2rem 2rem;position:relative;overflow:hidden}
     .footer::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 30% 100%,rgba(201,168,76,.04),transparent 50%);pointer-events:none}
-    .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
+    .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem}
     .footer h4,.footer-heading{color:white;font-family:var(--font-display);margin-bottom:1rem;-webkit-text-fill-color:white}
     .footer a{color:rgba(255,255,255,.8);text-decoration:none;border-radius:2px;padding:0 2px;transition:all .3s cubic-bezier(.25,.46,.45,.94)}
     .footer a:hover{color:white;background:rgba(255,255,255,.1)}
@@ -246,6 +246,8 @@ const localBusinessSchema = {
       <div class="nav-links" id="nav-links" role="menu">
         <a href="/industries/">Industries</a>
         <a href="/services/">Services</a>
+        <a href="/blog/">Blog</a>
+        <a href="/cities/stockton/">Cities</a>
         <a href="/about/">About</a>
         <a href="/contact/" class="nav-cta">Get a Free Quote</a>
         <a href="tel:+12092292066" class="nav-phone" style="font-size:1rem;">(209) 229-2066</a>
@@ -261,27 +263,39 @@ const localBusinessSchema = {
   <footer class="footer" role="contentinfo">
     <div class="footer-inner">
       <div>
-        <p class="footer-heading" style="font-weight:700;"><img src="/logo-system4-footer.png" alt="System4" width="220" height="68" style="height:40px;width:auto;margin-bottom:.5rem;" /><br><span style="font-size:.85em;font-weight:400;">of San Joaquin Valley</span></p>
-        <p style="max-width:400px;line-height:1.7;margin-bottom:1rem;">Commercial cleaning, janitorial, and facility services for medical, dental, office, and multi-site organizations across the Central Valley. One contact. One invoice. One solution.</p>
-        <a href="/contact/" class="btn-primary" style="font-size:.9rem;padding:.6rem 1.4rem;">Get a Free Quote</a>
+        <p class="footer-heading" style="font-family:var(--font-tight);font-size:1.1rem;font-weight:700;color:white;margin-bottom:1rem;">System4 of San Joaquin Valley</p>
+        <p style="color:rgba(255,255,255,.7);font-size:.9rem;line-height:1.7;">Commercial cleaning, janitorial, and facility services for medical, dental, office, and multi-site organizations across the Central Valley. One contact. One invoice. One solution.</p>
+        <p style="margin-top:.75rem;"><a href="/contact/" class="btn-primary" style="font-size:.9rem;padding:.6rem 1.4rem;">Get a Free Quote</a></p>
       </div>
       <div>
-        <p class="footer-heading">Services</p>
-        <p><a href="/industries/medical-dental/">Medical & Dental Offices</a></p>
-        <p><a href="/industries/professional-offices/">Professional Offices</a></p>
-        <p><a href="/services/">Day Porter Services</a></p>
+        <p class="footer-heading" style="font-family:var(--font-tight);font-size:1rem;font-weight:700;color:white;margin-bottom:1rem;">Services</p>
+        <p><a href="/commercial-cleaning/">Commercial Cleaning</a></p>
+        <p><a href="/janitorial-services/">Janitorial Services</a></p>
+        <p><a href="/day-porter-services/">Day Porter Services</a></p>
+        <p><a href="/floor-care/">Floor Care</a></p>
+        <p><a href="/disinfection-services/">Disinfection</a></p>
+        <p><a href="/medical-office-cleaning/">Medical Cleaning</a></p>
         <p><a href="/services/">All Services →</a></p>
       </div>
       <div>
-        <p class="footer-heading">Areas We Serve</p>
-        <p>San Joaquin County & Stanislaus County</p>
-        <p>Stockton • Modesto • Tracy • Manteca • Lodi • Turlock</p>
+        <p class="footer-heading" style="font-family:var(--font-tight);font-size:1rem;font-weight:700;color:white;margin-bottom:1rem;">Service Areas</p>
+        <p><a href="/cities/stockton/">Stockton</a></p>
+        <p><a href="/cities/modesto/">Modesto</a></p>
+        <p><a href="/cities/tracy/">Tracy</a></p>
+        <p><a href="/cities/manteca/">Manteca</a></p>
+        <p><a href="/cities/lodi/">Lodi</a></p>
+        <p><a href="/cities/turlock/">Turlock</a></p>
+      </div>
+      <div>
+        <p class="footer-heading" style="font-family:var(--font-tight);font-size:1rem;font-weight:700;color:white;margin-bottom:1rem;">Contact</p>
         <p style="margin-top:.5rem;"><a href="tel:+12092292066" style="color:white;text-decoration:none;font-weight:700;font-size:1.1em;display:inline-block;">(209) 229-2066</a></p>
         <p style="margin-top:.25rem;"><a href="mailto:jcastillo@system4.com" style="color:rgba(255,255,255,.7);">jcastillo@system4.com</a></p>
+        <p style="margin-top:.75rem;color:rgba(255,255,255,.5);font-size:.8rem;">GSA Contract Holder<br/>#47QSMS24D0089</p>
+        <p style="margin-top:.5rem;color:rgba(255,255,255,.5);font-size:.8rem;">No long-term contracts<br/>Dedicated territory managers<br/>Regular quality inspections</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; {currentYear} System4 of San Joaquin Valley. All rights reserved. | <a href="/privacy-policy/">Privacy Policy</a> | <a href="/accessibility/">Accessibility</a></p>
+      <p>&copy; {currentYear} System4 of San Joaquin Valley. All rights reserved. | <a href="/terms/">Terms</a> | <a href="/privacy-policy/">Privacy</a> | <a href="/accessibility/">Accessibility</a></p>
     </div>
   </footer>
   <script>
