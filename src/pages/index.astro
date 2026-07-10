@@ -922,24 +922,24 @@ const faqSchema = {
   @media(min-width:1100px) {
     /* Hero: side-by-side with sticky form, generous vertical padding */
     .hero {
-      padding: 5rem 2rem 4rem;
+      padding: 6rem 3rem 5rem;
     }
     .hero-inner {
-      max-width: 1120px !important;
+      max-width: 1200px !important;
       margin: 0 auto !important;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 3rem;
+      gap: 4rem;
       padding: 0;
     }
     .hero-content {
-      flex: 1 1 55%;
-      max-width: 560px;
+      flex: 1 1 58%;
+      max-width: 620px;
     }
     .hero-form-desktop {
       display: block;
-      flex: 0 0 360px;
+      flex: 0 0 380px;
       position: sticky;
       top: 100px;
     }
@@ -949,16 +949,16 @@ const faqSchema = {
     }
     /* Hero content — premium typography */
     .hero h1 {
-      font-size: 3.2rem;
-      line-height: 1.08;
-      letter-spacing: -.03em;
-      margin-bottom: 1.25rem;
+      font-size: 3.5rem;
+      line-height: 1.06;
+      letter-spacing: -.035em;
+      margin-bottom: 1.5rem;
     }
     .hero-tag {
       font-size: .7rem;
-      letter-spacing: .12em;
-      padding: .35rem 1.1rem;
-      margin-bottom: 1.25rem;
+      letter-spacing: .14em;
+      padding: .4rem 1.2rem;
+      margin-bottom: 1.5rem;
     }
     .hero-tagline {
       font-size: 1.3rem;
@@ -974,21 +974,21 @@ const faqSchema = {
     }
     .hero-badges {
       display: flex;
-      gap: .75rem;
+      gap: 1rem;
       justify-content: flex-start;
-      padding-top: 1.25rem;
+      padding-top: 1.75rem;
       border-top: 1px solid rgba(255,255,255,.12);
     }
     .hero-badge {
       display: flex;
       align-items: center;
-      gap: .5rem;
-      padding: .65rem 1.1rem;
-      background: rgba(255,255,255,.07);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 12px;
+      gap: .6rem;
+      padding: .75rem 1.25rem;
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 14px;
       transition: all .4s cubic-bezier(.25,.46,.45,.94);
       position: relative;
       overflow: hidden;
@@ -1014,23 +1014,23 @@ const faqSchema = {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 8px;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
       background: linear-gradient(135deg, var(--magenta), #e8447a);
       color: white;
       flex-shrink: 0;
-      box-shadow: 0 2px 8px rgba(212,55,110,.35);
+      box-shadow: 0 3px 12px rgba(212,55,110,.4);
     }
     .badge-icon svg {
-      width: 15px;
-      height: 15px;
+      width: 16px;
+      height: 16px;
     }
     .badge-accent {
       display: block;
       font-family: var(--font-tight);
       font-weight: 700;
-      font-size: .95rem;
+      font-size: 1rem;
       color: white;
       -webkit-text-fill-color: white;
       line-height: 1.15;
@@ -1041,9 +1041,9 @@ const faqSchema = {
       font-family: var(--font-tight);
       font-weight: 500;
       font-size: .6rem;
-      color: rgba(255,255,255,.6);
-      -webkit-text-fill-color: rgba(255,255,255,.6);
-      letter-spacing: .1em;
+      color: rgba(255,255,255,.55);
+      -webkit-text-fill-color: rgba(255,255,255,.55);
+      letter-spacing: .12em;
       text-transform: uppercase;
       line-height: 1;
     }
@@ -1079,30 +1079,30 @@ const faqSchema = {
 
     /* More generous section padding */
     .section {
-      padding: 6rem 2rem;
+      padding: 7rem 2rem;
     }
 
     /* Larger section titles with decorative accent */
     .section-title {
-      font-size: 2.75rem;
+      font-size: 2.9rem;
       margin-bottom: 1.5rem;
-      letter-spacing: -.025em;
+      letter-spacing: -.03em;
     }
     .section-subtitle {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       line-height: 1.7;
     }
 
     /* Cards: premium breathing room and elevation */
     .card {
-      padding: 2rem;
+      padding: 2.25rem;
       border-radius: var(--radius-lg);
       background: white;
       border: 1px solid var(--gray-100);
-      box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 4px 12px rgba(0,0,0,.03);
+      box-shadow: 0 2px 8px rgba(0,0,0,.06), 0 8px 32px rgba(0,0,0,.04);
     }
     .card-grid {
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
     /* Steps: connector line between steps */
@@ -1127,26 +1127,26 @@ const faqSchema = {
       z-index: 1;
     }
     .step-number {
-      width: 56px;
-      height: 56px;
-      font-size: 1.35rem;
+      width: 64px;
+      height: 64px;
+      font-size: 1.5rem;
     }
     .step h3 {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
     }
     .step p {
-      font-size: 1rem;
-      max-width: 280px;
+      font-size: 1.05rem;
+      max-width: 300px;
       margin-left: auto;
       margin-right: auto;
     }
 
     /* Industry cards: refined hover */
     .industry-grid {
-      gap: 2rem;
+      gap: 2.5rem;
     }
     .industry-card img {
-      height: 200px;
+      height: 220px;
       transition: transform .6s cubic-bezier(.25,.46,.45,.94);
     }
     .industry-card:hover img {
@@ -1158,29 +1158,29 @@ const faqSchema = {
 
     /* Trust section: stronger visual */
     .trust-section {
-      padding: 5rem 0 !important;
+      padding: 6rem 0 !important;
     }
     .trust-inner {
-      gap: 4rem;
+      gap: 5rem;
     }
     .trust-badge h3 {
-      font-size: 1.75rem;
+      font-size: 1.9rem;
     }
     .trust-badge p {
-      font-size: 1.08rem;
+      font-size: 1.1rem;
     }
 
     /* CTA: premium gradient */
     .cta-section {
-      padding: 5rem 2rem;
+      padding: 7rem 2rem;
     }
     .cta-section h2 {
-      font-size: 2.75rem;
-      letter-spacing: -.02em;
+      font-size: 3rem;
+      letter-spacing: -.025em;
     }
     .cta-section p {
-      font-size: 1.1rem;
-      max-width: 640px;
+      font-size: 1.15rem;
+      max-width: 680px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -1192,32 +1192,35 @@ const faqSchema = {
 
     /* Footer: more generous spacing */
     .footer {
-      padding: 5rem 3rem 2rem;
+      padding: 6rem 3rem 2.5rem;
     }
     .footer-inner {
-      gap: 3rem;
+      gap: 3.5rem;
     }
 
     /* Nav refinement */
     .nav-inner {
-      padding: .75rem 2rem;
+      padding: .85rem 2.5rem;
     }
     .nav-logo img {
-      height: 42px;
+      height: 44px;
     }
   }
 
   /* Desktop form styles (always loaded, visibility controlled by media query) */
   .hero-form-desktop .hero-form {
-    background: var(--white);
+    background: rgba(255,255,255,.97);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border-radius: var(--radius-lg);
-    padding: 2rem;
-    box-shadow: 0 12px 40px rgba(0,0,0,.12), 0 0 0 1px rgba(255,255,255,.1);
+    padding: 2.25rem;
+    box-shadow: 0 16px 48px rgba(0,0,0,.15), 0 0 0 1px rgba(255,255,255,.2), 0 2px 4px rgba(0,0,0,.05);
     display: flex;
     flex-direction: column;
-    gap: .75rem;
+    gap: .8rem;
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(255,255,255,.3);
   }
   .hero-form-desktop .hero-form::before {
     content: '';
@@ -1228,7 +1231,7 @@ const faqSchema = {
   }
   .hero-form-desktop .hero-form-title {
     font-family: var(--font-display);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--navy);
     margin-bottom: 0;
   }
