@@ -967,7 +967,10 @@ const faqSchema = {
     .cta-section .container { text-align: center; }
     .cta-section h2 { text-align: center; }
     .cta-section p { text-align: center; }
-    .cta-buttons { justify-content: center; text-align: center; }
+    .cta-buttons { flex-direction: column; align-items: center; gap: .75rem; }
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-secondary,
+    .cta-buttons .btn-ghost { width: 100%; max-width: 320px; justify-content: center; text-align: center; }
     .btn-ghost { text-align: center; }
     .stats-inner {
       flex-direction: column;
