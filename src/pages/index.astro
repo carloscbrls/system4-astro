@@ -1480,6 +1480,18 @@ const faqSchema = {
       font-size: .5rem;
     }
   }
+  @keyframes hero-shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .hero {
+    background-size: 200% 200%;
+    animation: hero-shimmer 15s ease-in-out infinite;
+  }
+  @media(prefers-reduced-motion: reduce) {
+    .hero { animation: none; }
+  }
 </style>
 <style is:global>
   /* Luxury button/card/animation upgrades — global because Astro scopes Layout CSS differently from slot content */
