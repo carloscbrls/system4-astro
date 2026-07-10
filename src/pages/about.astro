@@ -9,8 +9,9 @@ const canonicalUrl = 'https://system4sjv.com/about/';
 <Layout title={title} description={description} canonicalUrl={canonicalUrl}>
 
   <!-- Hero -->
-  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;">
-    <div class="container">
+  <section class="hero" data-animate style="padding:4rem 1.5rem 3rem;position:relative;overflow:hidden;">
+    <img src="/images/about-team.jpg" alt="Professional cleaning team at work" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15;pointer-events:none;" loading="eager" />
+    <div class="container" style="position:relative;z-index:1;">
       <h1>About <em>System4</em><br/>of San Joaquin Valley</h1>
       <p>Locally owned and operated with the capabilities and resources of a national company. Whether you need basic services, multiple services, or specialized programs — we exceed expectations.</p>
     </div>
@@ -70,8 +71,9 @@ const canonicalUrl = 'https://system4sjv.com/about/';
   </section>
 
   <!-- CTA -->
-  <section class="cta-section" data-animate>
-    <div class="container">
+  <section class="cta-section" data-animate style="position:relative;overflow:hidden;">
+    <img src="/images/cta-meeting.jpg" alt="Business meeting about facility services" class="cta-bg" loading="lazy" />
+    <div class="container" style="position:relative;z-index:1;">
       <h2>Ready for Better Facility Services?</h2>
       <p>Get a free walkthrough and customized proposal for your San Joaquin Valley business.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
@@ -85,6 +87,7 @@ const canonicalUrl = 'https://system4sjv.com/about/';
 </Layout>
 
 <style>
+  .cta-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .15; pointer-events: none; }
   .mission-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

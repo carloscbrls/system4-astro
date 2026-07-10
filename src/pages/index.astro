@@ -278,6 +278,7 @@ const canonicalUrl = 'https://system4sjv.com/';
 
   <!-- CTA -->
   <section class="cta-section" data-animate>
+    <img src="/images/cta-meeting.jpg" alt="Business meeting about facility services" class="cta-bg" loading="lazy" />
     <div class="container">
       <h2>Ready for a Cleaner Facility?</h2>
       <p>Get a free, no-obligation walkthrough and custom cleaning program. We'll assess your space, identify your needs, and deliver a proposal — typically within 24 hours.</p>
@@ -499,6 +500,9 @@ const canonicalUrl = 'https://system4sjv.com/';
   }
 
   /* CTA section */
+  .cta-section { position: relative; overflow: hidden; }
+  .cta-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .15; pointer-events: none; }
+  .cta-section .container { position: relative; z-index: 1; }
   .cta-section .cta-buttons {
     display: flex;
     gap: 1rem;
