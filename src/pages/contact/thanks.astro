@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'Thank You | System4 of San Joaquin Valley';
+const description = 'Your walkthrough request has been submitted. System4 of San Joaquin Valley will be in touch shortly.';
+const canonicalUrl = 'https://system4sjv.com/contact/thanks/';
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+
+  <section class="section" data-animate style="text-align:center;padding:6rem 1.5rem;">
+    <div class="container" style="max-width:600px;">
+      <div style="width:80px;height:80px;margin:0 auto 2rem;background:var(--green-100);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h1 style="font-family:var(--font-display);font-size:2rem;color:var(--gray-900);margin-bottom:1rem;">Thank You!</h1>
+      <p style="color:var(--gray-500);font-size:1.1rem;line-height:1.7;margin-bottom:2rem;">Your walkthrough request has been submitted. We'll review your information and get back to you within one business day.</p>
+      <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:1.5rem;margin-bottom:2rem;text-align:left;">
+        <h3 style="font-family:var(--font-display);font-size:1rem;color:var(--gray-900);margin-bottom:.75rem;">What happens next?</h3>
+        <ol style="color:var(--gray-500);font-size:.95rem;line-height:2;padding-left:1.5rem;">
+          <li>We'll review your facility details</li>
+          <li>A dedicated account manager will reach out</li>
+          <li>We'll schedule a walkthrough at your convenience</li>
+          <li>You'll receive a customized cleaning proposal</li>
+        </ol>
+      </div>
+      <p style="color:var(--gray-500);font-size:.95rem;margin-bottom:1.5rem;">Need immediate assistance? Give us a call.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:+12092292066" class="btn-primary">Call (209) 229-2066</a>
+        <a href="/" class="btn-secondary">Back to Homepage</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
