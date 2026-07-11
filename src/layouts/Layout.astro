@@ -137,6 +137,7 @@ const localBusinessSchema = {
   .nav-dropdown-menu{background:white!important;border-radius:12px!important;box-shadow:0 8px 32px rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.06)!important;padding:.5rem 0!important;min-width:180px!important;border:1px solid rgba(0,0,0,.06)!important}
   .nav-dropdown-menu a{color:var(--gray-700)!important;-webkit-text-fill-color:var(--gray-700)!important;font-family:var(--font-tight)!important;font-weight:500!important;font-size:.88rem!important;transition:all .15s ease!important;text-decoration:none!important}
   .nav-dropdown-menu a:hover{color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important;background:rgba(212,55,110,.05)!important}
+  .nav-cities-mobile{display:none!important}
     .nav-links a:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
 .nav-dropdown{position:relative;display:inline-flex;align-items:center}
 .nav-dropdown-toggle{color:var(--gray-700);font-family:var(--font-tight);font-weight:500;font-size:.88rem;padding:.45rem .9rem;min-height:44px;display:inline-flex;align-items:center;gap:.25rem;border-radius:8px;cursor:pointer;background:none;border:none;transition:all .25s cubic-bezier(.25,.46,.45,.94);letter-spacing:.01em;position:relative;line-height:1}
@@ -149,6 +150,7 @@ const localBusinessSchema = {
 .nav-dropdown.open .nav-dropdown-menu{display:block;animation:fadeIn .2s ease}
 .nav-dropdown-menu a{display:block;padding:.55rem 1.25rem;color:var(--gray-700);font-family:var(--font-tight);font-weight:500;font-size:.88rem;transition:all .15s ease;white-space:nowrap;text-decoration:none}
 .nav-dropdown-menu a:hover{color:var(--magenta);background:rgba(212,55,110,.05)}
+.nav-cities-mobile{display:none}
     .nav-phone{font-family:var(--font-tight);font-weight:700;font-size:.9rem;color:var(--navy);white-space:nowrap;display:inline-flex;align-items:center;gap:.35rem;padding:.35rem .7rem;border-radius:8px;transition:all .25s cubic-bezier(.25,.46,.45,.94)}
     .nav-phone:hover{background:var(--gray-50);color:var(--blue-600)}
     .nav-phone svg{flex-shrink:0}
@@ -287,11 +289,12 @@ const localBusinessSchema = {
     @media(max-width:1024px){.card-grid-3{grid-template-columns:repeat(2,1fr)}.industry-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.areas-grid{grid-template-columns:repeat(2,1fr)}.trust-inner{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:2rem}.nav-links{gap:1.5rem}.nav-brand-tagline{display:none}}
     @media(max-width:768px){.nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:1rem 1.5rem;box-shadow:var(--shadow-lg);z-index:99;gap:.25rem;border-bottom-left-radius:var(--radius-md);border-bottom-right-radius:var(--radius-md)}.nav-links.open{display:flex}.nav-links a{padding:.75rem 1rem;border-bottom:1px solid var(--gray-100);font-size:.95rem;border-radius:0}.nav-links a:last-child{border-bottom:none}.nav-links a.nav-cta{margin-top:.5rem;border-bottom:none;border-radius:10px;text-align:center}.nav-dropdown{width:100%;display:flex;flex-direction:column}
 .nav-dropdown-toggle{width:100%;justify-content:space-between;padding:.75rem 1rem;border-bottom:1px solid var(--gray-100);border-radius:0;font-size:.95rem;background:none!important;color:var(--gray-700)!important;-webkit-text-fill-color:var(--gray-700)!important;min-height:44px;line-height:1.4}
-.nav-dropdown-menu{display:none;position:static;transform:none;box-shadow:none;border:none;border-radius:0;min-width:0;padding:0 0 .25rem 0;background:var(--gray-50)!important}
-.nav-dropdown.open .nav-dropdown-menu{display:block;animation:none}
-.nav-dropdown-menu a{padding:.6rem 1rem .6rem 1.75rem;font-size:.88rem;border-bottom:1px solid var(--gray-100);color:var(--gray-700)!important;text-decoration:none}
-.nav-dropdown-menu a:last-child{border-bottom:none}
-.nav-dropdown-menu a:hover{color:var(--magenta)!important;background:rgba(212,55,110,.05)!important}.mobile-toggle{display:flex}.nav-brand-tagline{display:none}.card-grid-3{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.industry-grid{grid-template-columns:1fr}.areas-grid{grid-template-columns:1fr}.footer{padding:2.5rem 1.25rem 1.5rem}.footer-inner{grid-template-columns:1fr;gap:2rem}.footer-col{padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.06)}.footer-col:last-child{border-bottom:none;padding-bottom:0}.footer-social{justify-content:flex-start}.hero{padding:2.5rem 1rem 1.5rem}.hero-compact{padding:2rem 1rem 1.25rem}.hero h1{font-size:1.6rem;margin-bottom:.75rem}.hero p{font-size:1rem;margin-bottom:1rem}.hero-badges{flex-direction:row;gap:.75rem;margin-top:1rem}.hero-badge{padding:.6rem 1rem}.hero-badge strong{font-size:1.3rem}.hero-badge span{font-size:.7rem}.hero-inner{grid-template-columns:1fr!important}.hero-form-wrap{width:100%}.hero-form{padding:1.25rem}.industry-card img{height:140px}.stat{padding:.75rem 0}.stat-number{font-size:2rem}.section{padding:2rem 1rem}}
+.nav-dropdown-menu{display:none}
+.nav-dropdown.open .nav-dropdown-menu{display:none}
+.nav-cities-mobile{display:flex;flex-direction:column}
+.nav-cities-mobile a{padding:.6rem 1rem .6rem 1.75rem;border-bottom:1px solid var(--gray-100);font-family:var(--font-tight);font-weight:500;font-size:.88rem;color:var(--gray-700);-webkit-text-fill-color:var(--gray-700);text-decoration:none;transition:color .15s ease}
+.nav-cities-mobile a:hover{color:var(--magenta)}
+.nav-cities-mobile a:last-child{border-bottom:1px solid var(--gray-100)}.mobile-toggle{display:flex}.nav-brand-tagline{display:none}.card-grid-3{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.industry-grid{grid-template-columns:1fr}.areas-grid{grid-template-columns:1fr}.footer{padding:2.5rem 1.25rem 1.5rem}.footer-inner{grid-template-columns:1fr;gap:2rem}.footer-col{padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,.06)}.footer-col:last-child{border-bottom:none;padding-bottom:0}.footer-social{justify-content:flex-start}.hero{padding:2.5rem 1rem 1.5rem}.hero-compact{padding:2rem 1rem 1.25rem}.hero h1{font-size:1.6rem;margin-bottom:.75rem}.hero p{font-size:1rem;margin-bottom:1rem}.hero-badges{flex-direction:row;gap:.75rem;margin-top:1rem}.hero-badge{padding:.6rem 1rem}.hero-badge strong{font-size:1.3rem}.hero-badge span{font-size:.7rem}.hero-inner{grid-template-columns:1fr!important}.hero-form-wrap{width:100%}.hero-form{padding:1.25rem}.industry-card img{height:140px}.stat{padding:.75rem 0}.stat-number{font-size:2rem}.section{padding:2rem 1rem}}
     @media(max-width:480px){.hero{padding:2rem .75rem 1.25rem}.hero-compact{padding:1.25rem .75rem .75rem}.hero h1{font-size:1.4rem;margin-bottom:.5rem}.hero p{font-size:.92rem;line-height:1.6;margin-bottom:.75rem}.hero-tagline{font-size:1.05rem;margin-bottom:.35rem;color:var(--green-500);-webkit-text-fill-color:var(--green-500)}.hero-sub{font-size:.92rem;line-height:1.6;color:var(--navy);-webkit-text-fill-color:var(--navy)}.hero-tag{font-size:.65rem;padding:.25rem .6rem;margin-bottom:.75rem}.hero-badges{gap:.5rem;margin-top:.75rem}.hero-badge{padding:.5rem .75rem}.hero-badge strong{font-size:1.1rem}.hero-badge span{font-size:.65rem}.btn-lg{padding:.7rem 1.25rem;font-size:.92rem}.hero-cta{flex-direction:column;align-items:stretch;gap:.5rem}.hero-cta .btn-secondary{border-color:var(--navy);color:var(--navy)}.hero-form{padding:1rem}.industry-card img{height:100px}.container{padding:0 1rem}.section{padding:2rem 1rem}.card{padding:1.25rem}}
 
 
@@ -326,6 +329,15 @@ const localBusinessSchema = {
             <a href="/cities/lodi/">Lodi</a>
             <a href="/cities/turlock/">Turlock</a>
           </div>
+        </div>
+        <!-- Mobile: flat city links (hidden on desktop) -->
+        <div class="nav-cities-mobile">
+          <a href="/cities/stockton/">Stockton</a>
+          <a href="/cities/modesto/">Modesto</a>
+          <a href="/cities/tracy/">Tracy</a>
+          <a href="/cities/manteca/">Manteca</a>
+          <a href="/cities/lodi/">Lodi</a>
+          <a href="/cities/turlock/">Turlock</a>
         </div>
         <a href="/about/">About</a>
         <a href="tel:+12092292066" class="nav-phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(209) 229-2066</a>
@@ -435,6 +447,9 @@ const localBusinessSchema = {
         menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{dd.classList.remove('open');btn.setAttribute('aria-expanded','false');if(links)links.classList.remove('open')}));
       }
     });
+
+    // Mobile flat city links — close menu on click
+    document.querySelectorAll('.nav-cities-mobile a').forEach(a=>a.addEventListener('click',()=>{if(links){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu')}}));
 
     // Cookie banner
     if(!localStorage.getItem('cookie-consent')){document.getElementById('cookie-banner').style.display='block';}
