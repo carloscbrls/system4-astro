@@ -185,14 +185,14 @@ const breadcrumbSchema = {
   .faq-question::-webkit-details-marker { display: none; }
   .faq-question::after { content: '+'; font-size: 1.2rem; font-weight: 300; color: var(--blue); transition: transform .2s ease; }
   .faq-item[open] .faq-question::after { content: '−'; }
-  .faq-answer { color: var(--gray-500); margin-top: .75rem; line-height: 1.7; }
+  .faq-answer { color: var(--gray-700); -webkit-text-fill-color: var(--gray-700); margin-top: .75rem; line-height: 1.7; }
   .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
   .areas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .area-card { background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: .75rem; transition: all .3s ease; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
   .area-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateX(4px); }
   .area-card svg { color: var(--green-600); flex-shrink: 0; }
   .area-card strong { color: var(--gray-900); font-size: 1rem; }
-  .area-card span { color: var(--gray-500); font-size: .85rem; }
+  .area-card span { color: var(--gray-700); -webkit-text-fill-color: var(--gray-700); font-size: .85rem; }
   @media (max-width: 768px) {
     .service-detail-grid { grid-template-columns: 1fr; }
     .areas-grid { grid-template-columns: 1fr; }
