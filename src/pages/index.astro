@@ -247,34 +247,49 @@ const faqSchema = {
   </section>
 
   <!-- Industries (compact icon grid) -->
-  <section class="section" data-animate style="padding:2rem 2rem;">
+  <section class="section industries-luxury" data-animate style="padding:4rem 2rem;background:linear-gradient(180deg,var(--navy) 0%,#0a1525 100%);">
     <div class="container">
-      <div class="section-label">Industries</div>
-      <h2 class="section-title" style="margin-bottom:1rem;">Industries We Serve</h2>
-      <div class="card-grid card-grid-3" style="gap:1rem;">
-        <a href="/industries/medical-dental/" class="card" style="padding:.85rem;text-align:center;" data-animate>
-          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h3 style="font-size:.95rem;">Medical & Dental</h3>
+      <div style="text-align:center;margin-bottom:2.5rem;">
+        <div class="section-label" style="color:var(--gold);-webkit-text-fill-color:var(--gold);letter-spacing:.15em;font-size:.7rem;">Industries</div>
+        <h2 class="section-title" style="margin-bottom:.5rem;color:white;-webkit-text-fill-color:white;font-size:1.75rem;">Industries We Serve</h2>
+        <p style="color:rgba(255,255,255,.6);-webkit-text-fill-color:rgba(255,255,255,.6);font-size:.92rem;max-width:520px;margin:0 auto;line-height:1.6;">Specialized cleaning programs designed for the unique demands of your industry</p>
+      </div>
+      <div class="industries-grid">
+        <a href="/industries/medical-dental/" class="industry-card" data-animate>
+          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3 class="industry-card-title">Medical & Dental</h3>
+          <p class="industry-card-desc">OSHA-compliant disinfection and sterilization for clinics, dental offices, and surgical centers</p>
+          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
-        <a href="/industries/professional-offices/" class="card" style="padding:.85rem;text-align:center;" data-animate>
-          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-          <h3 style="font-size:.95rem;">Professional Offices</h3>
+        <a href="/industries/professional-offices/" class="industry-card" data-animate>
+          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3 class="industry-card-title">Professional Offices</h3>
+          <p class="industry-card-desc">Immaculate workspaces that reflect your brand's professionalism and attention to detail</p>
+          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
-        <a href="/industries/education/" class="card" style="padding:.85rem;text-align:center;" data-animate>
-          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg></div>
-          <h3 style="font-size:.95rem;">Education & Schools</h3>
+        <a href="/industries/education/" class="industry-card" data-animate>
+          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg></div>
+          <h3 class="industry-card-title">Education & Schools</h3>
+          <p class="industry-card-desc">Healthy learning environments for K-12, universities, and childcare facilities</p>
+          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
-        <a href="/industries/dealerships/" class="card" style="padding:.85rem;text-align:center;" data-animate>
-          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-          <h3 style="font-size:.95rem;">Dealerships & Showrooms</h3>
+        <a href="/industries/dealerships/" class="industry-card" data-animate>
+          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3 class="industry-card-title">Dealerships & Showrooms</h3>
+          <p class="industry-card-desc">Showroom-ready finishes that make every vehicle presentation shine</p>
+          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
-        <a href="/industries/banks/" class="card" style="padding:.85rem;text-align:center;" data-animate>
-          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M12 3a9 9 0 0 1 9 9"/><path d="M3 12a9 9 0 0 1 9-9"/></svg></div>
-          <h3 style="font-size:.95rem;">Banks & Financial</h3>
+        <a href="/industries/banks/" class="industry-card" data-animate>
+          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M12 3a9 9 0 0 1 9 9"/><path d="M3 12a9 9 0 0 1 9-9"/></svg></div>
+          <h3 class="industry-card-title">Banks & Financial</h3>
+          <p class="industry-card-desc">Secure, discreet cleaning for branches, headquarters, and customer-facing spaces</p>
+          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
-        <a href="/industries/warehouses/" class="card" style="padding:.85rem;text-align:center;" data-animate>
-          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/></svg></div>
-          <h3 style="font-size:.95rem;">Warehouses & Industrial</h3>
+        <a href="/industries/warehouses/" class="industry-card" data-animate>
+          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/></svg></div>
+          <h3 class="industry-card-title">Warehouses & Industrial</h3>
+          <p class="industry-card-desc">Heavy-duty cleaning for distribution centers, fulfillment hubs, and manufacturing floors</p>
+          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
         </a>
       </div>
     </div>
@@ -1038,6 +1053,104 @@ const faqSchema = {
     /* Review cards: compact spacing */
     .review-card {
       padding: 0.75rem !important;
+    }
+
+    /* Industries luxury section */
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .industry-card {
+      display: flex;
+      flex-direction: column;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 2rem 1.5rem 1.5rem;
+      text-decoration: none;
+      color: white;
+      transition: all .4s cubic-bezier(.25,.46,.45,.94);
+      position: relative;
+      overflow: hidden;
+    }
+    .industry-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      opacity: 0;
+      transition: opacity .4s ease;
+    }
+    .industry-card:hover {
+      background: rgba(255,255,255,.08);
+      border-color: rgba(201,168,76,.3);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.3);
+    }
+    .industry-card:hover::before {
+      opacity: 1;
+    }
+    .industry-card-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(201,168,76,.15), rgba(201,168,76,.05));
+      border: 1px solid rgba(201,168,76,.2);
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      color: var(--gold);
+      -webkit-text-fill-color: var(--gold);
+      transition: all .3s ease;
+    }
+    .industry-card:hover .industry-card-icon {
+      background: linear-gradient(135deg, rgba(201,168,76,.25), rgba(201,168,76,.1));
+      border-color: rgba(201,168,76,.4);
+    }
+    .industry-card-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white;
+      -webkit-text-fill-color: white;
+      margin-bottom: .5rem;
+    }
+    .industry-card-desc {
+      font-size: .85rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,.55);
+      -webkit-text-fill-color: rgba(255,255,255,.55);
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .industry-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--gold);
+      -webkit-text-fill-color: var(--gold);
+      transition: gap .3s ease;
+    }
+    .industry-card:hover .industry-card-link {
+      gap: .6rem;
+    }
+    @media (max-width: 768px) {
+      .industries-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     /* Footer: compact spacing */
