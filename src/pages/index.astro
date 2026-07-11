@@ -404,15 +404,14 @@ const faqSchema = {
     </div>
   </section>
 
-  <section class="cta-section" data-animate>
-    <img src="/images/cta-meeting.jpg" alt="Business meeting about facility services" class="cta-bg" loading="lazy" />
-    <div class="container">
-      <h2>Ready for a Cleaner Facility?</h2>
-      <p>Get a free, no-obligation walkthrough and custom cleaning program. We'll assess your space, identify your needs, and deliver a proposal - typically within 24 hours.</p>
-      <div class="cta-buttons">
-        <a href="/contact/" class="btn-primary btn-lg">Get a Free Quote</a>
-        <a href="tel:+12092292066" class="btn-secondary btn-lg">Call (209) 229-2066</a>
-        <a href="mailto:jcastillo@system4.com" class="btn-secondary btn-lg btn-secondary-outline">Email jcastillo@system4.com</a>
+  <section style="background:linear-gradient(135deg,#d4376e 0%,#e8447a 40%,#c42d63 100%);padding:3rem 1.5rem;text-align:center;color:white;position:relative;overflow:hidden">
+    <div style="max-width:680px;margin:0 auto;position:relative;z-index:1">
+      <h2 style="font-size:1.75rem;font-weight:700;color:white;-webkit-text-fill-color:white;margin:0 0 .75rem;padding:0;text-align:center;line-height:1.2">Ready for a Cleaner Facility?</h2>
+      <p style="font-size:1rem;line-height:1.6;color:white;-webkit-text-fill-color:white;margin:0 auto 1.5rem;max-width:520px;text-align:center;opacity:.92">Get a free, no-obligation walkthrough and custom cleaning program. We'll assess your space, identify your needs, and deliver a proposal — typically within 24 hours.</p>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:.6rem">
+        <a href="/contact/" style="display:block;width:100%;max-width:300px;padding:.85rem 2rem;background:white;color:#d4376e;-webkit-text-fill-color:#d4376e;border-radius:12px;font-weight:700;font-size:1rem;text-decoration:none;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.15)">Get a Free Quote</a>
+        <a href="tel:+12092292066" style="display:block;width:100%;max-width:300px;padding:.85rem 2rem;background:rgba(255,255,255,.12);color:white;-webkit-text-fill-color:white;border:2px solid white;border-radius:12px;font-weight:700;font-size:1rem;text-decoration:none;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" style="display:block;width:100%;max-width:300px;padding:.85rem 2rem;background:transparent;color:white;-webkit-text-fill-color:white;border:2px solid rgba(255,255,255,.5);border-radius:12px;font-weight:600;font-size:.9rem;text-decoration:none;text-align:center">Email jcastillo@system4.com</a>
       </div>
     </div>
   </section>
@@ -701,72 +700,7 @@ const faqSchema = {
   details summary { transition: color .2s; }
   details summary:hover { color: var(--blue) !important; }
 
-  .cta-section { position: relative; overflow: hidden; }
-  .cta-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .15; pointer-events: none; }
-  .cta-section .container { position: relative; z-index: 1; }
-  .cta-section .cta-buttons {
-    display: flex;
-    gap: .75rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .cta-section h2,
-  .cta-section p {
-    text-align: center;
-  }
-  .btn-ghost {
-    display: inline-flex;
-    align-items: center;
-    gap: .5rem;
-    color: white;
-    -webkit-text-fill-color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: .85rem 2rem;
-    border: 2px solid rgba(255,255,255,.6);
-    border-radius: var(--radius-md);
-    background: rgba(11,125,218,.15);
-    transition: all .4s cubic-bezier(.25,.46,.45,.94);
-    position: relative;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-  }
-  .btn-secondary-outline {
-    background: transparent !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-    border-color: white !important;
-    box-shadow: none !important;
-  }
-  .btn-secondary-outline:hover {
-    background: rgba(255,255,255,.15) !important;
-    color: white !important;
-    -webkit-text-fill-color: white !important;
-  }
-  .btn-ghost::after {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: currentColor;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .4s cubic-bezier(.25,.46,.45,.94);
-  }
-  .btn-ghost:hover {
-    color: white;
-    -webkit-text-fill-color: white;
-    background: var(--blue);
-    border-color: var(--blue);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(11,125,218,.4);
-  }
-  .btn-ghost:hover::after {
-    transform: scaleX(1);
-  }
+  /* CTA section is now fully inline-styled for bulletproof centering */
 
   /* ===== DESKTOP LUXURY (wide screens) ===== */
   @media(min-width:1100px) {
@@ -1018,19 +952,7 @@ const faqSchema = {
     }
 
     /* CTA: premium gradient */
-    .cta-section {
-      padding: 1.5rem 2rem;
-    }
-    .cta-section h2 {
-      font-size: 2.25rem;
-      letter-spacing: -.025em;
-    }
-    .cta-section p {
-      font-size: 1.1rem;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    /* CTA section is inline-styled */
 
     /* Review cards: compact spacing */
     .review-card {
@@ -1144,16 +1066,7 @@ const faqSchema = {
     }
   }
   @media(max-width: 768px) {
-    .cta-section { padding: 2.5rem 1.5rem; text-align: center; }
-    .cta-section .container { text-align: center; }
-    .cta-section h2 { text-align: center; }
-    .cta-section p { text-align: center; }
-    .cta-buttons { flex-direction: column; align-items: center; gap: .6rem; }
-    .cta-buttons .btn-primary,
-    .cta-buttons .btn-secondary,
-    .cta-buttons .btn-secondary-outline,
-    .cta-buttons .btn-ghost { width: 100%; max-width: 340px; justify-content: center; text-align: center; }
-    .btn-ghost { text-align: center; }
+    /* CTA is inline-styled, no responsive override needed */
     .stats-inner {
       flex-direction: column;
       gap: .75rem;
@@ -1200,13 +1113,7 @@ const faqSchema = {
     details { padding: 1rem !important; }
     details summary { font-size: .95rem !important; }
     details p { font-size: .88rem !important; }
-    .cta-section { padding: 2rem 1rem; text-align: center; }
-    .cta-section h2 { text-align: center; }
-    .cta-section p { text-align: center; }
-    .cta-buttons { flex-direction: column; align-items: center; gap: .5rem; }
-    .cta-buttons .btn-primary,
-    .cta-buttons .btn-secondary,
-    .cta-buttons .btn-secondary-outline { width: 100%; max-width: 300px; justify-content: center; text-align: center; }
+    /* CTA is inline-styled, no responsive override needed */
     .hero h1 {
       font-size: 1.15rem;
     }
@@ -1334,8 +1241,7 @@ const faqSchema = {
   .btn-primary:active{transform:translateY(-1px)!important}
   .btn-secondary{background:white!important;color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important;border:2px solid white!important;border-radius:12px!important;box-shadow:0 4px 16px rgba(0,0,0,.15)!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important;font-weight:700!important}
   .btn-secondary:hover{background:var(--navy-light)!important;color:white!important;-webkit-text-fill-color:white!important;border-color:var(--navy-light)!important;transform:translateY(-3px)!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important}
-  .btn-secondary-outline{background:transparent!important;color:white!important;-webkit-text-fill-color:white!important;border:2px solid white!important;border-radius:12px!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;font-weight:600!important}
-  .btn-secondary-outline:hover{background:rgba(255,255,255,.15)!important;transform:translateY(-2px)!important}
+  /* btn-secondary-outline is now inline-styled in CTA */
   .card{background:var(--white)!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;box-shadow:var(--shadow-sm)!important;position:relative!important;overflow:hidden!important;transition:transform .3s cubic-bezier(.4,0,.2,1),box-shadow .3s cubic-bezier(.4,0,.2,1)!important}
   .card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue));transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
   .card:hover{box-shadow:var(--shadow-md)!important;transform:translateY(-4px)!important}
@@ -1370,12 +1276,9 @@ const faqSchema = {
   .hero-form::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue))}
   .hero-form input,.hero-form select{border-width:1.5px!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important}
   .hero-form input:focus,.hero-form select:focus{border-color:var(--blue)!important;box-shadow:0 0 0 4px rgba(16,108,176,.12)!important;background:var(--white)!important}
-  .cta-section{background:linear-gradient(135deg,var(--magenta) 0%,#e8447a 40%,#c42d63 100%)!important;padding:2rem 1.5rem!important;text-align:center!important;color:white!important;position:relative!important;overflow:hidden!important}
-  .cta-section h2{text-align:center!important}
-  .cta-section p{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+  /* CTA section is inline-styled — no overrides needed */
   .reviews-section{padding:1.5rem 2rem!important}
-  .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(255,255,255,.08),transparent 60%),radial-gradient(circle at 80% 20%,rgba(255,255,255,.05),transparent 50%);pointer-events:none}
-  .cta-section .container{position:relative!important;z-index:1!important}
+  /* CTA section is inline-styled — no overrides needed */
   .trust-section{position:relative!important;overflow:hidden!important}
   .trust-section::before{content:'';position:absolute;top:-50%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(16,108,176,.06),transparent 70%);border-radius:50%;pointer-events:none}
   .footer a{color:rgba(255,255,255,.85)!important;text-decoration:none!important;border-radius:2px!important;padding:0 2px!important;transition:all .3s cubic-bezier(.25,.46,.45,.94)!important}
@@ -1404,13 +1307,12 @@ const faqSchema = {
   .card p{font-family:var(--font-body)!important;letter-spacing:-.01em!important;line-height:1.7!important}
   .step h3{font-family:var(--font-tight)!important;font-weight:600!important}
   .step p{font-family:var(--font-body)!important;line-height:1.7!important}
-  .btn-primary,.btn-secondary,.btn-secondary-outline,.nav-cta{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
+  .btn-primary,.btn-secondary,.nav-cta{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
   .hero-form h2{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
   .hero-form label{font-family:var(--font-tight)!important;font-weight:500!important;letter-spacing:.01em!important}
   .trust-badge h3{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
   .trust-badge p{font-family:var(--font-body)!important;line-height:1.7!important}
-  .cta-section h2{font-family:var(--font-display)!important;font-weight:700!important;letter-spacing:-.02em!important;line-height:1.15!important;color:white!important;-webkit-text-fill-color:white!important;text-shadow:0 2px 12px rgba(0,0,0,.2)!important}
-  .cta-section p{opacity:.92!important;max-width:640px!important;margin:0 auto 1.5rem!important;line-height:1.7!important;color:white!important;-webkit-text-fill-color:white!important}
+  /* CTA section is inline-styled — no overrides needed */
   .footer-heading{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
   .footer{background:linear-gradient(180deg,var(--navy),#0a1628)!important;color:rgba(255,255,255,.7)!important;font-family:var(--font-body)!important;line-height:1.7!important}
   .area-card strong,.area-card h3,.area-card a{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;text-decoration:none!important}
