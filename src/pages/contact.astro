@@ -4,9 +4,18 @@ import Layout from '../layouts/Layout.astro';
 const title = 'Contact System4 of San Joaquin Valley | Get a Free Quote';
 const description = 'Get a free quote for commercial cleaning and facility services in San Joaquin Valley. Call (209) 229-2066 or email jcastillo@system4.com.';
 const canonicalUrl = 'https://system4sjv.com/contact/';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Contact"}
+  ]
+};
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={breadcrumbSchema}>
 
   <!-- Hero -->
   <section class="hero hero-compact" data-animate>

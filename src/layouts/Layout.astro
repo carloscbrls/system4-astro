@@ -16,6 +16,8 @@ const localBusinessSchema = {
   "name": "System4 of San Joaquin Valley",
   "description": "Commercial cleaning, janitorial, and facility services for medical, dental, office, and multi-site organizations across the San Joaquin Valley and Stanislaus County. One contact. One invoice. One solution.",
   "url": "https://system4sjv.com",
+  "image": "https://system4sjv.com/images/og-image.png",
+  "logo": "https://system4sjv.com/logo-system4-2x.png",
   "telephone": "+1-209-229-2066",
   "email": "jcastillo@system4.com",
   "areaServed": [
@@ -37,6 +39,12 @@ const localBusinessSchema = {
     "postalCode": "95376",
     "addressCountry": "US"
   },
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.google.com/maps/place/System4+of+San+Joaquin+Valley",
+    "https://www.facebook.com/system4sjv",
+    "https://www.linkedin.com/company/system4"
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
@@ -82,11 +90,17 @@ const localBusinessSchema = {
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="System4 of San Joaquin Valley" />
   <meta property="og:locale" content="en_US" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://system4sjv.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="System4 of San Joaquin Valley — Commercial Cleaning & Facility Services" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content="https://system4sjv.com/images/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link rel="preload" as="image" href="/images/hero-office.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Inter+Tight:opsz,wght@14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/favicon-180.png" sizes="180x180" />
@@ -94,7 +108,8 @@ const localBusinessSchema = {
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="msapplication-TileColor" content="#0f1e33" />
-  <script type="application/ld+json" set:html={JSON.stringify(schema || localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  {(schema && Array.isArray(schema)) ? schema.map(s => <script type="application/ld+json" set:html={JSON.stringify(s)} />) : (schema ? <script type="application/ld+json" set:html={JSON.stringify(schema)} /> : null)}
   <style>
     :root{--navy:#0f1e33;--navy-light:#162d4a;--blue:#0968b5;--blue-dark:#0a5ea8;--blue-light:#2d9cff;--blue-500:#3d8fd4;--blue-600:#0968b5;--blue-700:#0a5ea8;--blue-800:#083f71;--blue-900:#1a2e4a;--blue-100:#e8f4fd;--magenta:#d4376e;--magenta-dark:#b02a58;--green-600:#28a866;--green-500:#1d9a56;--green-100:#d1fae5;--gold:#c9a84c;--gold-light:#e2c97e;--gray-900:#111827;--gray-700:#374151;--gray-500:#6b7280;--gray-300:#d1d5db;--gray-100:#f3f4f6;--gray-50:#f8f9fb;--white:#fff;--font-display:'Playfair Display',Georgia,'Times New Roman',serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;--font-tight:'Inter Tight',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;--radius-sm:8px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;--shadow-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);--shadow-md:0 4px 16px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.04);--shadow-lg:0 12px 40px rgba(0,0,0,.12),0 4px 12px rgba(0,0,0,.06);--shadow-xl:0 24px 64px rgba(0,0,0,.15),0 8px 20px rgba(0,0,0,.08);--shadow-card:0 4px 24px rgba(0,0,0,.06),0 1px 4px rgba(0,0,0,.03);--transition:all .3s ease}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}

@@ -108,7 +108,7 @@ const faqSchema = {
 };
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={faqSchema}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={[faqSchema, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"}]}]}>
 
   <!-- Hero -->
   <section class="hero" data-animate>

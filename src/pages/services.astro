@@ -4,9 +4,18 @@ import Layout from '../layouts/Layout.astro';
 const title = 'Commercial Cleaning Services | System4 of San Joaquin Valley';
 const description = 'System4 of San Joaquin Valley commercial cleaning services: janitorial, office cleaning, medical & dental cleaning, day porter, floor care, and disinfection programs.';
 const canonicalUrl = 'https://system4sjv.com/services/';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://system4sjv.com/services/"}
+  ]
+};
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={breadcrumbSchema}>
 
   <!-- Hero -->
   <section class="hero hero-compact" data-animate>

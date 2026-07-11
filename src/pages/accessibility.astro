@@ -4,9 +4,18 @@ import Layout from '../layouts/Layout.astro';
 const title = 'Accessibility Statement | System4 of San Joaquin Valley';
 const description = 'Accessibility statement for System4 of San Joaquin Valley. We are committed to ensuring digital accessibility for all users.';
 const canonicalUrl = 'https://system4sjv.com/accessibility/';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Accessibility"}
+  ]
+};
 ---
 
-<Layout title={title} description={description} canonicalUrl={canonicalUrl}>
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={breadcrumbSchema}>
 
   <section class="hero hero-compact" style="background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);">
     <div class="container">
