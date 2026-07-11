@@ -69,7 +69,7 @@ const faqSchema = {
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Get a Free Quote
           </a>
-          <a href="tel:+12092292066" class="btn-secondary btn-lg" style="-webkit-text-fill-color:#d4376e;color:#d4376e;background:white;border-color:white;">
+          <a href="tel:+12092292066" class="btn-secondary btn-lg">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             (209) 229-2066
           </a>
@@ -411,8 +411,8 @@ const faqSchema = {
       <p>Get a free, no-obligation walkthrough and custom cleaning program. We'll assess your space, identify your needs, and deliver a proposal - typically within 24 hours.</p>
       <div class="cta-buttons">
         <a href="/contact/" class="btn-primary btn-lg">Get a Free Quote</a>
-        <a href="tel:+12092292066" class="btn-secondary btn-lg" style="-webkit-text-fill-color:#d4376e;color:#d4376e;">Call (209) 229-2066</a>
-        <a href="mailto:jcastillo@system4.com" class="btn-ghost">Email jcastillo@system4.com</a>
+        <a href="tel:+12092292066" class="btn-secondary btn-lg">Call (209) 229-2066</a>
+        <a href="mailto:jcastillo@system4.com" class="btn-secondary btn-lg btn-secondary-outline">Email jcastillo@system4.com</a>
       </div>
     </div>
   </section>
@@ -727,6 +727,18 @@ const faqSchema = {
     position: relative;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
+  }
+  .btn-secondary-outline {
+    background: transparent !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    border-color: white !important;
+    box-shadow: none !important;
+  }
+  .btn-secondary-outline:hover {
+    background: rgba(255,255,255,.15) !important;
+    color: white !important;
+    -webkit-text-fill-color: white !important;
   }
   .btn-ghost::after {
     content: '';
@@ -1128,14 +1140,13 @@ const faqSchema = {
     }
   }
   @media(max-width: 768px) {
-    .cta-section { padding: 3rem 1rem; text-align: center; }
+    .cta-section { padding: 2.5rem 1.5rem; text-align: center; }
     .cta-section .container { text-align: center; }
-    .cta-section h2 { text-align: center; }
-    .cta-section p { text-align: center; }
-    .cta-buttons { flex-direction: column; align-items: center; gap: .75rem; }
+    .cta-buttons { flex-direction: column; align-items: stretch; gap: .6rem; }
     .cta-buttons .btn-primary,
     .cta-buttons .btn-secondary,
-    .cta-buttons .btn-ghost { width: 100%; max-width: 340px; justify-content: center; text-align: center; }
+    .cta-buttons .btn-secondary-outline,
+    .cta-buttons .btn-ghost { width: 100%; justify-content: center; text-align: center; }
     .btn-ghost { text-align: center; }
     .stats-inner {
       flex-direction: column;
@@ -1183,10 +1194,9 @@ const faqSchema = {
     details { padding: 1rem !important; }
     details summary { font-size: .95rem !important; }
     details p { font-size: .88rem !important; }
-    .cta-section { padding: 2.5rem 1rem; text-align: center; }
-    .cta-section .container { text-align: center; }
-    .cta-buttons { flex-direction: column; align-items: center; gap: .75rem; }
-    .btn-ghost { width: 100%; text-align: center; justify-content: center; }
+    .cta-section { padding: 2rem 1rem; text-align: center; }
+    .cta-buttons { flex-direction: column; align-items: stretch; gap: .5rem; }
+    .btn-secondary-outline { font-size: .85rem !important; padding: .7rem 1.5rem !important; }
     .hero h1 {
       font-size: 1.15rem;
     }
@@ -1314,9 +1324,8 @@ const faqSchema = {
   .btn-primary:active{transform:translateY(-1px)!important}
   .btn-secondary{background:white!important;color:var(--magenta)!important;-webkit-text-fill-color:var(--magenta)!important;border:2px solid white!important;border-radius:12px!important;box-shadow:0 4px 16px rgba(0,0,0,.15)!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important;font-weight:700!important}
   .btn-secondary:hover{background:var(--navy-light)!important;color:white!important;-webkit-text-fill-color:white!important;border-color:var(--navy-light)!important;transform:translateY(-3px)!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important}
-  .btn-ghost::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
-  .btn-ghost:hover{transform:translateY(-1px)}
-  .btn-ghost:hover::after{transform:scaleX(1)}
+  .btn-secondary-outline{background:transparent!important;color:white!important;-webkit-text-fill-color:white!important;border:2px solid white!important;border-radius:12px!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;font-weight:600!important}
+  .btn-secondary-outline:hover{background:rgba(255,255,255,.15)!important;transform:translateY(-2px)!important}
   .card{background:var(--white)!important;border:1px solid var(--gray-100)!important;border-radius:var(--radius-lg)!important;box-shadow:var(--shadow-sm)!important;position:relative!important;overflow:hidden!important;transition:transform .3s cubic-bezier(.4,0,.2,1),box-shadow .3s cubic-bezier(.4,0,.2,1)!important}
   .card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue));transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
   .card:hover{box-shadow:var(--shadow-md)!important;transform:translateY(-4px)!important}
@@ -1383,7 +1392,7 @@ const faqSchema = {
   .card p{font-family:var(--font-body)!important;letter-spacing:-.01em!important;line-height:1.7!important}
   .step h3{font-family:var(--font-tight)!important;font-weight:600!important}
   .step p{font-family:var(--font-body)!important;line-height:1.7!important}
-  .btn-primary,.btn-secondary,.btn-ghost,.nav-cta{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
+  .btn-primary,.btn-secondary,.btn-secondary-outline,.nav-cta{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
   .hero-form h2{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
   .hero-form label{font-family:var(--font-tight)!important;font-weight:500!important;letter-spacing:.01em!important}
   .trust-badge h3{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
