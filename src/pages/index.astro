@@ -246,50 +246,41 @@ const faqSchema = {
     </div>
   </section>
 
-  <!-- Industries (compact icon grid) -->
-  <section class="section industries-luxury" data-animate style="padding:4rem 2rem;background:linear-gradient(180deg,var(--navy) 0%,#0a1525 100%);">
+  <!-- Industries -->
+  <section class="section" data-animate>
     <div class="container">
-      <div style="text-align:center;margin-bottom:2.5rem;">
-        <div class="section-label" style="color:var(--gold);-webkit-text-fill-color:var(--gold);letter-spacing:.15em;font-size:.7rem;">Industries</div>
-        <h2 class="section-title" style="margin-bottom:.5rem;color:white;-webkit-text-fill-color:white;font-size:1.75rem;">Industries We Serve</h2>
-        <p style="color:rgba(255,255,255,.6);-webkit-text-fill-color:rgba(255,255,255,.6);font-size:.92rem;max-width:520px;margin:0 auto;line-height:1.6;">Specialized cleaning programs designed for the unique demands of your industry</p>
-      </div>
-      <div class="industries-grid">
-        <a href="/industries/medical-dental/" class="industry-card" data-animate>
-          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h3 class="industry-card-title">Medical & Dental</h3>
-          <p class="industry-card-desc">OSHA-compliant disinfection and sterilization for clinics, dental offices, and surgical centers</p>
-          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      <div class="section-label">Industries</div>
+      <h2 class="section-title" style="margin-bottom:1rem;">Industries We Serve</h2>
+      <div class="card-grid card-grid-3" style="gap:.75rem;">
+        <a href="/industries/medical-dental/" class="card" style="padding:.85rem;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Medical & Dental</h3>
+          <p>OSHA-compliant disinfection for clinics, dental offices, and surgical centers.</p>
         </a>
-        <a href="/industries/professional-offices/" class="industry-card" data-animate>
-          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-          <h3 class="industry-card-title">Professional Offices</h3>
-          <p class="industry-card-desc">Immaculate workspaces that reflect your brand's professionalism and attention to detail</p>
-          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        <a href="/industries/professional-offices/" class="card" style="padding:.85rem;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Professional Offices</h3>
+          <p>Immaculate workspaces that reflect your brand and professionalism.</p>
         </a>
-        <a href="/industries/education/" class="industry-card" data-animate>
-          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg></div>
-          <h3 class="industry-card-title">Education & Schools</h3>
-          <p class="industry-card-desc">Healthy learning environments for K-12, universities, and childcare facilities</p>
-          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        <a href="/industries/education/" class="card" style="padding:.85rem;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg></div>
+          <h3>Education & Schools</h3>
+          <p>Healthy learning environments for K-12 and universities.</p>
         </a>
-        <a href="/industries/dealerships/" class="industry-card" data-animate>
-          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-          <h3 class="industry-card-title">Dealerships & Showrooms</h3>
-          <p class="industry-card-desc">Showroom-ready finishes that make every vehicle presentation shine</p>
-          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        <a href="/industries/dealerships/" class="card" style="padding:.85rem;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>Dealerships & Showrooms</h3>
+          <p>Showroom-ready finishes for vehicle presentations.</p>
         </a>
-        <a href="/industries/banks/" class="industry-card" data-animate>
-          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M12 3a9 9 0 0 1 9 9"/><path d="M3 12a9 9 0 0 1 9-9"/></svg></div>
-          <h3 class="industry-card-title">Banks & Financial</h3>
-          <p class="industry-card-desc">Secure, discreet cleaning for branches, headquarters, and customer-facing spaces</p>
-          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        <a href="/industries/banks/" class="card" style="padding:.85rem;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M12 3a9 9 0 0 1 9 9"/><path d="M3 12a9 9 0 0 1 9-9"/></svg></div>
+          <h3>Banks & Financial</h3>
+          <p>Secure, discreet cleaning for branches and headquarters.</p>
         </a>
-        <a href="/industries/warehouses/" class="industry-card" data-animate>
-          <div class="industry-card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/></svg></div>
-          <h3 class="industry-card-title">Warehouses & Industrial</h3>
-          <p class="industry-card-desc">Heavy-duty cleaning for distribution centers, fulfillment hubs, and manufacturing floors</p>
-          <span class="industry-card-link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        <a href="/industries/warehouses/" class="card" style="padding:.85rem;" data-animate>
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/></svg></div>
+          <h3>Warehouses & Industrial</h3>
+          <p>Heavy-duty cleaning for distribution and fulfillment centers.</p>
         </a>
       </div>
     </div>
@@ -620,16 +611,6 @@ const faqSchema = {
     color: inherit;
   }
 
-  /* Industry cards as links */
-  .industry-card {
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-  }
-  .industry-card h3,
-  .industry-card p {
-    color: inherit;
-  }
   .industry-emoji {
     font-size: 2rem;
     margin-bottom: .5rem;
@@ -1006,21 +987,6 @@ const faqSchema = {
       margin-right: auto;
     }
 
-    /* Industry cards: refined hover */
-    .industry-grid {
-      gap: 1.5rem;
-    }
-    .industry-card img {
-      height: 120px !important;
-      transition: transform .6s cubic-bezier(.25,.46,.45,.94);
-    }
-    .industry-card:hover img {
-      transform: scale(1.05);
-    }
-    .industry-card-body {
-      padding: 1rem;
-    }
-
     /* Trust section: compact */
     .trust-section {
       padding: 2rem 0 !important;
@@ -1061,98 +1027,6 @@ const faqSchema = {
       grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
     }
-    .industry-card {
-      display: flex;
-      flex-direction: column;
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 16px;
-      padding: 2rem 1.5rem 1.5rem;
-      text-decoration: none;
-      color: white;
-      transition: all .4s cubic-bezier(.25,.46,.45,.94);
-      position: relative;
-      overflow: hidden;
-    }
-    .industry-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      opacity: 0;
-      transition: opacity .4s ease;
-    }
-    .industry-card:hover {
-      background: rgba(255,255,255,.08);
-      border-color: rgba(201,168,76,.3);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,.3);
-    }
-    .industry-card:hover::before {
-      opacity: 1;
-    }
-    .industry-card-icon {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, rgba(201,168,76,.15), rgba(201,168,76,.05));
-      border: 1px solid rgba(201,168,76,.2);
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      color: var(--gold);
-      -webkit-text-fill-color: var(--gold);
-      transition: all .3s ease;
-    }
-    .industry-card:hover .industry-card-icon {
-      background: linear-gradient(135deg, rgba(201,168,76,.25), rgba(201,168,76,.1));
-      border-color: rgba(201,168,76,.4);
-    }
-    .industry-card-title {
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: white;
-      -webkit-text-fill-color: white;
-      margin-bottom: .5rem;
-    }
-    .industry-card-desc {
-      font-size: .85rem;
-      line-height: 1.6;
-      color: rgba(255,255,255,.55);
-      -webkit-text-fill-color: rgba(255,255,255,.55);
-      margin-bottom: 1rem;
-      flex: 1;
-    }
-    .industry-card-link {
-      display: inline-flex;
-      align-items: center;
-      gap: .35rem;
-      font-size: .82rem;
-      font-weight: 600;
-      color: var(--gold);
-      -webkit-text-fill-color: var(--gold);
-      transition: gap .3s ease;
-    }
-    .industry-card:hover .industry-card-link {
-      gap: .6rem;
-    }
-    @media (max-width: 768px) {
-      .industries-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-      }
-    }
-    @media (min-width: 769px) and (max-width: 1024px) {
-      .industries-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
     /* Footer: compact spacing */
     .footer {
       padding: 3rem 3rem 1.5rem;
@@ -1391,26 +1265,6 @@ const faqSchema = {
       font-size: .6rem;
       letter-spacing: .1em;
     }
-    .industry-card img {
-      height: 80px;
-      object-position: center 30%;
-    }
-    .industry-card-body {
-      padding: .75rem;
-    }
-    .industry-card h3 {
-      font-size: .9rem;
-    }
-    .industry-card p {
-      font-size: .8rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .industry-card p {
-      font-size: .82rem;
-    }
     .container {
       padding: 0 .75rem;
     }
@@ -1473,10 +1327,6 @@ const faqSchema = {
   .step-number::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:2px solid rgba(40,168,102,.25);transition:all .4s cubic-bezier(.25,.46,.45,.94)}
   .step:hover .step-number{transform:scale(1.08)!important;box-shadow:0 8px 24px rgba(40,168,102,.4)!important}
   .step:hover .step-number::after{border-color:rgba(40,168,102,.5)!important;inset:-6px!important}
-  .industry-card{border-radius:var(--radius-lg)!important;overflow:hidden!important;transition:all .4s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important}
-  .industry-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--magenta),var(--blue));transform:scaleX(0);transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
-  .industry-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.12)!important;transform:translateY(-6px)!important}
-  .industry-card:hover::after{transform:scaleX(1)}
   .area-card{transition:all .35s cubic-bezier(.25,.46,.45,.94)!important;position:relative!important;overflow:hidden!important}
   .area-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--blue),var(--magenta));opacity:0;transition:opacity .35s ease}
   .area-card:hover{border-color:var(--blue-100)!important;box-shadow:0 8px 24px rgba(0,0,0,.08)!important;transform:translateX(4px)!important}
@@ -1533,8 +1383,6 @@ const faqSchema = {
   .card p{font-family:var(--font-body)!important;letter-spacing:-.01em!important;line-height:1.7!important}
   .step h3{font-family:var(--font-tight)!important;font-weight:600!important}
   .step p{font-family:var(--font-body)!important;line-height:1.7!important}
-  .industry-card h3{color:var(--gray-900)!important;-webkit-text-fill-color:var(--gray-900)!important;font-family:var(--font-tight)!important;font-weight:600!important;text-decoration:none!important}
-  .industry-card p{font-family:var(--font-body)!important;line-height:1.7!important}
   .btn-primary,.btn-secondary,.btn-ghost,.nav-cta{font-family:var(--font-tight)!important;font-weight:600!important;letter-spacing:.02em!important}
   .hero-form h2{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:-.01em!important}
   .hero-form label{font-family:var(--font-tight)!important;font-weight:500!important;letter-spacing:.01em!important}
