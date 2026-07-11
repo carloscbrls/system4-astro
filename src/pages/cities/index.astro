@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'Cities We Serve | System4 of San Joaquin Valley';
+const description = 'System4 serves commercial cleaning clients across Stockton, Modesto, Tracy, Manteca, Lodi, Turlock, and the greater San Joaquin Valley.';
+const canonicalUrl = 'https://system4sjv.com/cities/';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://system4sjv.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Cities", "item": "https://system4sjv.com/cities/"}
+  ]
+};
+
+const cities = [
+  { name: 'Stockton', href: '/cities/stockton/', desc: 'Serving downtown Stockton, the waterfront district, and surrounding commercial zones. From medical offices on March Lane to multi-tenant buildings on Pacific Avenue.' },
+  { name: 'Modesto', href: '/cities/modesto/', desc: 'Covering downtown Modesto, McHenry Avenue business corridors, and surrounding office parks. Reliable nightly and daytime janitorial programs.' },
+  { name: 'Tracy', href: '/cities/tracy/', desc: 'Serving Tracy\'s growing business parks, distribution centers, and professional offices. Custom cleaning programs built for your facility.' },
+  { name: 'Manteca', href: '/cities/manteca/', desc: 'Manteca commercial cleaning with a local touch. Medical offices, retail spaces, and professional buildings kept to your standards.' },
+  { name: 'Lodi', href: '/cities/lodi/', desc: 'Lodi area janitorial and cleaning services. From wine-country tasting rooms to professional offices, we keep your space client-ready.' },
+  { name: 'Turlock', href: '/cities/turlock/', desc: 'Turlock commercial cleaning for offices, medical facilities, and educational institutions. Consistent service you can count on.' }
+];
+---
+
+<Layout title={title} description={description} canonicalUrl={canonicalUrl} schema={breadcrumbSchema}>
+
+  <section class="hero hero-compact" data-animate>
+    <img src="/images/hero-office.jpg" alt="Commercial cleaning across San Joaquin Valley" class="hero-bg" loading="eager" />
+    <div class="container" style="max-width:960px;text-align:center;">
+      <div class="section-label" style="color:rgba(255,255,255,.8);text-align:center;">Our Coverage</div>
+      <h1>Cities We <em>Serve</em></h1>
+      <p style="max-width:600px;margin-left:auto;margin-right:auto;">One contact. One invoice. Consistent cleaning across every location in the San Joaquin Valley.</p>
+    </div>
+  </section>
+
+  <section class="section" data-animate>
+    <div class="container" style="max-width:1080px;">
+      <div class="card-grid card-grid-3" style="margin-top:0;">
+        {cities.map((city) => (
+          <a href={city.href} class="card" data-animate style="text-decoration:none;color:inherit;">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>{city.name}</h3>
+            <p>{city.desc}</p>
+            <span class="card-link">Learn more →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" data-animate>
+    <div class="container" style="max-width:720px;text-align:center;">
+      <div class="section-label" style="text-align:center;">Multi-Site?</div>
+      <h2 class="section-title" style="text-align:center;">One Partner for All Your Locations</h2>
+      <p class="section-subtitle" style="text-align:center;margin-left:auto;margin-right:auto;">Managing cleaning across multiple cities? We coordinate it all — one point of contact, one invoice, consistent standards across every site.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+        <a href="/contact/" class="btn-primary">Get a Free Quote</a>
+        <a href="tel:+12092292066" class="btn-secondary">Call (209) 229-2066</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .card-grid-3 {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.75rem;
+  }
+</style>
